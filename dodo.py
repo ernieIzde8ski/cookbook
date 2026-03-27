@@ -11,7 +11,7 @@ def Action(*args: str | Path) -> list[str]:
 def task_compile():
     working_directory = Path("src")
     targets_directory = Path("target")
-    variant_directory = working_directory / "target"
+    variant_directory = working_directory / "variants"
     variants = {path for path in variant_directory.glob("*.typ") if not path.name.startswith("_")}
     sources = list({*working_directory.rglob("*.typ")} - variants)
     for variant in variants:
