@@ -3,7 +3,7 @@
 
 # TODO: add more entries & (re|sub)categorize; maybe "soups", "breads", and
 # "other"?
-meals: 
+meals:
   # basic-bread
   - barszcz
   - rice-cooker-bean-soup
@@ -15,7 +15,7 @@ sides:
   - sticky-rice
 
 # TODO: make this say "Spreads & Sauces"
-sauces: 
+sauces:
   - nacho-cheese
   - spicy-hummus
 
@@ -25,6 +25,6 @@ ingredients:
   - refried-beans
   - tahini
 
-drinks: 
+drinks:
   - agua-de-jamaica
   # horchata

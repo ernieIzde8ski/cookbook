@@ -18,7 +18,7 @@
 
 #let allspice = footnote[Allspice has the taste of cinnamon, cloves, and
 nutmeg---it doesn't add anything _new_ here.]
-- 1 pinch each of ground cloves, ground nutmeg, and ground allspice (optional#allspice) 
+- 1 pinch each of ground cloves, ground nutmeg, and ground allspice (optional#allspice)
 
 - 1 cup white sugar
 
@@ -33,7 +33,7 @@ nutmeg---it doesn't add anything _new_ here.]
 
 + Setting aside the white sugar, stir all ingredients into pot. Reduce
   temperature & simmer for 20-30 minutes.
-  
+
 + Strain ingredients into container. *Do NOT throw ingredients away yet.*
 
 + Repeat previous steps with fresh water & the same ingredients until container

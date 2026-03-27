@@ -1,11 +1,11 @@
 #import "/lib/mkbook.typ": mkbook
 
 #let mkbook = mkbook.with(
-  /* --- Overridable Properties <<< */ 
+  /* --- Overridable Properties <<< */
   // page-size: "us-letter",
   theme: "lotus",
-  /* >>> Overridable Properties ---*/ 
-  
+  /* >>> Overridable Properties ---*/
+
 
   /* Metadata */
   authors: "Ernie Izdebski",

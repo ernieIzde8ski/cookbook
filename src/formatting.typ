@@ -78,7 +78,7 @@
     let multiplier = size-mult.ratio(page)
 
     set text(size: 12pt * size / 78.6)
-    
+
     it
   }
 
@@ -121,7 +121,7 @@
     leading: 0.55em,
   )
   set text(region: "US")
-  
+
 
   show heading.where(depth: 1): set text(size: 1.5em)
   // TODO: keep messing with these values
@@ -151,7 +151,7 @@
         [pg. #page-no]
       }
     }
-  
+
     if elem == none or elem.numbering != none {
       return it
     }
@@ -182,7 +182,7 @@
   let base = page.height
 
   if page.header != none { panic("todo") }
-  
+
   if page.footer != none {
     let footer-height =  measure(page.footer).height
     if footer-height != 0pt {
@@ -209,9 +209,9 @@
   if measure(left).height > usable-height(page) {
     columns += 1
   }
-  
+
   set page(columns: columns)
-  
+
   show heading.where(depth: 1): it => {
     [#counter(footnote).update(0)]
     show: unsplit
@@ -221,7 +221,7 @@
   set heading(offset: 2)
 
   show footnote.entry: set text(0.85em)
-  
+
   show "1/4": "¼"
   show "1/3": "⅓"
   show "1/2": "½"
@@ -231,4 +231,3 @@
 
   body
 }
-

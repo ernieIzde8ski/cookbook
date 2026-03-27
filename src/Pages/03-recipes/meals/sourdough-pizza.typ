@@ -5,7 +5,7 @@
 This pizza can be prepared in under an hour (with yeast + active starter) while still
 tasting of sourdough. See the original recipe here:
 #url("https://www.thedivinechef.com/post/quick-sourdough-pizza")
-  
+
 
 == Equipment
 
@@ -54,7 +54,7 @@ an issue.]
 
 + Punch dough down. Shape into pizza crust on baking sheet.
 
-+ Bake for 12–15 minutes. Remove, punch dough down if needed, and add toppings. 
++ Bake for 12–15 minutes. Remove, punch dough down if needed, and add toppings.
 
 + Bake another 5–10 minutes, checking every 2–3 minutes. \
   If top is pale but crust is done, turn broiler on for 1–2 minutes to
