@@ -3,6 +3,20 @@
 version = "0.1.0-beta0"
 
 [[document]]
+id = "file:src/target/a4.typ"
+inputs = []
+main = "file:src/target/a4.typ"
+root = "file:src"
+system-fonts = true
+
+[[document]]
+id = "file:src/target/iPhone 16e, wave.typ"
+inputs = []
+main = "file:src/target/iPhone 16e, wave.typ"
+root = "file:src"
+system-fonts = true
+
+[[document]]
 id = "file:src/target/letter.typ"
 inputs = []
 main = "file:src/target/letter.typ"
@@ -10,12 +24,34 @@ root = "file:src"
 system-fonts = true
 
 [[route]]
+id = "file:src/target/a4.typ"
+priority = 256
+
+[[route]]
 id = "file:src/target/letter.typ"
 priority = 256
+
+[[route]]
+id = "file:src/target/iPhone 16e, wave.typ"
+priority = 256
+
+[[task]]
+document = "file:src/target/a4.typ"
+id = "file:src/target/a4.typ"
+output = "target/a4"
+type = "export-pdf"
+when = "never"
+
+[[task]]
+document = "file:src/target/iPhone 16e, wave.typ"
+id = "file:src/target/iPhone 16e, wave.typ"
+output = "target/iPhone 16e, wave"
+type = "export-pdf"
+when = "never"
 
 [[task]]
 document = "file:src/target/letter.typ"
 id = "file:src/target/letter.typ"
-output = "target/main"
+output = "target/letter"
 type = "export-pdf"
 when = "never"

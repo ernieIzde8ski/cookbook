@@ -4,3 +4,6 @@
 .exrc
 .vscode/
 .idea/
+
+# build artifacts
+__pycache__
