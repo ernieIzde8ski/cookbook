@@ -1,0 +1,30 @@
+# TODO: auto-generate this file
+# TODO: commented entries
+
+# TODO: add more entries & (re|sub)categorize; maybe "soups", "breads", and
+# "other"?
+meals: 
+  # basic-bread
+  - barszcz
+  - rice-cooker-bean-soup
+  - sourdough-milk-bread
+  - sourdough-pizza
+
+sides:
+  # mexican-rice
+  - sticky-rice
+
+# TODO: make this say "Spreads & Sauces"
+sauces: 
+  - nacho-cheese
+  - spicy-hummus
+
+ingredients:
+  - beef-marinade
+  - potato-flour
+  - refried-beans
+  - tahini
+
+drinks: 
+  - agua-de-jamaica
+  # horchata
