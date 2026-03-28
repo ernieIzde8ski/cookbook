@@ -1,16 +1,15 @@
 #import "/formatting.typ": *
 
-// TODO: Make the different path to this recipe appear in the table of contents
 = Potato Flour
 
 == Equipment
 
 #let teflon = footnote[Laying mashed potatoes in the dehydrator makes it easier
-to later grind potatoes into a paste than entire chunks of potato. I don't have
-teflon sheets, so I don't do this.]
+  to later grind potatoes into a paste than entire chunks of potato. I don't have
+  teflon sheets, so I don't do this.]
 
 #let dehydrator = footnote[A toaster oven at a low temperature (\~60°C) for a
-long duration should work too, albeit inefficiently.]
+  long duration should work too, albeit inefficiently.]
 
 - Knife
 - Pot, stovetop
@@ -29,7 +28,7 @@ Yields as much as you put in.
 + Rinse potatoes.
 
 + Slice or dice potatoes.#footnote[If not using teflon, take care not to slice
-  chunks too small, lest potatoes fall through the dehydrator's racks.]
+    chunks too small, lest potatoes fall through the dehydrator's racks.]
 
 + Boil chunks until edible.
 
