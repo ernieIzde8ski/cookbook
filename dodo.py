@@ -10,7 +10,7 @@ VARIANT_DIRECTORY = LIBRARY_DIRECTORY / "variants"
 TARGET_DIRECTORY = Path("target")
 
 TYPST_SOURCES = set(LIBRARY_DIRECTORY.rglob("*.typ"))
-VARIANTS = set(path for path in VARIANT_DIRECTORY.rglob("*.typ") if not path.name.startswith("_"))
+VARIANTS = {path for path in VARIANT_DIRECTORY.rglob("*.typ") if not path.name.startswith("_")}
 INDICES = set(LIBRARY_DIRECTORY.rglob("index.yaml"))
 LIBRARIES = TYPST_SOURCES | INDICES - VARIANTS
 
