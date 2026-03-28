@@ -10,6 +10,9 @@ repos:
     hooks:
     - id: pyupgrade
       args: [--py314-plus]
+  - repo: https://github.com/typstyle-rs/pre-commit-typstyle
+    rev: "v0.14.4"
+    hooks: [{id: typstyle}]
   - repo: local
     hooks:
       - id: doit
