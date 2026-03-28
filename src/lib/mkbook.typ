@@ -30,8 +30,9 @@
   let Chapter = regex("(?:^|/)(?:\\d+-)([a-zA-Z]+)/$")
   for recipe in recipes {
     let chapter = recipe.match(Chapter)
-    if chapter != none { mkrecipechapter(chapter.captures.at(0)) }
-    else { mkrecipe(recipe) }
+    if chapter != none { mkrecipechapter(chapter.captures.at(0)) } else {
+      mkrecipe(recipe)
+    }
     pagebreak()
   }
 }
@@ -67,10 +68,9 @@
     document.author.join(" & ")
   }
 
-  // TODO: fix center alignment
   set align(center)
   set text(size: 14pt)
-  (title, page-no, [Accessed #today],).filter(as-bool).join(sep)
+  (title, page-no, [Accessed #today]).filter(as-bool).join(sep)
 }
 
 
@@ -81,7 +81,6 @@
   page-size: "us-letter",
   theme: "lotus",
 
-  // TODO: make these more configurable
   page-header: true,
   page-footer: true,
   cover: true,
@@ -90,7 +89,7 @@
   recipes: (),
 ) = {
   import "/formatting.typ": stylize-elements
-  import "./kanagawa/mod.typ": kanagawa, Theme
+  import "./kanagawa/mod.typ": Theme, kanagawa
 
   if type(theme) == str {
     theme = Theme.at(theme)
@@ -112,7 +111,5 @@
     if recipes.len() > 0 { mkrecipes(recipes) },
   )
 
-  pages
-    .filter(it => it != none)
-    .join(pagebreak(weak: true))
+  pages.filter(it => it != none).join(pagebreak(weak: true))
 }

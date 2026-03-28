@@ -32,7 +32,6 @@ tasting of sourdough. See the original recipe here:
 
 *Yields 1 pizza.*
 
-// TODO: rewrite in my own words
 == Steps
 
 + Whisk starter, yeast (if applicable), water, and oil together in bowl.
@@ -40,15 +39,14 @@ tasting of sourdough. See the original recipe here:
 + Add flour & salt. Knead until smooth.
 
 #let fn = footnote[~Expect this to take about 45 minutes if using instant
-yeast.\ I suspect that, the longer you sit on it, the more you give the yeast a
-chance to burn itself out, and therefore the less giant the bubbles will be when
-you do the first bake. Given that you can just punch the dough down again if it
-inflates too much on the first bake, though, I don't think this is too much of
-an issue.]
+  yeast.\ I suspect that, the longer you sit on it, the more you give the yeast a
+  chance to burn itself out, and therefore the less giant the bubbles will be when
+  you do the first bake. Given that you can just punch the dough down again if it
+  inflates too much on the first bake, though, I don't think this is too much of
+  an issue.]
 
 + Cover bowl with a damp towel. Let dough rise in a warm place until doubled.
 
-// TODO: This should be represented asynchronously. How?
 // TODO: Automatically convert these units.
 + Preheat oven to 245°C (475°F).
 

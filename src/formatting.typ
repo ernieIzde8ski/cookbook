@@ -11,7 +11,7 @@
 
 
 
-#let invisible(body) = hide(place(body, float: false, ))
+#let invisible(body) = hide(place(body, float: false))
 
 #let unsplit(body, x-align: center) = context {
   if page.columns == 1 {
@@ -30,9 +30,9 @@
 #let intro = unsplit-body
 
 #let HR(length: 50%) = {
-    set align(center)
-    show: pad.with(y: 0.5em)
-    line(length: 50%)
+  set align(center)
+  show: pad.with(y: 0.5em)
+  line(length: 50%)
 }
 
 #let hr = HR()
@@ -40,7 +40,9 @@
 #let list-break = v(0.25em)
 #let lsb = list-break
 
-#let title-case(string) = string.split().map(it => upper(it.at(0)) + lower(it.slice(1))).join(" ")
+#let title-case(string) = (
+  string.split().map(it => upper(it.at(0)) + lower(it.slice(1))).join(" ")
+)
 
 #let dimensions-from-diagonal-length(
   diagonal-length,
@@ -54,19 +56,19 @@
 }
 #let dimensions-from-ppi(ppi, height, width) = (
   height: height / ppi * 1in,
-  width: width / ppi * 1in
+  width: width / ppi * 1in,
 )
 
 #let PAGE_DIMENSIONS = (
-  "iPhone 16e": dimensions-from-ppi(460, 2532, 1170)
+  "iPhone 16e": dimensions-from-ppi(460, 2532, 1170),
 )
-// TODO: kanagawa
-#let stylize-elements(page-size: "us-letter") = (body) => context {
+
+#let stylize-elements(page-size: "us-letter") = body => context {
   import "/lib/size-mult.typ"
 
   let page-args
   if type(page-size) == str {
-    page-args = PAGE_DIMENSIONS.at(page-size, default: (page-size, ))
+    page-args = PAGE_DIMENSIONS.at(page-size, default: (page-size,))
   } else {
     page-args = page-size
   }
@@ -74,7 +76,7 @@
 
   show: it => context {
     // 41.7 with my phone, 78.6 with `us-letter`
-    let size = calc.pow(page.width.pt() * page.height.pt(), 1/3)
+    let size = calc.pow(page.width.pt() * page.height.pt(), 1 / 3)
     let multiplier = size-mult.ratio(page)
 
     set text(size: 12pt * size / 78.6)
@@ -122,9 +124,7 @@
   )
   set text(region: "US")
 
-
   show heading.where(depth: 1): set text(size: 1.5em)
-  // TODO: keep messing with these values
   show heading: it => {
     let text-size = 1em
     if it.depth < 3 {
@@ -184,7 +184,7 @@
   if page.header != none { panic("todo") }
 
   if page.footer != none {
-    let footer-height =  measure(page.footer).height
+    let footer-height = measure(page.footer).height
     if footer-height != 0pt {
       footer-height += resolve-length(page.footer-descent, page.height)
       base -= footer-height
@@ -199,9 +199,10 @@
 }
 
 #let format-recipe(body) = context {
-  // TODO: This could be smarter, use more columns only as needed
-
-  let page-simulator(column-no) = block(width: page.width, columns(column-no, body))
+  let page-simulator(column-no) = block(width: page.width, columns(
+    column-no,
+    body,
+  ))
 
   let columns = 1
   let left = page-simulator(columns)
