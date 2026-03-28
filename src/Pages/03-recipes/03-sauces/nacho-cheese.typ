@@ -16,12 +16,11 @@
 
 #let fn = (
   cheese: footnote[~Shredded cheese will dissolve easier, but a block works just fine too.],
-  sodium-citrate: footnote[~This recipe gets to omit salt because sodium citrate is already somewhat saline.],
 )
 
 - 200 g. cheddar cheese#fn.cheese
 - 200 g. milk
-- 10 g. #url[sodium citrate] #Fn.sodium-citrate#fn.sodium-citrate
+- 10 g. #url[sodium citrate] #Fn.sodium-citrate
 - 1/4 tsp. chili powder // TODO: metric
 - Red food dye (optional)
 

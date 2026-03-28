@@ -8,10 +8,7 @@
     return none
   }
   lower(
-    key
-      .trim()
-      .replace(regex("(\s|-)+"), "-")
-      .replace(regex("[^a-zA-Z-]"), "")
+    key.trim().replace(regex("(\s|-)+"), "-").replace(regex("[^a-zA-Z-]"), ""),
   )
 }
 
@@ -19,7 +16,7 @@
   chicken-bouillon: "https://www.amazon.com/Knorr-Chicken-Flavor-Bouillon-35-3/dp/B0711K2YP7",
   grease-keeper: "https://www.amazon.com/Oggi-7347-Jumbo-Grease-Stainless/dp/B0711FN8BG",
   pullman-loaf-pan: "https://shop.kingarthurbaking.com/items/pullman-loaf-pan",
-  baking-steel:  "https://alexandracooks.com/2020/05/01/simple-sourdough-pizza-a-step-by-step-guide/",
+  baking-steel: "https://alexandracooks.com/2020/05/01/simple-sourdough-pizza-a-step-by-step-guide/",
   sodium-citrate: "https://www.amazon.com/dp/B07NF4B3Y7",
   cream: "https://en.wikipedia.org/wiki/Cream",
 )
@@ -53,13 +50,13 @@
     food-processor: [You can technically get away with a blender, but it's a hell of a lot more tedious.],
     grease-keeper: [In the absence of a #url(key: "grease keeper")[fine-mesh grease keeper], a cheesecloth or a metal fine-mesh strainer, and a generic 4-liter container, will do fine.],
     rice-cooker: [My rice cooker cooks up to 12 cups.],
-    sodium-citrate: [Sodium citrate is a cheese emulsifier; that is, it helps keep cheese molecules bound to water molecules.],
+    sodium-citrate: [Sodium citrate is a cheese emulsifier; that is, it helps keep cheese molecules bound to water molecules. It's also somewhat saline, so you get to use less salt when you use it.],
     the-texture-destroyer: [Just don't boil it. I trust you.],
   ),
   mappers: (
     it => [~#it],
     footnote,
-  )
+  ),
 )
 
 #let Fn = Footnotes
