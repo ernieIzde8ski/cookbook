@@ -1,30 +1,17 @@
-# TODO: auto-generate this file
-# TODO: commented entries
-
-# TODO: add more entries & (re|sub)categorize; maybe "soups", "breads", and
-# "other"?
-meals:
-  # basic-bread
-  - barszcz
-  - rice-cooker-bean-soup
-  - sourdough-milk-bread
-  - sourdough-pizza
-
-sides:
-  # mexican-rice
-  - sticky-rice
-
-# TODO: make this say "Spreads & Sauces"
-sauces:
-  - nacho-cheese
-  - spicy-hummus
-
-ingredients:
-  - beef-marinade
-  - potato-flour
-  - refried-beans
-  - tahini
-
-drinks:
-  - agua-de-jamaica
-  # horchata
+- 01-meals/
+- 01-meals/barszcz.typ
+- 01-meals/rice-cooker-bean-soup.typ
+- 01-meals/sourdough-milk-bread.typ
+- 01-meals/sourdough-pizza.typ
+- 02-sides/
+- 02-sides/sticky-rice.typ
+- 03-sauces/
+- 03-sauces/nacho-cheese.typ
+- 03-sauces/spicy-hummus.typ
+- 04-drinks/
+- 04-drinks/agua-de-jamaica.typ
+- 05-ingredients/
+- 05-ingredients/beef-marinade.typ
+- 05-ingredients/potato-flour.typ
+- 05-ingredients/refried-beans.typ
+- 05-ingredients/tahini.typ

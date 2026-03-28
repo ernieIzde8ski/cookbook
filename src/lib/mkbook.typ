@@ -15,25 +15,22 @@
   [= #title-case(path)]
 }
 
-#let mkrecipe(paths, base-path: DEFAULT_RECIPE_PATH) = {
+#let mkrecipe(path, base-path: DEFAULT_RECIPE_PATH) = {
   import "/formatting.typ": format-recipe
 
-  let path = base-path + paths.join("/") + ".typ"
+  let path = base-path + path
   format-recipe(include path)
 }
 
 #let mkrecipes(recipes) = {
-  import "/recipe.typ": fold-recipes
-
-  if type(recipes) != array {
-    recipes = fold-recipes(recipes)
-  }
-
   mkrecipechapter("Recipes", offset: 0)
   pagebreak()
 
+  // don't worry about it
+  let Chapter = regex("(?:^|/)(?:\\d+-)([a-zA-Z]+)/$")
   for recipe in recipes {
-    if type(recipe) == str { mkrecipechapter(recipe) }
+    let chapter = recipe.match(Chapter)
+    if chapter != none { mkrecipechapter(chapter.captures.at(0)) }
     else { mkrecipe(recipe) }
     pagebreak()
   }
@@ -90,7 +87,7 @@
   cover: true,
   advice: true,
   outline: true,
-  recipes: (:),
+  recipes: (),
 ) = {
   import "/formatting.typ": stylize-elements
   import "./kanagawa/mod.typ": kanagawa, Theme

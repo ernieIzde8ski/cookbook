@@ -7,8 +7,9 @@
   /* >>> Overridable Properties ---*/
 
 
-  /* Metadata */
+  /* --- Metadata <<< */
   authors: "Ernie Izdebski",
   title: "Cookbook 2",
-  recipes: "/Pages/03-recipes/"
+  recipes: yaml("/Pages/03-recipes/index.yaml"),
+  /* */
 )

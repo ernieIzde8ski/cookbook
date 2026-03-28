@@ -1,4 +1,19 @@
+from collections.abc import Iterator
+from functools import partial
+from hashlib import sha256
 from pathlib import Path
+
+import yaml
+
+LIBRARY_DIRECTORY = Path("src")
+VARIANT_DIRECTORY = LIBRARY_DIRECTORY / "variants"
+TARGET_DIRECTORY = Path("target")
+
+TYPST_SOURCES = set(LIBRARY_DIRECTORY.rglob("*.typ"))
+VARIANTS = set(path for path in VARIANT_DIRECTORY.rglob("*.typ") if not path.name.startswith("_"))
+INDICES = set(LIBRARY_DIRECTORY.rglob("index.yaml"))
+LIBRARIES = TYPST_SOURCES | INDICES - VARIANTS
+
 
 def Action(*args: str | Path) -> list[str]:
     result: list[str] = []
@@ -8,15 +23,12 @@ def Action(*args: str | Path) -> list[str]:
         result.append(value)
     return result
 
+
 def task_compile():
-    working_directory = Path("src")
-    targets_directory = Path("target")
-    variant_directory = working_directory / "variants"
-    variants = {path for path in variant_directory.glob("*.typ") if not path.name.startswith("_")}
-    sources = list({*working_directory.rglob("*.typ")} - variants)
-    for variant in variants:
+    libs = list(LIBRARIES)
+    for variant in VARIANTS:
         name = variant.name.removesuffix(variant.suffix)
-        target = targets_directory / (name + ".pdf")
+        target = TARGET_DIRECTORY / (name + ".pdf")
         yield {
             "name": name,
             "actions": [
@@ -28,9 +40,43 @@ def task_compile():
                     "src/",
                     "--",
                     variant,
-                    target
+                    target,
                 )
             ],
-            "file_dep": [variant] + sources,
-            "targets": (target, )
+            "file_dep": [variant] + libs,
+            "targets": (target,),
+        }
+
+
+def _generate_flat_index(root: Path) -> Iterator[str]:
+    files: list[str] = []
+    for path in sorted(root.iterdir()):
+        if path.name.startswith(".") or path.name.startswith("_"):
+            continue
+        if path.is_dir():
+            yield path.name + "/"
+            for child in _generate_flat_index(path):
+                yield f"{path.name}/{child}"
+        elif path.is_file() and path.suffix == ".typ":
+            files.append(path.name)
+    yield from files
+
+
+def _build_index(index: Path):
+    paths = list(_generate_flat_index(index.parent))
+    with open(index, "w") as file:
+        yaml.dump(paths, file)
+
+
+def task_build_index():
+    for index_path in INDICES:
+        path_bytes = index_path.as_posix().encode()
+        hash = sha256(path_bytes).digest()
+        short_hash = hash.hex()[:6]
+
+        yield {
+            "name": f"{short_hash}-{index_path.parent.name}",
+            "actions": [partial(_build_index, index_path)],
+            "file_dep": [*index_path.parent.rglob("*.typ")],
+            "targets": (index_path,),
         }
