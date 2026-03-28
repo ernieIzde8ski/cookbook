@@ -5,3 +5,17 @@ repos:
       - id: check-yaml
       - id: end-of-file-fixer
       - id: trailing-whitespace
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v1.25.0
+    hooks:
+    - id: pyupgrade
+      args: [--py314-plus]
+  - repo: local
+    hooks:
+      - id: doit
+        name: doit
+        description: "Run builds & tests"
+        entry: doit
+        language: python
+        always_run: true # doit has its own DAG, no worries
+        pass_filenames: false
