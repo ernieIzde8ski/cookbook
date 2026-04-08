@@ -12,18 +12,19 @@
 
 - 1 liter of water per iteration (see Steps below)
 
-- 1 cup dried hibiscus petals
+- 70 grams (1 cup) hibiscus petals
 
 - 1 cinnamon stick
 
 #let allspice = footnote[Allspice has the taste of cinnamon, cloves, and
-nutmeg---it doesn't add anything _new_ here.]
-- 1 pinch each of ground cloves, ground nutmeg, and ground allspice (optional#allspice)
-
-- 1 cup white sugar
+  nutmeg---it doesn't add anything _new_ here.]
+- 1 pinch each of ground cloves, ground nutmeg, and ground allspice
+  (optional#allspice)
 
 #let piloncillo = footnote[Substitute 1:1 with brown sugar.]
-- 1/2 cup piloncillo#piloncillo
+- 90 grams (1/2 cup) piloncillo#piloncillo
+
+- 200 grams (1 cup) white sugar
 
 == Steps <jamaica-steps>
 
@@ -38,8 +39,8 @@ nutmeg---it doesn't add anything _new_ here.]
 
 + Repeat previous steps with fresh water & the same ingredients until container
   is nearly full or leaves are no longer potent.#footnote[This repetition makes
-  the jamaica incredibly strong; this is why we only use one cup of hibiscus
-  petals.]
+    the jamaica incredibly strong; this is why we only use one cup of hibiscus
+    petals.]
 
 === Phase 2: Refrigeration
 
