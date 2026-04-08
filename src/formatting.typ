@@ -100,6 +100,8 @@
     it
   }
 
+  show raw.where(lang: "hayagriva"): it => bibliography(bytes(it.text))
+
   set pagebreak(weak: true)
 
   show: display-emoji

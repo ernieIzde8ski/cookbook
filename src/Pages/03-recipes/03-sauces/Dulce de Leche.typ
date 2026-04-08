@@ -44,7 +44,13 @@ experiment, and my bain-marie proper isn't arriving for four days (on 12 apr.
 
 
 #let bib = box({
-  let bib-data = ```hayagriva
+  set align(top)
+  [== References]
+
+  set text(size: 0.8em)
+  set bibliography(title: none, full: true)
+
+  ```hayagriva
   bib-kis:
     type: post
     title: Dulce de Leche
@@ -72,16 +78,5 @@ experiment, and my bain-marie proper isn't arriving for four days (on 12 apr.
       value: https://www.kingarthurbaking.com/blog/2024/07/04/how-to-make-dulce-de-leche-at-home
       date: 2026-04-08
   ```
-
-  set align(top)
-  [== References]
-
-  set text(size: 0.8em)
-
-  bibliography(
-    bytes(bib-data.text),
-    title: none,
-    full: true,
-  )
 })
 #align(bottom, bib)
