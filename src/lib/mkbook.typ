@@ -4,7 +4,10 @@
 
 #let mkoutline() = include "/Pages/01-outline.typ"
 
-#let mkadvice() = include "../Pages/02-advice.typ"
+#let mkadvice() = {
+  set par(first-line-indent: (amount: 1em, all: true))
+  include "../Pages/02-advice.typ"
+}
 
 #let mkrecipechapter(path, offset: 1) = {
   import "/formatting.typ": title-case

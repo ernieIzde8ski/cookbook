@@ -1,11 +1,13 @@
 #import "/formatting.typ": *
 #import "/shared-data.typ": *
 
-= Sourdough Milk Bread
+= Sourdough Milk Bread <r-soft-sourdough-bread>
 
 #unsplit-body[
   This bread is Soft. See the original recipe here:
-  #link("https://www.butterforall.com/traditional-cooking-traditional-living/sourdough-milk-bread/")
+  #link(
+    "https://www.butterforall.com/traditional-cooking-traditional-living/sourdough-milk-bread/",
+  )
   #hr
 ]
 
@@ -13,7 +15,7 @@
 
 - Oven
 - 9"x5" loaf pan#footnote[Cast iron not recommended. I like my
-#url("Pullman loaf pan") from the King Arthur Baking Company.]
+    #url("Pullman loaf pan") from the King Arthur Baking Company.]
 - Large bowl
 
 == Ingredients
@@ -21,11 +23,11 @@
 - 125 grams (1/2 cup) active sourdough starter, 100% hydration
 
 - 300 grams (1 cup) flour#footnote[
-  A majority of the flour should be all-purpose or bread flour. Highly recommend
-  up to 75 grams (25%) of einkorn flour for flavor. Still experimenting with
-  potato flour; so far, it seems like it produces softer but more sour bread,
-  and a very low rise (#sym.arrow a need to use more flour).
-]
+    A majority of the flour should be all-purpose or bread flour. Highly recommend
+    up to 75 grams (25%) of einkorn flour for flavor. Still experimenting with
+    potato flour; so far, it seems like it produces softer but more sour bread,
+    and a very low rise (#sym.arrow a need to use more flour).
+  ]
 
 - 20 grams (2 tbsp. honey)
 
@@ -42,8 +44,8 @@
 + Mix all ingredients together until texture is consistent.
 
 + Cover & proof overnight. Doing stretch & folds is optional.#footnote[If you
-  don't do any stretch and folds, the dough will break in the morning, but it
-  may (or may not) contribute to a softer texture.]
+    don't do any stretch and folds, the dough will break in the morning, but it
+    may (or may not) contribute to a softer texture.]
 
 === Phase 2: Baking and such
 

@@ -1,6 +1,6 @@
 #import "/formatting.typ": *
 
-= Potato Flour
+= Potato Flour <r-potato-flour>
 
 == Equipment
 
