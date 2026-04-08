@@ -79,7 +79,10 @@
     let size = calc.pow(page.width.pt() * page.height.pt(), 1 / 3)
     let multiplier = size-mult.ratio(page)
 
-    set text(size: 12pt * size / 78.6)
+    set text(
+      font: ("Twitter Color Emoji", "Libertinus Serif"),
+      size: 12pt * size / 78.6,
+    )
 
     it
   }
