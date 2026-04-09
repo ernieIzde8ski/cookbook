@@ -171,8 +171,14 @@
     [ (#ref(it.citation.key, form: "page"))]
   }
 
-  set footnote(numbering: "[1]")
+  set footnote(numbering: "(1)")
   show footnote.entry: set text(0.85em)
+  show ref: it => {
+    if it.element == none {
+      it = super(it)
+    }
+    it
+  }
 
   show regex("^-\|$"): list-break
 
