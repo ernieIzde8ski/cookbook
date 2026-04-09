@@ -19,6 +19,7 @@ prbk-ch8:
   type: Chapter
   title: "Lean Yeast Doughs: Sponges, Pre-Ferments, and Sourdoughs"
   chapter: 8
+  page-range: 155-179
   author: *prbk-author
   parent: *prbk
 
