@@ -1,3 +1,5 @@
+#import "/formatting.typ": *
+
 = Broad Advice
 
 It should be possible to prepare any recipe in this cookbook without needing to
@@ -15,7 +17,7 @@ can get away with using less by precooking. In the latter case, undercooked rice
 is even preferable.
 
 == Bread Dough
-=== Elasticity & Extensibility
+=== Elasticity & Extensibility <elastic>
 
 Firstly: Elasticity refers to a substance's ability to "spring back" to its
 original shape. Extensibility refers to a substance's ability to stretch. You
@@ -26,9 +28,10 @@ back together (elasticity). Increasing elasticity often, if not always,
 correlates with decreasing extensibility, and vice versa.
 
 Several factors impact elasticity in bread:
-- A lengthy @autolysis increases extensibility.
-- Higher water content increases extensibility#footnote[I am not certain about
-    the behavior of other fluids.].
+
+- A lengthy @autolysis[autolysis phase] increases extensibility.
+- Higher hydration increases extensibility#footnote[I am not certain about the
+    impact of non-water fluids.].
 - Increased stretch & folds, and longer durations between stretch & folds,
   increases extensibility.
 
@@ -68,11 +71,32 @@ A typical sourdough bread recipe#footnote[Autolysis can be done with any bread,
   but I find it most frequently associated with "traditional" styles such as
   sourdough.] may open with these steps:
 
-+ Mix flour and water together in a large bowl.
-+ Let bread sit for 1 hour.
-+ Mix sourdough starter, salt, and seasonings into dough.
-+ ...
+#bq[
+  + Mix flour and water together in a large bowl.
+  + Let bread sit for 1 hour.
+  + Mix sourdough starter, salt, and seasonings into dough.
+  + ...
+]
 
 The second step, in which the flour-water mixture rests for anywhere between 20
-to 60 minutes, is the autolysis phase. Autolysis allows for a variety of
-benefits. // TODO: list benefits
+to 60 minutes, is the autolysis phase. While autolysis is an optional step, it
+allows flour to "hydrate fully"; that is, "the water is completely absorbed by
+the flour’s proteins and starches" @prbk-ch8[p. 159], and protease enzymes
+break down proteins in the dough, making it easier to knead dough. Some bakers
+also believe this improves the flavor of dough: minimal kneading prevents
+@oxidation[oxidation].
+
+Salt is not added because it interferes with proper hydrolization. There is
+some dispute over whether yeast should be added before autolysis. Gisslen
+advises against it: the acidity produced by yeast makes dough more
+@elastic[elastic] @prbk-ch8[p. 159], which contradicts the purpose of
+autolysis.
+
+== Oxidation <oxidation>
+
+Oxidation occurs when oxygen naturally present in the air reacts with particles
+in a substance, such as in the sifting or mixing of flour. Oxidization is
+sometimes somewhat desirable, especially in fermentation-based processes such
+as kefir or maintaining a sourdough starter, but it typically should be kept to
+a minimum as it can destroy flavors@prbk-ch5[p. 95]. This gives oxidation its
+other name, "oxygen bleaching".

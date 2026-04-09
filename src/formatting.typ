@@ -124,8 +124,8 @@
 
   set par(
     first-line-indent: 0em,
-    spacing: 0.8em,
-    leading: 0.55em,
+    spacing: 0.85em,
+    leading: 0.45em,
   )
   set text(region: "US")
 
@@ -175,6 +175,14 @@
   show footnote.entry: set text(0.85em)
 
   show regex("^-\|$"): list-break
+
+  show quote.where(block: true): set block(above: auto, below: auto)
+  show quote.where(block: true): box.with(
+    inset: (left: 0.5em),
+    stroke: (left: 2pt + gray),
+  )
+
+  set bibliography(title: "References")
 
   body
 }
@@ -237,3 +245,13 @@
 
   body
 }
+
+#let V = {
+  set align(center)
+  v(1em)
+  line(length: 50%)
+  v(1em)
+}
+
+#let blockquote = quote.with(block: true)
+#let bq = blockquote

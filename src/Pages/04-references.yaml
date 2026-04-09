@@ -1,0 +1,50 @@
+prbk: &prbk
+  type: Book
+  title: "Professional Baking"
+  author: &prbk-author Gisslen, Wayne
+  publisher: John Wiley & Sons, Inc.
+  edition: 7th
+  date: 2016-09-21
+  page-total: 764
+
+prbk-ch5:
+  type: Chapter
+  title: "Basic Baking Principles"
+  chapter: 5
+  page-range: 93-101
+  author: *prbk-author
+  parent: *prbk
+
+prbk-ch8:
+  type: Chapter
+  title: "Lean Yeast Doughs: Sponges, Pre-Ferments, and Sourdoughs"
+  chapter: 8
+  author: *prbk-author
+  parent: *prbk
+
+kis:
+  type: post
+  title: Dulce de Leche
+  author: Kevin Is Cooking
+  date: 2024-04-11
+  url:
+    value: https://keviniscooking.com/dulce-de-leche/#wprm-recipe-container-96594
+    date: 2026-04-08
+
+md-dulce-de-leche:
+  type: post
+  title: How to make Dulce de Leche
+  author: Frias, Ana
+  date: 2025-04-04
+  url:
+    value: https://www.muydelish.com/how-to-make-dulce-de-leche/
+    date: 2026-04-08
+
+ka-dulce-de-leche:
+  type: post
+  title: How to make dulce de leche at home
+  author: Bautista, Tatiana
+  date: 2024-07-04
+  url:
+    value: https://www.kingarthurbaking.com/blog/2024/07/04/how-to-make-dulce-de-leche-at-home
+    date: 2026-04-08

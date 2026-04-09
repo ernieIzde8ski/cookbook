@@ -82,6 +82,7 @@
   (title, page-no, [Accessed #today]).filter(as-bool).join(sep)
 }
 
+#let mkreferences() = bibliography("/Pages/04-references.yaml")
 
 #let mkbook(
   authors: (),
@@ -96,6 +97,7 @@
   advice: true,
   outline: true,
   recipes: (),
+  references: true,
 ) = {
   import "/formatting.typ": stylize-elements
   import "./kanagawa/mod.typ": Theme, kanagawa
@@ -118,6 +120,7 @@
     if outline { mkoutline() },
     if advice { mkadvice() },
     if recipes.len() > 0 { mkrecipes(recipes) },
+    if references { mkreferences() },
   )
 
   pages.filter(it => it != none).join(pagebreak(weak: true))

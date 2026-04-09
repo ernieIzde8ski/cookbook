@@ -34,49 +34,10 @@
 == Trivia
 
 I initially planned to make this recipe bain-marie style, as it seems to be
-possible @bib-ka-dulce-de-leche, but I broke three mason jars in the
+possible @ka-dulce-de-leche, but I broke three mason jars in the
 experiment, and my bain-marie proper isn't arriving for four days (on 12 apr.
 2026). In the meantime this is happening.
 
 // TODO: comment on these:
 // - https://www.stirmate.com/product-page/stirmate-ii-smart-pot-stirrer
 // - https://www.thermofisher.com/order/catalog/product/SP88857190
-
-
-#let bib = box({
-  set align(top)
-  [== References]
-
-  set text(size: 0.8em)
-  set bibliography(title: none, full: true)
-
-  ```hayagriva
-  bib-kis:
-    type: post
-    title: Dulce de Leche
-    author: Kevin Is Cooking
-    date: 2024-04-11
-    url:
-      value: https://keviniscooking.com/dulce-de-leche/#wprm-recipe-container-96594
-      date: 2026-04-08
-
-  bib-md-dulce-de-leche:
-    type: post
-    title: How to make Dulce de Leche
-    author: Ana Frias
-    date: 2025-04-04
-    url:
-      value: https://www.muydelish.com/how-to-make-dulce-de-leche/
-      date: 2026-04-08
-
-  bib-ka-dulce-de-leche:
-    type: post
-    title: How to make dulce de leche at home
-    author: Tatiana Bautista
-    date: 2024-07-04
-    url:
-      value: https://www.kingarthurbaking.com/blog/2024/07/04/how-to-make-dulce-de-leche-at-home
-      date: 2026-04-08
-  ```
-})
-#align(bottom, bib)

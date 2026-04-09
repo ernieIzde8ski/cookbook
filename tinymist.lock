@@ -24,11 +24,11 @@ root = "file:src"
 system-fonts = true
 
 [[route]]
-id = "file:src/variants/a4.typ"
+id = "file:src/variants/letter.typ"
 priority = 256
 
 [[route]]
-id = "file:src/variants/letter.typ"
+id = "file:src/variants/a4.typ"
 priority = 256
 
 [[route]]
