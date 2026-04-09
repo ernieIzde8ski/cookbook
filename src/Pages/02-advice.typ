@@ -1,5 +1,10 @@
 = Broad Advice
 
+It should be possible to prepare any recipe in this cookbook without needing to
+read this section. If that is your intent, jump directly to @recipes. The
+following advice will be useful instead for experimentation.
+
+
 == Rice
 
 // TODO: Cite Mexican Rice here.
@@ -9,7 +14,25 @@ even better, slightly less). Recipes like @sticky-rice or Mexican Rice (TO-DO)
 can get away with using less by precooking. In the latter case, undercooked rice
 is even preferable.
 
-== Generic Bread Flour
+== Bread Dough
+=== Elasticity & Extensibility
+
+Firstly: Elasticity refers to a substance's ability to "spring back" to its
+original shape. Extensibility refers to a substance's ability to stretch. You
+typically want bread dough to have some degree of both. For instance, while
+performing stretch & folds for sourdough bread, you want the bread to be able
+to stretch without ripping apart (extensibility), but still be able to snap
+back together (elasticity). Increasing elasticity often, if not always,
+correlates with decreasing extensibility, and vice versa.
+
+Several factors impact elasticity in bread:
+- A lengthy @autolysis increases extensibility.
+- Higher water content increases extensibility#footnote[I am not certain about
+    the behavior of other fluids.].
+- Increased stretch & folds, and longer durations between stretch & folds,
+  increases extensibility.
+
+=== Flour
 
 In this document, "generic flour" refers to bread flour, all-purpose flour, and
 whole wheat flour. I use this as a baseline because you can safely substitute
@@ -38,3 +61,18 @@ potatoes, makes for very fluffy bread, and has a subtler taste than most
 grains. I eventually plan to modify the @r-soft-sourdough-bread (initially
 intended to be a recipe for soft sourdough bread) to incorporate potato flour,
 though I have yet to discover the correct water ratio needed.
+
+=== Autolysis <autolysis>
+
+A typical sourdough bread recipe#footnote[Autolysis can be done with any bread,
+  but I find it most frequently associated with "traditional" styles such as
+  sourdough.] may open with these steps:
+
++ Mix flour and water together in a large bowl.
++ Let bread sit for 1 hour.
++ Mix sourdough starter, salt, and seasonings into dough.
++ ...
+
+The second step, in which the flour-water mixture rests for anywhere between 20
+to 60 minutes, is the autolysis phase. Autolysis allows for a variety of
+benefits. // TODO: list benefits

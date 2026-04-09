@@ -24,15 +24,15 @@ root = "file:src"
 system-fonts = true
 
 [[route]]
-id = "file:src/variants/iPhone 16e, wave.typ"
-priority = 256
-
-[[route]]
 id = "file:src/variants/a4.typ"
 priority = 256
 
 [[route]]
 id = "file:src/variants/letter.typ"
+priority = 256
+
+[[route]]
+id = "file:src/variants/iPhone 16e, wave.typ"
 priority = 256
 
 [[task]]

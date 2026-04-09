@@ -9,13 +9,13 @@
   include "../Pages/02-advice.typ"
 }
 
-#let mkrecipechapter(path, offset: 1) = {
+#let mkrecipechapter(title, offset: 1) = {
   import "/formatting.typ": title-case
 
   set align(center + horizon)
   set text(size: 1.5em)
   set heading(offset: offset)
-  [= #title-case(path)]
+  title
 }
 
 #let mkrecipe(path, base-path: DEFAULT_RECIPE_PATH) = {
@@ -26,14 +26,20 @@
 }
 
 #let mkrecipes(recipes) = {
-  mkrecipechapter("Recipes", offset: 0)
+  import "/formatting.typ": title-case
+
+  mkrecipechapter([= Recipes <recipes>], offset: 0)
+
   pagebreak()
 
   // don't worry about it
   let Chapter = regex("(?:^|/)(?:\\d+-)([a-zA-Z]+)/$")
   for recipe in recipes {
     let chapter = recipe.match(Chapter)
-    if chapter != none { mkrecipechapter(chapter.captures.at(0)) } else {
+    if chapter != none {
+      let title = title-case(chapter.captures.at(0))
+      mkrecipechapter([= #title])
+    } else {
       mkrecipe(recipe)
     }
     pagebreak()
