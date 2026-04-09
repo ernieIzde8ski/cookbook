@@ -173,12 +173,6 @@
 
   set footnote(numbering: "(1)")
   show footnote.entry: set text(0.85em)
-  show ref: it => {
-    if it.element == none {
-      it = super(it)
-    }
-    it
-  }
 
   show regex("^-\|$"): list-break
 
@@ -188,7 +182,7 @@
     stroke: (left: 2pt + gray),
   )
 
-  set bibliography(title: "References")
+  set bibliography(title: "References", style: "american-chemical-society")
 
   body
 }
