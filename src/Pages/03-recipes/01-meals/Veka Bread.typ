@@ -13,7 +13,7 @@ Poland and Czechia. It is reminiscent of the baguette.
 
 *Dry:*
 - 250 g. (2 cups) all-purpose flour
-- 1 g. (1 tsp.) instant yeast
+- 6 g. (1 tsp.) instant yeast
 - 1 g. (1/8 tsp.) sugar
 - 1 g. (1/4 tsp.) salt
 
