@@ -10,7 +10,9 @@ VARIANT_DIRECTORY = LIBRARY_DIRECTORY / "variants"
 TARGET_DIRECTORY = Path("target")
 
 TYPST_SOURCES = set(LIBRARY_DIRECTORY.rglob("*.typ"))
-VARIANTS = {path for path in VARIANT_DIRECTORY.rglob("*.typ") if not path.name.startswith("_")}
+VARIANTS = {
+    path for path in VARIANT_DIRECTORY.rglob("*.typ") if not path.name.startswith("_")
+}
 INDICES = set(LIBRARY_DIRECTORY.rglob("index.yaml"))
 LIBRARIES = TYPST_SOURCES | INDICES - VARIANTS
 
@@ -25,27 +27,28 @@ def Action(*args: str | Path) -> list[str]:
 
 
 def task_compile():
+    def actions(source: Path, target: Path) -> list[list[str]]:
+        return [Action("tinymist", "compile", "--save-lock", "--root", "src/", "--", source, target)]
     libs = list(LIBRARIES)
     for variant in VARIANTS:
         name = variant.name.removesuffix(variant.suffix)
         target = TARGET_DIRECTORY / (name + ".pdf")
         yield {
             "name": name,
-            "actions": [
-                Action(
-                    "tinymist",
-                    "compile",
-                    "--save-lock",
-                    "--root",
-                    "src/",
-                    "--",
-                    variant,
-                    target,
-                )
-            ],
+            "actions": actions(variant, target),
             "file_dep": [variant] + libs,
             "targets": (target,),
         }
+
+    name = "webpage"
+    source = VARIANT_DIRECTORY / "_base.typ"
+    target = TARGET_DIRECTORY / (name + ".html")
+    yield {
+        "name": name,
+        "actions": actions(source, target),
+        "file_dep": libs,
+        "targets": (target,),
+    }
 
 
 def _generate_flat_index(root: Path) -> Iterator[str]:

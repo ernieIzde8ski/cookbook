@@ -3,6 +3,13 @@
 version = "0.1.0-beta0"
 
 [[document]]
+id = "file:src/variants/_base.typ"
+inputs = []
+main = "file:src/variants/_base.typ"
+root = "file:src"
+system-fonts = true
+
+[[document]]
 id = "file:src/variants/a4.typ"
 inputs = []
 main = "file:src/variants/a4.typ"
@@ -28,12 +35,23 @@ id = "file:src/variants/a4.typ"
 priority = 256
 
 [[route]]
-id = "file:src/variants/letter.typ"
+id = "file:src/variants/_base.typ"
 priority = 256
 
 [[route]]
 id = "file:src/variants/iPhone 16e, wave.typ"
 priority = 256
+
+[[route]]
+id = "file:src/variants/letter.typ"
+priority = 256
+
+[[task]]
+document = "file:src/variants/_base.typ"
+id = "file:src/variants/_base.typ"
+output = "target/webpage"
+type = "export-html"
+when = "never"
 
 [[task]]
 document = "file:src/variants/a4.typ"

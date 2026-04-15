@@ -6,10 +6,11 @@
   theme: "lotus",
   /* >>> Overridable Properties ---*/
 
-
   /* --- Metadata <<< */
   authors: "Ernie Izdebski",
   title: "Cookbook 2",
   recipes: yaml("/Pages/03-recipes/index.yaml"),
   /* */
 )
+
+#mkbook()
