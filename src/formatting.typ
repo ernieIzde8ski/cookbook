@@ -1,11 +1,14 @@
+#import "/shared-data.typ": *
+
+#import color: hsl, hsv
+
 #import "/lib/Zlomek.typ"
 #import "/lib/emoji.typ": display-emoji
 #import "/lib/format.typ": display
 #import "/lib/format.typ": format-date
 #import "/lib/size-mult.typ"
-
-#import "utils.typ": as-bool, is-truthy
-#import "shared-data.typ": *
+#import "/utils.typ": as-bool, is-truthy
+#import "/lib/flags.typ": ALL as flags
 
 #import "@preview/oxifmt:1.0.0": strfmt as fmt
 
@@ -61,6 +64,20 @@
   )
 }
 
+#let simple-cell-fill(
+  _x,
+  y,
+  // opts
+  header-rowspan: 1,
+  bg-header: rgb("#C8D7E6FF"),
+  bg-body: pale-blue,
+  default: none,
+) = {
+  // @typstyle off
+  if y < header-rowspan { bg-header }
+  else if calc.odd(y) { bg-body }
+  else { default }
+}
 #let mdtable = {
   import "@preview/tablem:0.3.0": three-line-table
   three-line-table.with(fill: (_, y) => if calc.odd(y) { pale-blue })
@@ -121,7 +138,7 @@
   } else {
     page-args = page-size
   }
-  set page(..page-args)
+  set page(..page-args, margin: 6%)
 
   show: body => context {
     // 41.7 with my phone, 78.6 with `us-letter`
@@ -246,6 +263,7 @@
   set footnote(numbering: "(1)")
   show footnote.entry: set text(0.85em)
 
+  show "%%": "‱"
   show regex("^-\|$"): list-break
 
   set enum(numbering: "1.A.I.i.")

@@ -72,7 +72,5 @@
       return "\""
     }
     key.fields().values().flatten().map(content-to-str).join("")
-  } else {
-    panic("unsupported type: " + repr(key))
   }
 }

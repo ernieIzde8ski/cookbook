@@ -1,3 +1,62 @@
+romanian-flours:
+  type: Report
+  title: "Physical–chemical analysis of different types of flours available in the Romanian market"
+  author:
+    - Katalin Bodor
+    - József Szilágyi
+    - Brigitta Salamon
+    - Orsolya Szakács
+    - Zsolt Bodor
+  date: 2024
+  abstract: |
+    The physical–chemical characteristics of different types of flours are essential for understanding their composition, nutritional value, and functional properties as well. The aim of this research was to identify the variability of the different wheat flours available in Romania. In this study 39 different wheat flours were selected and the following parameters were analyzed in the laboratory: moisture content, ash content, gluten content (wet and dry) and wet gluten spreading. The tested flours were classified into four different classes according to their ash content: 480 (ash content 0.48%) (N = 11), 550 (0.55%) (N = 9), 650 (0.65%) (N = 8), 1100 (1.1%) (N = 11). Mathematical and statistical methods were used to analyze the obtained results: descriptive statistics, box-plot, Spearman correlation and hierarchical cluster analysis. The results revealed that moisture content varied between 9.5 and 11.8%. In terms of ash content, the lowest and highest measured values were 0.427–2.04 g/100 g. The average wet gluten content of the studied flours varied between 30 and 32%, while the average dry gluten content was 12.8%. The findings indicate that the moisture content of all examined flour samples was within permissible levels for extended storage, aligning with established standards. Gluten is a key and essential parameter for bread making because influences the dough mixing and baking properties. The mineral content, represented by ash content, is influenced by cereal type and milling process, with wheat's ash content ranging between 1.5 and 2%. Flours with high wet gluten content (> 34%) can be used to improve the properties of lower quality flours. Further studies are necessary in order to determine the possible health effects of different cereal varieties.
+  publisher: Springer Nature
+  url:
+    value: https://www.nature.com/articles/s41598-023-49535-x
+    date: 2026-07-05
+  parent:
+    title: Scientific Reports
+    publisher: Springer Nature
+    url:
+      value: https://www.nature.com/srep/
+      date: 2026-07-05
+
+PF_confusion-flour: &PF_confusion-flour
+  type: Thread
+  title: "Confusion over flour names in Poland"
+  author: "@KatieKasia"
+  date: 2008-09-22
+  url:
+    value: https://polishforums.com/food/poland-confusion-flour-names-27955/
+    date: 2026-06-27
+  publisher: PolishForums.com
+
+pf_confusion-flour.9:
+  type: Post
+  title: "#9"
+  author: Bev07
+  date: 2008-09-24
+  abstract: |
+    Can anyone help me with the wording for "whole wheat flour" in Polish? I've purchased four different packages but none are whole wheat flour.....maybe they don't have it in Poland?
+
+    I went to the thread that Krzysztof (above) suggested. It doesn't address my question, but it was good information. Here it is again in case anyone is interested, but I still need my whole wheat answer.
+
+    Other thread:
+    Flour type, according to Polish food regulations, means the content of ashes in it (i.e. the remains after complete burning of the organic ingredients in a sample of the product at a determined temperature). Ii is expressed in gramms/100 kg of flour. For example: type 500 means that in every 100 kg of flour there's around 500 g of ashes, and type 850 means that in every 100 kg the content of ashes is around 850 g.
+
+    Main types of wheat flours:
+
+    - mąka poznańska, typ 500 - recommended for dough for noodles, pierogi, pizza, for sauces (as densifier);
+    - mąka luksusowa, typ 550 - recommended for dough for yeast cakes and fried cakes;
+    - mąka tortowa, typ 450 - recommended for dough for sponge cake or sponge cake with fat;
+    - mąka krupczatka, typ 500 - recommended for shortcrust pastry and "półkruche" (shortcrust pastry with cream, egg whites and baking soda), "ciasto parzone" (steamed dough/pastry???) and maccaroni
+
+    - mąka wrocławska, typ 500 - recommended for dough for yeast cakes, puff pastry (ciasto francuskie) and rough-puff pastry (ciasto półfrancuskie), pancakes, soups and sauces
+  url:
+    value: https://polishforums.com/food/poland-confusion-flour-names-27955/#msg534262
+    date: 2026-06-27
+  parent: *PF_confusion-flour
+
 PROFESSIONAL_BAKING: &prbk
   type: Book
   title: "Professional Baking"
@@ -35,6 +94,16 @@ ALL_RECIPES: &ar
   type: Newspaper
   title: "Allrecipes"
   publisher: People Inc.
+
+ar_vital-wheat-gluten:
+  type: Article
+  title: "What Is Vital Wheat Gluten and How Do You Use It?"
+  author: Sugg, Hayley
+  date: 2024-09-24
+  url:
+    value: https://www.allrecipes.com/article/what-is-vital-wheat-gluten-how-to-use/
+    date: 2026-07-05
+  parent: *ar
 
 ar_jamaica:
   type: Article
@@ -88,6 +157,48 @@ ac_piloncillo:
     value: https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/piloncillo-coma-and-blank-upc-column--blank-712810000056
     date: 2026-05-12
   parent: *ac
+
+BABICCINA_VOLBA: &bv
+  type: Web
+  title: "Babiččina volba"
+  publisher: "GoodMills Česko"
+  url: https://www.babiccinavolba.cz
+
+bv_mouka-hruba:
+  type: Web
+  title: "Mouka hrubá pšeničká"
+  url:
+    value: https://www.babiccinavolba.cz/mouky/hruba-psenicna/
+    date: 2026-07-05
+  parent: *bv
+
+BABICCINA_VOLBA_BLOG: &bvb
+  type: Blog
+  title: "Vypečený blog"
+  publisher: "GoodMills Česko"
+  url: https://www.babiccinavolba.cz/vypeceny-blog/
+
+bvb_mouk:
+  type: Post
+  title: Druhy a typy pšeničných mouk
+  url:
+    value: https://www.babiccinavolba.cz/vypeceny-blog/druhy-a-typy-psenicnych-mouk
+    date: 2026-07-05
+  parent: *bvb
+
+BOBS_RED_MILL: &brm
+  type: Web
+  title: "Bob's Red Mill"
+  publisher: "Bob's Red Mill"
+  url: https://www.bobsredmill.com
+
+brm_vital-wheat-gluten:
+  type: Web
+  title: "Vital Wheat Gluten"
+  url:
+    value: https://www.bobsredmill.com/product/vital-wheat-gluten
+    date: 2026-07-05
+  parent: *brm
 
 FARMHOUSE_ON_BOONE: &fob
   type: Blog
