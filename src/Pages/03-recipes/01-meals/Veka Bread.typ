@@ -12,14 +12,14 @@ Poland and Czechia. It is reminiscent of the baguette.
 == Ingredients
 
 *Dry:*
-- 250 g. all-purpose flour
-- 1 tsp. instant yeast
-- 1/8 tsp. sugar
-- 1/4 tsp. salt
+- 250 g. (2 cups) all-purpose flour
+- 1 g. (1 tsp.) instant yeast
+- 1 g. (1/8 tsp.) sugar
+- 1 g. (1/4 tsp.) salt
 
 *Wet:*
-- 180 mL water
-- 2 tsp. vegetable oil
+- 180 g. (3/4 cup) water
+- 10 g. (2 tsp.) vegetable oil
 
 *Yields 1 loaf.*
 
