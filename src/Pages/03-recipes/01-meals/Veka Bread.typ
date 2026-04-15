@@ -21,10 +21,27 @@ Poland and Czechia. It is reminiscent of the baguette.
 - 180 g. (3/4 cup) water
 - 10 g. (2 tsp.) vegetable oil
 
+*Coating:*
+- 1-2 eggs
+- Water, roughly equal amount
+
 *Yields 1 loaf.*
 
 == Steps
 
-+ Add dry ingredients to bowl first. Add wet ingredients. Mix.
-+ Transfer to dry surface and mix. Dough should be low moisture, easy to handle. // TODO: Add advice section for moisture
-+ Shape dough into round bun. Cover and let rise, 45 minutes.
+*First rise:*
++ Add dry ingredients first, then wet ingredients, and mix with fork.
++ Transfer to dry surface and knead. Dough should be low/medium moisture, easy to handle. // TODO: Add advice section for moisture
++ Shape dough into round bun. Cover with damp towel and let rise, 45 minutes.
+#v(0em)
+
+*Second rise:*
++ Press bun into flat oval, short side closest to you, as though you were folding a burrito.
++ Roll loaf up.
++ Move loaf to baking sheet. Let rest for 30 minutes.
+
+*Baking:*
++ Preheat oven to 215°C (425°F).#footnote[Oh, how I would love an oven where I can actually try steaming my bread.]
++ Mix eggs and water together in a small bowl.
++ Brush loaf with egg-water mixture.
++ Move loaf to oven and reduce temperature to 200°C (400°F). Bake for 15-18 minutes.
