@@ -35,7 +35,7 @@ Poland and Czechia. It is reminiscent of the baguette.
 *First rise:*
 + Add dry ingredients first, then wet ingredients, and mix with fork.
 + Transfer to dry surface and knead. Dough should be low/medium moisture, easy to handle. // TODO: Add advice section for moisture
-+ Shape dough into round bun. Cover with damp towel and let rise, 45 minutes.
++ Shape dough into round bun. Cover with dry towel and let rise, 45 minutes.
 #v(0em)
 
 *Second rise:*
