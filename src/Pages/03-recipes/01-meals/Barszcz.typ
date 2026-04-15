@@ -30,23 +30,25 @@
       - Salt & seasonings to taste, or #url[chicken bouillon]
       - Splash of vinegar
       - Water
-    ], extra: [
+    ],
+    extra: [
       *Extra:*
       - Meat#fns.meat, cooked
       - Fried potatoes, medium chunks
-    ], toppings: [
+    ],
+    toppings: [
       *Toppings*:
       - Cream
       - Dill
-    ]
+    ],
   )
   if page.columns == 1 {
-  table(
-    columns: 2,
-    table.cell(rowspan: 2, data.broth),
-    data.extra,
-    data.toppings
-  )
+    table(
+      columns: 2,
+      table.cell(rowspan: 2, data.broth),
+      data.extra,
+      data.toppings,
+    )
   } else {
     data.broth
     data.extra
