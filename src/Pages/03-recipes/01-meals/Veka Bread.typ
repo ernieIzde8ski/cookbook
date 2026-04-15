@@ -9,6 +9,9 @@ Poland and Czechia. It is reminiscent of the baguette.
 
 == Equipment
 
+- Oven
+- Bowl
+
 == Ingredients
 
 *Dry:*
