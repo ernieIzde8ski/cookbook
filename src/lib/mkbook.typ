@@ -51,19 +51,18 @@
 
 #let mkpgfooter(gap: 0.5em) = context {
   let page-no = counter(page).display("1 of 1", both: true)
-
-  if page.width < 30em.to-absolute() {
-    return align(right, page-no)
-  }
-
-  import "/lib/format.typ": format-date
-  import "/utils.typ": as-bool
-
   let sep = {
     h(gap)
     [---]
     h(gap)
   }
+
+  if page.width < 40em.to-absolute() {
+    return align(end, sep + page-no + sep)
+  }
+
+  import "/lib/format.typ": format-date
+  import "/utils.typ": as-bool
 
   let today = format-date(datetime.today())
   let title = if document.title != none {
