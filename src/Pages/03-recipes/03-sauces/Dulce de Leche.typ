@@ -3,10 +3,8 @@
 
 = Dulce de Leche <r-dulce-de-leche>
 
-#intro[
-  Preparing dulce de leche without condensed milk is a larger time
-  investment, but on the plus side, it doesn't require buying condensed milk.
-]
+Preparing dulce de leche without condensed milk is a larger time
+investment, but on the plus side, it doesn't require buying condensed milk.
 
 == Equipment
 

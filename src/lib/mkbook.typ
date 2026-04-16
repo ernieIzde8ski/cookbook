@@ -9,14 +9,18 @@
   include "../Pages/02-advice.typ"
 }
 
-#let mkrecipechapter(title, offset: 1) = {
-  import "/formatting.typ": title-case
+#let mkrecipechapter(title, offset: 1) = box(
+  {
+    import "/formatting.typ": title-case
 
-  set align(center + horizon)
-  set text(size: 1.5em)
-  set heading(offset: offset)
-  title
-}
+    set align(center + horizon)
+    set text(size: 1.5em)
+    set heading(offset: offset)
+    title
+  },
+  width: 100%,
+  height: 100%,
+)
 
 #let mkrecipe(path, base-path: DEFAULT_RECIPE_PATH) = {
   import "/formatting.typ": format-recipe
@@ -51,19 +55,18 @@
 
 #let mkpgfooter(gap: 0.5em) = context {
   let page-no = counter(page).display("1 of 1", both: true)
-
-  if page.width < 30em.to-absolute() {
-    return align(right, page-no)
-  }
-
-  import "/lib/format.typ": format-date
-  import "/utils.typ": as-bool
-
   let sep = {
     h(gap)
     [---]
     h(gap)
   }
+
+  if page.width < 40em.to-absolute() {
+    return align(end, sep + page-no + sep)
+  }
+
+  import "/lib/format.typ": format-date
+  import "/utils.typ": as-bool
 
   let today = format-date(datetime.today())
   let title = if document.title != none {
@@ -89,7 +92,6 @@
   title: none,
 
   page-size: "us-letter",
-  theme: "lotus",
 
   page-header: true,
   page-footer: true,
@@ -100,11 +102,6 @@
   references: true,
 ) = {
   import "/formatting.typ": stylize-elements
-  import "./kanagawa/mod.typ": Theme, kanagawa
-
-  if type(theme) == str {
-    theme = Theme.at(theme)
-  }
 
   set document(author: authors, title: title)
   set page(
@@ -112,7 +109,6 @@
     footer: mkpgfooter(),
   )
 
-  show: kanagawa(base-theme: theme)
   show: stylize-elements(page-size: page-size)
 
   let pages = (

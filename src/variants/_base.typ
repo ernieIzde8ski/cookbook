@@ -3,9 +3,7 @@
 #let mkbook = mkbook.with(
   /* --- Overridable Properties <<< */
   // page-size: "us-letter",
-  theme: "lotus",
   /* >>> Overridable Properties ---*/
-
 
   /* --- Metadata <<< */
   authors: "Ernie Izdebski",

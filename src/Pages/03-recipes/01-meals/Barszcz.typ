@@ -6,12 +6,9 @@
 
 = Barszcz
 
-
-#intro[
-  Red beet soup. Polish spelling. Alternate names include: Борщ
-  (:flag_ukr:/:flag_rus:), Borsch(t) (direct transliteration), Боршч
-  (:flag_blr:), Borshch (direct transliteration), ...
-]
+Red beet soup. Polish spelling. Alternate names include: Борщ
+(:flag_ukr:/:flag_rus:), Borsch(t) (direct transliteration), Боршч
+(:flag_blr:), Borshch (direct transliteration), ...
 
 == Ingredients
 

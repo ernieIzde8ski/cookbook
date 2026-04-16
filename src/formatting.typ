@@ -1,5 +1,3 @@
-#import "/lib/kanagawa/mod.typ": *
-
 #import "/lib/emoji.typ": display-emoji
 #import "/lib/format.typ": display
 #import "/lib/format.typ": format-date
@@ -7,27 +5,10 @@
 
 #import "utils.typ": as-bool
 #import "shared-data.typ": *
+
 #import "@preview/oxifmt:1.0.0": strfmt as fmt
 
-
-
 #let invisible(body) = hide(place(body, float: false))
-
-#let unsplit(body, x-align: center) = context {
-  if page.columns == 1 {
-    align(x-align, body)
-  } else {
-    place(body, top + x-align, scope: "parent", float: true)
-  }
-}
-
-#let unsplit-body(body) = {
-  show: unsplit.with(x-align: left)
-  set par(first-line-indent: (amount: 1em, all: true))
-  body
-}
-
-#let intro = unsplit-body
 
 #let HR(length: 50%) = {
   set align(center)
@@ -47,12 +28,12 @@
 #let dimensions-from-diagonal-length(
   diagonal-length,
   height,
-  length,
+  width,
 ) = {
-  let c-squared = calc.pow(height, 2) + calc.pow(length, 2)
+  let c-squared = calc.pow(height, 2) + calc.pow(width, 2)
   let c = calc.sqrt(c-squared)
   let distance-per-pixel = diagonal-length / c
-  (height: height * distance-per-pixel, length: length * distance-per-pixel)
+  (height: height * distance-per-pixel, width: width * distance-per-pixel)
 }
 #let dimensions-from-ppi(ppi, height, width) = (
   height: height / ppi * 1in,
@@ -60,11 +41,20 @@
 )
 
 #let PAGE_DIMENSIONS = (
+  "Kobo Clara BW": dimensions-from-diagonal-length(6in, 1448, 1072),
   "iPhone 16e": dimensions-from-ppi(460, 2532, 1170),
 )
 
-#let stylize-elements(page-size: "us-letter") = body => context {
+#let stylize-elements(
+  page-size: "us-letter",
+  uri-default: blue,
+  uri-label: green.darken(20%),
+  uri-insecure: red,
+  bg: white,
+  bg-dim: luma(80%),
+) = body => context {
   import "/lib/size-mult.typ"
+  import "/lib/stylize.typ": *
 
   let page-args
   if type(page-size) == str {
@@ -74,7 +64,7 @@
   }
   set page(..page-args)
 
-  show: it => context {
+  show: body => context {
     // 41.7 with my phone, 78.6 with `us-letter`
     let size = calc.pow(page.width.pt() * page.height.pt(), 1 / 3)
     let multiplier = size-mult.ratio(page)
@@ -84,14 +74,12 @@
       size: 12pt * size / 78.6,
     )
 
-    it
+    body
   }
-
-  let theme = THEME.get()
 
   show raw.where(block: false): it => {
     show: box.with(
-      fill: theme.bg-dim,
+      fill: bg-dim,
       radius: 25%,
       outset: (bottom: 3pt, top: 2pt),
       inset: (x: 2pt),
@@ -132,12 +120,14 @@
   show heading.where(depth: 1): set text(size: 1.5em)
   show heading: it => {
     let text-size = 1em
-    if it.depth < 3 {
+    if it.depth < 2 {
       it = underline(it)
       text-size = 1.50em
+    } else if it.depth == 2 {
+      text-size = 1.25em
     } else if it.depth == 3 {
       text-size = 1.15em
-    } else if it.depth == 4 {
+    } else {
       it = {
         set text(style: "italic")
         it
@@ -170,7 +160,23 @@
     underline(body)
     [ (#ref(it.citation.key, form: "page"))]
   }
+  show link: it => {
+    let color = uri-default
+    let _underline = false
 
+    if type(it.dest) == label {
+      color = uri-label
+    } else if type(it.dest) == str {
+      if it.dest.starts-with("http://") {
+        color = uri-insecure
+      } else {
+        _underline = true
+      }
+    }
+
+    set text(fill: color)
+    if _underline { underline(it) } else { it }
+  }
   set footnote(numbering: "(1)")
   show footnote.entry: set text(0.85em)
 
@@ -191,54 +197,21 @@
   len.length + len.ratio / 100% * parent-length
 }
 
-#let usable-height(page) = {
-  let base = page.height
-
-  if page.header != none { panic("todo") }
-
-  if page.footer != none {
-    let footer-height = measure(page.footer).height
-    if footer-height != 0pt {
-      footer-height += resolve-length(page.footer-descent, page.height)
-      base -= footer-height
-    }
-  }
-
-  if page.margin == auto {
-    // inoptimal
-    // return page.height - 2 * page.height / 21
-    return base * 19 / 21
-  } else { panic("case not implemented") }
-}
-
-#let format-recipe(body) = context {
-  let page-simulator(column-no) = block(width: page.width, columns(
-    column-no,
-    body,
-  ))
-
-  let columns = 1
-  let left = page-simulator(columns)
-
-  if measure(left).height > usable-height(page) {
-    columns += 1
-  }
-
-  set page(columns: columns)
-
+#let format-recipe(body) = {
   show heading.where(depth: 1): it => {
     [#counter(footnote).update(0)]
-    show: unsplit
-    it
-    v(1em)
+    align(center, it)
   }
   set heading(offset: 2)
 
   show footnote.entry: set text(0.85em)
 
+  show "1/8": "⅛"
   show "1/4": "¼"
   show "1/3": "⅓"
+  show "3/8": "⅜"
   show "1/2": "½"
+  show "5/8": "⅝"
   show "3/4": "¾"
   show "5/6": "⅚"
   show "7/8": "⅞"
