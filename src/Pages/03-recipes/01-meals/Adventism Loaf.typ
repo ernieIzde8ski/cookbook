@@ -17,7 +17,7 @@
 - 460 g. (2 cups) cottage cheese
 - 140 g. (1 cup) bread crumbs
 - 3 eggs
-- 4\~ tsp. (1 tsp.) chicken bouillon
+- 4\~ g. (1 tsp.) chicken bouillon
 - 25 g. (2 tbsp.) soy sauce
 - 50 g. (1/2 cup) chopped nuts
 
@@ -25,26 +25,21 @@
 
 == Steps
 
-+ Braise onions. In the meantime...
-+ Preheat oven to 400°F.
++ Fry onions in oil until nearly caramelized. In the meantime...
 + Mix eggs in bowl.
++ Preheat oven to 200°C (400°F).
 + When onions are done, mix all ingredients together.
 + Bake for 45 minutes.
 
 == Trivia
 
-This recipe is derived from one "Cottage Cheese Loaf Deluxe", found on page 23
-of It's Your World's "Vegetarian Cookbook". I consider this unique little SDA
-cookbook to be incredibly fascinating, especially for the fact that it chose to
-include Ellen G. White quotes about how food bereft of "spice and grease of all
-kinds" imparts "a power of endurance and a vigor of intellect ... not produced
-by a stimulating diet". #footnote[~Suffice it to say, much of that cookbook is
-  horrific. Honestly, this recipe is also horrific, but I like it for the sense
-  of nostalgia it gives me and the strong umami of it.]
+Originally adapted from "Cottage Cheese Loaf Deluxe" (p.23, "Vegetarian
+Cookbook" by It's Your World ).#footnote[~This SDA-endorsed cookbook FASCINATES
+  me. It quotes Ellen G. White on how "spice and grease" dull intellectual
+  vigor (???). Largely horrific; I mostly like this recipe out of pure
+  nostalgia.]
 
-That cookbook is incredibly vague on the details, so, out of necessity, much of
-my recipe here is creative reinterpretation. I imagine "Vegex" was some kind of
-vegetable bouillon, so chicken bouillon seems like an OK substitution.
-#footnote[~I don't own any vegetable bouillon.] God knows what exactly "1/2 cup
-chopped nuts" is though. I think, if they weren't using a blend of nuts, they
-likely used relatively simple nuts, like walnuts or pecans.
+My recipe is largely guesswork due to vague original instructions. "Vegex" was
+presumably a vegetable bouillon brand.#footnote[~Here swapped for chicken
+  bouillon. I lack vegetable bouillon.] The "1/2 cup chopped nuts" probably
+meant simple kinds, like walnuts or pecans.

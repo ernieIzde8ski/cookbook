@@ -10,9 +10,13 @@ VARIANT_DIRECTORY = LIBRARY_DIRECTORY / "variants"
 TARGET_DIRECTORY = Path("target")
 
 TYPST_SOURCES = set(LIBRARY_DIRECTORY.rglob("*.typ"))
-VARIANTS = {path for path in VARIANT_DIRECTORY.rglob("*.typ") if not path.name.startswith("_")}
+YAML_SOURCES = set(LIBRARY_DIRECTORY.rglob("*.yaml"))
+ALL_SOURCES = TYPST_SOURCES | YAML_SOURCES
+VARIANTS = {
+    path for path in VARIANT_DIRECTORY.rglob("*.typ") if not path.name.startswith("_")
+}
 INDICES = set(LIBRARY_DIRECTORY.rglob("index.yaml"))
-LIBRARIES = TYPST_SOURCES | INDICES - VARIANTS
+LIBRARIES = ALL_SOURCES - VARIANTS
 
 
 def Action(*args: str | Path) -> list[str]:
