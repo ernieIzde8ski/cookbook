@@ -7,4 +7,6 @@
 
 # build artifacts
 __pycache__
-.doit.db
+.doit*
+src/**/index.yaml
+tinymist.lock
