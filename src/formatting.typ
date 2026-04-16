@@ -46,12 +46,12 @@
 #let dimensions-from-diagonal-length(
   diagonal-length,
   height,
-  length,
+  width,
 ) = {
-  let c-squared = calc.pow(height, 2) + calc.pow(length, 2)
+  let c-squared = calc.pow(height, 2) + calc.pow(width, 2)
   let c = calc.sqrt(c-squared)
   let distance-per-pixel = diagonal-length / c
-  (height: height * distance-per-pixel, length: length * distance-per-pixel)
+  (height: height * distance-per-pixel, width: width * distance-per-pixel)
 }
 #let dimensions-from-ppi(ppi, height, width) = (
   height: height / ppi * 1in,
