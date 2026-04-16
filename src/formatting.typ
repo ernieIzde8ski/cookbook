@@ -138,12 +138,14 @@
   show heading.where(depth: 1): set text(size: 1.5em)
   show heading: it => {
     let text-size = 1em
-    if it.depth < 3 {
+    if it.depth < 2 {
       it = underline(it)
       text-size = 1.50em
+    } else if it.depth == 2 {
+      text-size = 1.25em
     } else if it.depth == 3 {
       text-size = 1.15em
-    } else if it.depth == 4 {
+    } else {
       it = {
         set text(style: "italic")
         it
@@ -213,41 +215,7 @@
   len.length + len.ratio / 100% * parent-length
 }
 
-#let usable-height(page) = {
-  let base = page.height
-
-  if page.header != none { panic("todo") }
-
-  if page.footer != none {
-    let footer-height = measure(page.footer).height
-    if footer-height != 0pt {
-      footer-height += resolve-length(page.footer-descent, page.height)
-      base -= footer-height
-    }
-  }
-
-  if page.margin == auto {
-    // inoptimal
-    // return page.height - 2 * page.height / 21
-    return base * 19 / 21
-  } else { panic("case not implemented") }
-}
-
-#let format-recipe(body) = context {
-  let page-simulator(column-no) = block(width: page.width, columns(
-    column-no,
-    body,
-  ))
-
-  let columns = 1
-  let left = page-simulator(columns)
-
-  if measure(left).height > usable-height(page) {
-    columns += 1
-  }
-
-  set page(columns: columns)
-
+#let format-recipe(body) = {
   show heading.where(depth: 1): it => {
     [#counter(footnote).update(0)]
     show: unsplit
