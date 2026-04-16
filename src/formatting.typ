@@ -8,25 +8,7 @@
 
 #import "@preview/oxifmt:1.0.0": strfmt as fmt
 
-
-
 #let invisible(body) = hide(place(body, float: false))
-
-#let unsplit(body, x-align: center) = context {
-  if page.columns == 1 {
-    align(x-align, body)
-  } else {
-    place(body, top + x-align, scope: "parent", float: true)
-  }
-}
-
-#let unsplit-body(body) = {
-  show: unsplit.with(x-align: left)
-  set par(first-line-indent: (amount: 1em, all: true))
-  body
-}
-
-#let intro = unsplit-body
 
 #let HR(length: 50%) = {
   set align(center)
@@ -218,9 +200,7 @@
 #let format-recipe(body) = {
   show heading.where(depth: 1): it => {
     [#counter(footnote).update(0)]
-    show: unsplit
-    it
-    v(1em)
+    align(center, it)
   }
   set heading(offset: 2)
 

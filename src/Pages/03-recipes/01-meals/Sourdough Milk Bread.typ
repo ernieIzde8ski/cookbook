@@ -3,13 +3,7 @@
 
 = Sourdough Milk Bread <r-soft-sourdough-bread>
 
-#unsplit-body[
-  This bread is Soft. See the original recipe here:
-  #link(
-    "https://www.butterforall.com/traditional-cooking-traditional-living/sourdough-milk-bread/",
-  )
-  #hr
-]
+This bread is Soft. See the original recipe here: #link("https://www.butterforall.com/traditional-cooking-traditional-living/sourdough-milk-bread/")
 
 == Equipment
 

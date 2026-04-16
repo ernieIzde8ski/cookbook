@@ -2,10 +2,8 @@
 
 = Nacho Cheese
 
-#par(first-line-indent: (amount: 1em, all: true))[
-  This recipe is real easy and and its result doesn't taste of flour, thanks to
-  a little molecular gastronomy.
-]
+This recipe is real easy and and its result doesn't taste of flour, thanks to
+a little molecular gastronomy.
 
 == Equipment
 
