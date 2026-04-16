@@ -11,22 +11,16 @@
   }
 }
 
-#let display-emoji(body) = {
+#let display-emoji(body, error: red) = {
   import "/utils.typ": content-to-str
-  import "./kanagawa/mod.typ": THEME
 
   let pattern = regex(":([a-zA-Z_-]+):")
 
   show pattern: match => context {
-    let capture = content-to-str(match)
-      .match(pattern)
-      .captures
-      .at(0)
+    let capture = content-to-str(match).match(pattern).captures.at(0)
 
     let res = get-emoji(capture)
-    let theme = THEME.get()
-    if res == none { text(fill: theme.error, match) }
-    else { res }
+    if res == none { text(fill: error, match) } else { res }
   }
 
   body

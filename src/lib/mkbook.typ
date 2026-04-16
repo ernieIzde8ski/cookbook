@@ -89,7 +89,6 @@
   title: none,
 
   page-size: "us-letter",
-  theme: "lotus",
 
   page-header: true,
   page-footer: true,
@@ -100,11 +99,6 @@
   references: true,
 ) = {
   import "/formatting.typ": stylize-elements
-  import "./kanagawa/mod.typ": Theme, kanagawa
-
-  if type(theme) == str {
-    theme = Theme.at(theme)
-  }
 
   set document(author: authors, title: title)
   set page(
@@ -112,7 +106,6 @@
     footer: mkpgfooter(),
   )
 
-  show: kanagawa(base-theme: theme)
   show: stylize-elements(page-size: page-size)
 
   let pages = (

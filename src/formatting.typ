@@ -1,5 +1,3 @@
-#import "/lib/kanagawa/mod.typ": *
-
 #import "/lib/emoji.typ": display-emoji
 #import "/lib/format.typ": display
 #import "/lib/format.typ": format-date
@@ -7,6 +5,7 @@
 
 #import "utils.typ": as-bool
 #import "shared-data.typ": *
+
 #import "@preview/oxifmt:1.0.0": strfmt as fmt
 
 
@@ -60,11 +59,18 @@
 )
 
 #let PAGE_DIMENSIONS = (
+  "Kobo Clara BW": dimensions-from-diagonal-length(6in, 1448, 1072),
   "iPhone 16e": dimensions-from-ppi(460, 2532, 1170),
 )
 
-#let stylize-elements(page-size: "us-letter") = body => context {
+#let stylize-elements(
+  page-size: "us-letter",
+  uri-default: blue,
+  uri-label: green,
+  uri-insecure: red,
+) = body => context {
   import "/lib/size-mult.typ"
+  import "/lib/stylize.typ": *
 
   let page-args
   if type(page-size) == str {
@@ -74,7 +80,7 @@
   }
   set page(..page-args)
 
-  show: it => context {
+  show: body => context {
     // 41.7 with my phone, 78.6 with `us-letter`
     let size = calc.pow(page.width.pt() * page.height.pt(), 1 / 3)
     let multiplier = size-mult.ratio(page)
@@ -84,10 +90,8 @@
       size: 12pt * size / 78.6,
     )
 
-    it
+    body
   }
-
-  let theme = THEME.get()
 
   show raw.where(block: false): it => {
     show: box.with(
