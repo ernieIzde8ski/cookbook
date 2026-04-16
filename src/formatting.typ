@@ -66,8 +66,10 @@
 #let stylize-elements(
   page-size: "us-letter",
   uri-default: blue,
-  uri-label: green,
+  uri-label: green.darken(20%),
   uri-insecure: red,
+  bg: white,
+  bg-dim: luma(80%),
 ) = body => context {
   import "/lib/size-mult.typ"
   import "/lib/stylize.typ": *
@@ -95,7 +97,7 @@
 
   show raw.where(block: false): it => {
     show: box.with(
-      fill: theme.bg-dim,
+      fill: bg-dim,
       radius: 25%,
       outset: (bottom: 3pt, top: 2pt),
       inset: (x: 2pt),
@@ -174,7 +176,23 @@
     underline(body)
     [ (#ref(it.citation.key, form: "page"))]
   }
+  show link: it => {
+    let color = uri-default
+    let _underline = false
 
+    if type(it.dest) == label {
+      color = uri-label
+    } else if type(it.dest) == str {
+      if it.dest.starts-with("http://") {
+        color = uri-insecure
+      } else {
+        _underline = true
+      }
+    }
+
+    set text(fill: color)
+    if _underline { underline(it) } else { it }
+  }
   set footnote(numbering: "(1)")
   show footnote.entry: set text(0.85em)
 
