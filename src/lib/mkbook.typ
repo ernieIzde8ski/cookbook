@@ -9,14 +9,18 @@
   include "../Pages/02-advice.typ"
 }
 
-#let mkrecipechapter(title, offset: 1) = {
-  import "/formatting.typ": title-case
+#let mkrecipechapter(title, offset: 1) = box(
+  {
+    import "/formatting.typ": title-case
 
-  set align(center + horizon)
-  set text(size: 1.5em)
-  set heading(offset: offset)
-  title
-}
+    set align(center + horizon)
+    set text(size: 1.5em)
+    set heading(offset: offset)
+    title
+  },
+  width: 100%,
+  height: 100%,
+)
 
 #let mkrecipe(path, base-path: DEFAULT_RECIPE_PATH) = {
   import "/formatting.typ": format-recipe
