@@ -226,9 +226,12 @@
 
   show footnote.entry: set text(0.85em)
 
+  show "1/8": "⅛"
   show "1/4": "¼"
   show "1/3": "⅓"
+  show "3/8": "⅜"
   show "1/2": "½"
+  show "5/8": "⅝"
   show "3/4": "¾"
   show "5/6": "⅚"
   show "7/8": "⅞"
