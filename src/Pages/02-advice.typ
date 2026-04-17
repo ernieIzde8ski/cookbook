@@ -30,17 +30,62 @@ correlates with decreasing extensibility, and vice versa.
 Several factors impact elasticity in bread:
 
 - A lengthy @autolysis[autolysis phase] increases extensibility.
-- Higher hydration increases extensibility#footnote[I am not certain about the
-    impact of non-water fluids.].
+- Higher hydration increases extensibility. #footnote[I am not certain about the
+    impact of non-water fluids.]
 - Increased stretch & folds, and longer durations between stretch & folds,
   increases extensibility.
+- Using @adv-flour[(wheat) flour] with higher gluten content, such as bread flour or gluten flour.
 
-=== Flour
+=== Flour <adv-flour>
 
-In this document, "generic flour" refers to bread flour, all-purpose flour, and
-whole wheat flour. I use this as a baseline because you can safely substitute
-these flours 1:1 with each other in any recipe, though all-purpose and
-whole-wheat flour call for slightly more liquid than bread flour.
+In this cookbook, "generic flour" refers to bread flour, all-purpose flour, and
+whole wheat flour. I use this as a baseline because you can substitute these
+flours 1:1 with one another in most recipes, adjusting hydration to compensate.
+Consult @fig-flour-faq: // TODO: Should this be in an appendix?
+
+#figure(
+  caption: [Quick reference for various flours.@wp-flour @kab-pizza-flour @tfl-flavor-flour @fnub_flour-101 @prbk_ch4[p. 57-60]],
+  {
+    let All-Purpose = {
+      let names = ("All-Purpose", "Refined", "Plain", "Restaurant", "Hotel")
+      let sampling = names.slice(0, 3).sorted().join("; ")
+      let full = names.map(lower).sorted().join(" flour, ") + " flour"
+
+      sampling
+      footnote[I have thus far discovered the following names for this flour:
+        #full, and simply "flour". I
+        suspect there are more.]
+    }
+
+    let fn2 = footnote[~Almost (if not always) used as an additive.]
+
+    let fn-cake = footnote[~I could not find a source for this, nor do I own
+      any myself, but this seems like a reasonable conclusion, since white flour
+      has a lower ash content than all other commonplace white flours@prbk_ch4[p.
+        59] and because it is used in cake.]
+
+    mdtable(align: center + horizon)[
+      | *Category*  | *Variety*    | *Flavor*               | *Gluten*           |
+      | :---:       | :---:        | :---:                  | :---:              |
+      | White Flour | Cake Flour, Bleached | Negligible.#fn-cake | Low, 8%.      |
+      | White Flour | #All-Purpose | Mildly nutty.          | Medium, 10-11.5%.  |
+      | White Flour | Bread        | Mildly nutty.          | Mid-high, 12-14%.  |
+      | White Flour | Gluten       | N/A#fn2                | Nearly pure, 100%. |
+      | Whole-Wheat Flour      | < | Strong, earthy, nutty. | Mid-high, 12-13%.  |
+      | Einkorn Flour          | < | Strong, rustic, sour.  | Uncertain.         |
+    ]
+  },
+) <fig-flour-faq>
+
+==== Common Wheat
+
+In wheat cereals, gluten content (that is, protein content@wp-gluten) directly
+correlates with density & elasticity. Thus, high-protein flours typically
+require more hydration, and because of _that_, they're typically dense, chewy
+flours. A thin pizza is probably best done with all-purpose flour; a
+@pizza-sourdough[thick, chewy pizza] might instead use bread flour.
+
+==== Other Wheats
 
 Any recipe ordinarily calling for generic flour may also safely include up to
 25% of "ancient grain" flours: einkorn (my favorite), spelt, buckwheat, barley,

@@ -8,6 +8,13 @@
 
 #import "@preview/oxifmt:1.0.0": strfmt as fmt
 
+#let baby-blue = rgb("EAF2F5")
+
+#let mdtable = {
+  import "@preview/tablem:0.3.0": three-line-table
+  three-line-table.with(fill: (_, y) => if calc.odd(y) { baby-blue })
+}
+
 #let invisible(body) = hide(place(body, float: false))
 
 #let HR(length: 50%) = {

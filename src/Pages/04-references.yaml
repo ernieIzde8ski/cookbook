@@ -1,4 +1,4 @@
-prbk: &prbk
+PROFESSIONAL_BAKING: &prbk
   type: Book
   title: "Professional Baking"
   author: &prbk-author Gisslen, Wayne
@@ -6,6 +6,14 @@ prbk: &prbk
   edition: 7th
   date: 2016-09-21
   page-total: 764
+
+prbk_ch4:
+  type: Chapter
+  title: Ingredients
+  chapter: 4
+  page-range: 53-92
+  author: *prbk-author
+  parent: *prbk
 
 prbk-ch5:
   type: Chapter
@@ -23,6 +31,21 @@ prbk-ch8:
   author: *prbk-author
   parent: *prbk
 
+FOOD_NETWORK_ULTIMATE_BAKING: &fnub
+  type: Blog
+  title: "Ultimate Baking Guide"
+  publisher: Food Network
+  url: https://www.foodnetwork.com
+
+fnub_flour-101:
+  type: post
+  title: Flour 101
+  url:
+    value: https://www.foodnetwork.com/recipes/packages/baking-guide/flour-101-guide-to-different-types-and-uses
+    date: 2026-04-17
+  parent: *fnub
+
+
 kis:
   type: post
   title: Dulce de Leche
@@ -31,6 +54,20 @@ kis:
   url:
     value: https://keviniscooking.com/dulce-de-leche/#wprm-recipe-container-96594
     date: 2026-04-08
+
+MARTHA_STEWART: &ms
+  type: Blog
+  title: "Martha Stewart"
+  publisher: "People Inc."
+  url: https://www.marthastewart.com
+
+ms_cake-flour-vs-apf:
+  type: Post
+  title: "Cake Flour and All-Purpose Flour Aren't the Same—Here's When to Use Each"
+  url:
+    value: https://www.marthastewart.com/cake-flour-vs-all-purpose-flour-8612786
+    date: 2026-04-08
+
 
 md-dulce-de-leche:
   type: post
@@ -41,6 +78,12 @@ md-dulce-de-leche:
     value: https://www.muydelish.com/how-to-make-dulce-de-leche/
     date: 2026-04-08
 
+KABC_TIPS: &kabc-tips
+  type: Blog
+  title: Tips and Techniques
+  publisher: King Arthur Baking Company, Inc.
+  date: 2026
+
 ka-dulce-de-leche:
   type: post
   title: How to make dulce de leche at home
@@ -49,3 +92,41 @@ ka-dulce-de-leche:
   url:
     value: https://www.kingarthurbaking.com/blog/2024/07/04/how-to-make-dulce-de-leche-at-home
     date: 2026-04-08
+  parent: *kabc-tips
+
+kab-pizza-flour:
+  type: post
+  title: "Which flour is best for your pizza?"
+
+tfl-flavor-flour:
+  type: thread
+  title: "Flavor of flour?"
+  author: Vivian de Pane
+  date: 2021-02-08
+  url:
+    value: https://www.thefreshloaf.com/node/67360/flavor-flour
+    date: 2026-04-17
+
+
+WIKIPEDIA: &wp
+  type: reference
+  title: Wikipedia, The Free Encyclopedia
+  publisher: Wikimedia Foundation, Inc.
+  url: https://en.wikipedia.org/wiki/Main_Page
+
+wp-gluten:
+  type: article
+  title: "Gluten"
+  url:
+    value: https://en.wikipedia.org/wiki/Gluten
+    date: 2026-04-17
+  parent: *wp
+
+wp-flour:
+  type: article
+  title: "Flour"
+  url:
+    value: https://en.wikipedia.org/wiki/Flour
+    date: 2026-04-17
+
+  parent: *wp

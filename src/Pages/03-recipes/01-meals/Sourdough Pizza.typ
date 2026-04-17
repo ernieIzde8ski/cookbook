@@ -1,6 +1,6 @@
 #import "/formatting.typ": *
 
-= Sourdough Pizza
+= Sourdough Pizza <pizza-sourdough>
 
 This pizza can be prepared in under an hour (with yeast + active starter) while still
 tasting of sourdough. See the original recipe here:
@@ -16,7 +16,7 @@ tasting of sourdough. See the original recipe here:
 
 == Ingredients
 
-- 240 grams, active sourdough starter (1 cup, 100% hydration)
+- 240 grams (1 cup), active sourdough starter (100% hydration)
 
 - 4 grams (1 tsp.), instant yeast (optional, for quick rise)
 
@@ -24,7 +24,7 @@ tasting of sourdough. See the original recipe here:
 
 - 40 grams (2 tbsp.) olive oil
 
-- 350 grams (2 1/2 cups), all-purpose flour or bread flour
+- 275 grams (2 1/2 cups), bread flour#footnote[While you _can_ use all-purpose flour, it will result in a ]
 
 - 5 grams (1 tsp.) salt
 
@@ -36,7 +36,7 @@ tasting of sourdough. See the original recipe here:
 
 + Whisk starter, yeast (if applicable), water, and oil together in bowl.
 
-+ Add flour & salt. Knead until smooth.
++ Add flour & salt. Mix until consistent, very wet.
 
 #let fn = footnote[~Expect this to take about 45 minutes if using instant
   yeast.\ I suspect that, the longer you sit on it, the more you give the yeast a
