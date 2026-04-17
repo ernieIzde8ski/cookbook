@@ -12,7 +12,10 @@ repos:
       args: [--py314-plus]
   - repo: https://github.com/typstyle-rs/pre-commit-typstyle
     rev: "v0.14.4"
-    hooks: [{id: typstyle}]
+    hooks:
+    - id: typstyle
+      args: ["-i", "--line-width", "90", "--wrap-text", "--"]
+
   - repo: https://github.com/astral-sh/ruff-pre-commit
     # Ruff version.
     rev: v0.15.10
