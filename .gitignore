@@ -8,5 +8,4 @@
 # build artifacts
 __pycache__
 .doit*
-src/**/index.yaml
 tinymist.lock
