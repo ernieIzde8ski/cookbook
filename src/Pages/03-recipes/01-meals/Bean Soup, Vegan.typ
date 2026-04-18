@@ -29,7 +29,7 @@
   - 12g seaweed, chopped finely
   - 15g vegetable seasoning, unsalted
   - 10g yeast flakes
-  - 40 g. (3 tbsp.) avocado oil
+  - 40g (3 tbsp.) avocado oil
 
   === Afterwards
   - Ghost pepper (optional)#footnote[~Because capsaicin has a relatively low sublimation
