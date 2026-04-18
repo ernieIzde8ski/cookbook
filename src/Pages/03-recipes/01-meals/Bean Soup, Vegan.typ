@@ -14,22 +14,23 @@
   == Ingredients
 
   === Pre-Broth
-  - 115g (1 cup) diced celery
+  - 115g (1 cup) diced celery, wet
   - 900g (1 packet) dried beans
   - Enough water
 
   === Broth
-  - 2.5L water
+  - 2L water
+  - 125g (1/2 cup) soy sauce
+  - 40g (3 tbsp.) avocado oil
+  - 480g (2 large) tomatoes, blended
   - 350g (2 medium) onions, diced
   - 160g bell peppers, diced
-  - 480g (2 large) tomatoes, blended
-  - 3 bay leaves
-  - 50g soy sauce
-  - 1 pinch cumin
-  - 12g seaweed, chopped finely
+  - 30g (2 tbsp.) salt
   - 15g vegetable seasoning, unsalted
+  - 12g seaweed, chopped finely
   - 10g yeast flakes
-  - 40g (3 tbsp.) avocado oil
+  - 3 bay leaves
+  - 1 pinch cumin
 
   === Afterwards
   - Ghost pepper (optional)#footnote[~Because capsaicin has a relatively low sublimation
