@@ -14,9 +14,8 @@
   == Ingredients
 
   === Pre-Broth
-  - 115g (1 cup) diced celery, wet
+  - 115g (1 cup) celery
   - 900g (1 packet) dried beans
-  - Enough water
 
   === Broth
   - 2L water
@@ -27,44 +26,43 @@
   - 160g bell peppers, diced
   - 30g (2 tbsp.) salt
   - 15g vegetable seasoning, unsalted
-  - 12g seaweed, chopped finely
+  - 12g seaweed, dry, crushed
   - 10g yeast flakes
   - 3 bay leaves
   - 1 pinch cumin
 
   === Afterwards
   - Ghost pepper (optional)#footnote[~Because capsaicin has a relatively low sublimation
-      point, we introduce this at the very end, for fear of some of it boiling away.
+      point, we introduce this at the very end.
     ]
 
   - Cilantro, diced, to taste
 
   #colbreak()
 
-
   == Steps
 
   === The Day Before
 
   - If beans are dry:
-    + Rinse beans.
-    + Add beans to large pot. Soak for at least 8 hours.
-    + Wash.
+    + Rinse beans in cold water.
+    + Add beans to large pot. Soak in water for at least 8 hours.
+    + Repeat rinse.
 
   - If celery is *NOT* dry:
     + Leave celery in food dehydrator.
 
   === The Night Before
 
-  + Rinse beans.
   + Add beans, ample water, and broth ingredients to crock-pot.
   + Set crock-pot to Low.
   + Shuffle celery in dehydrator, if applicable.
-  + Go to bed, 8 hours.
+  + Go to bed, 8-10 hours.
 
   === The Day Of
 
   + Set crock-pot to Warm.
+  + Cut & crush celery.
   + Mix celery & peppers into soup.
   + Serve hot with cilantro. Good with tortillas or other carbs.
 ]
