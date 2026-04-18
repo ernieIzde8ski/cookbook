@@ -1,7 +1,7 @@
 #import "/formatting.typ": *
 #import "/shared-data.typ": *
 
-= Rice Cooker Bean Soup <bean-soup>
+= Bean Soup, Rice Cooker <bean-soup>
 
 == Equipment
 - Rice cooker#Footnotes.rice-cooker
@@ -28,15 +28,15 @@
 
 + Marinade meat if desired.
 
-+ Soak beans in water in rice cooker overnight, 12-24 hours.#Footnotes.bean-stinking Beans should be no taller than a
-  quarter of the rice cooker before soaking.
++ Soak beans in water in rice cooker overnight, 12-24 hours.#Footnotes.bean-stinking Beans
+  should be no taller than a quarter of the rice cooker before soaking.
 
 === The Day of the Meal
 
 + Rinse beans (again).
 
-+ Place beans in rice cooker, add water to nearly maximum capacity, and turn
-  rice cooker on.
++ Place beans in rice cooker, add water to nearly maximum capacity, and turn rice cooker
+  on.
 
 + Dice onion, ghost pepper, cilantro. Add all ingredients *except meat* to pot.
 
