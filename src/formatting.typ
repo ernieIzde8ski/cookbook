@@ -91,7 +91,6 @@
       outset: (bottom: 3pt, top: 2pt),
       inset: (x: 2pt),
     )
-    set text(fill: theme.raw-fg)
     it
   }
 
@@ -131,9 +130,9 @@
       it = underline(it)
       text-size = 1.50em
     } else if it.depth == 2 {
-      text-size = 1.25em
+      text-size = 1.35em
     } else if it.depth == 3 {
-      text-size = 1.15em
+      text-size = 1.08em
     } else {
       it = {
         set text(style: "italic")
