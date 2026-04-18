@@ -14,18 +14,21 @@
   == Ingredients
 
   === Pre-Broth
-  - Diced celery, to taste
-  - 1 packet dried beans
+  - 115g (1 cup) diced celery
+  - 900g (1 packet) dried beans
   - Enough water
 
   === Broth
-  - 1 onion
-  - 2 tomatoes, blended
-  - 2 tbsp. soy sauce
+  - 2.5L water
+  - 350g (2 medium) onions, diced
+  - 160g bell peppers, diced
+  - 480g (2 large) tomatoes, blended
+  - 3 bay leaves
+  - 50g soy sauce
   - 1 pinch cumin
-  - Seaweed, chopped finely, to taste
-  - Vegetable seasoning, unsalted, to taste
-  - Yeast flakes, to taste
+  - 12g seaweed, chopped finely
+  - 15g vegetable seasoning, unsalted
+  - 10g yeast flakes
   - 40 g. (3 tbsp.) avocado oil
 
   === Afterwards
@@ -63,7 +66,6 @@
   + Set crock-pot to Warm.
   + Mix celery & peppers into soup.
   + Serve hot with cilantro. Good with tortillas or other carbs.
-
 ]
 
 == Trivia
