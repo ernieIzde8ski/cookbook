@@ -45,6 +45,29 @@ fnub_flour-101:
     date: 2026-04-17
   parent: *fnub
 
+foppen_dijon-honey:
+  type: Post
+  title: "Smoked Salmon Salad with Honey Vinaigrette"
+  publisher: "Foppen"
+  url:
+    value: "https://www.foppensalmon.com/recipes/smoked-salmon-salad-with-honey-vinaigrette/"
+    date: 2026-04-19
+
+GAVS_KITCHEN: &gav
+  type: Blog
+  title: "Gav's Kitchen"
+  author: Gav
+  publisher: Recipesformen
+  url: https://recipesformen.com/
+
+gav_mustard-sauce:
+  type: Post
+  title: "Dill Honey Mustard Sauce"
+  author: Gav
+  url:
+    value: https://recipesformen.com/dill-honey-mustard-sauce/
+    date: 2026-04-19
+  parent: *gav
 
 kis:
   type: post
@@ -67,7 +90,6 @@ ms_cake-flour-vs-apf:
   url:
     value: https://www.marthastewart.com/cake-flour-vs-all-purpose-flour-8612786
     date: 2026-04-08
-
 
 md-dulce-de-leche:
   type: post
@@ -106,7 +128,6 @@ tfl-flavor-flour:
   url:
     value: https://www.thefreshloaf.com/node/67360/flavor-flour
     date: 2026-04-17
-
 
 WIKIPEDIA: &wp
   type: reference
