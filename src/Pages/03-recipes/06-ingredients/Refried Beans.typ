@@ -24,9 +24,8 @@
 
 + Rinse beans in cold running water.
 
-+ Soak beans in water overnight, 12-24 hours#Footnotes.bean-stinking. Beans
-  should be no taller than a third of the rice cooker before
-  soaking#Footnotes.bean-expansion.
++ Soak beans in water overnight, 12-24 hours#Footnotes.bean-stinking. Beans should be no
+  taller than a third of the rice cooker before soaking#Footnotes.bean-expansion.
 
 === The Day of Beans
 
@@ -42,7 +41,8 @@
 
 + (Optional) Strain excess beans, freeze indefinitely.
 
-+ Strain beans into food processor and blend. Remaining water can be used to rehydrate beans while frying or as a seasoning.
++ Strain beans into food processor and blend. Remaining water can be used to rehydrate
+  beans while frying or as a seasoning.
 
 + Fry beans with butter. Serve fresh, refrigerate for 1-2 weeks, or freeze until needed.
 
