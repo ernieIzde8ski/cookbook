@@ -15,7 +15,6 @@ repos:
     hooks:
     - id: typstyle
       args: ["-i", "--line-width", "90", "--wrap-text", "--"]
-
   - repo: https://github.com/astral-sh/ruff-pre-commit
     # Ruff version.
     rev: v0.15.10
@@ -33,4 +32,6 @@ repos:
         entry: doit
         language: python
         always_run: true # doit has its own DAG, no worries
+        additional_dependencies:
+          - typer>=0.24.1
         pass_filenames: false
