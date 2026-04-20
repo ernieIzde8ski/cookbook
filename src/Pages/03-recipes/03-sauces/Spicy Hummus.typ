@@ -16,11 +16,11 @@
 - 1/2 tsp. ground cumin#Fn.cumin
 - 1/2 tsp. salt
 - 1/4 tsp. sesame oil
-- As much spicy pepper as you can handle#footnote[~Habaneros & ghost peppers
-    work great here. Fun for the whole family. Maybe not the whole family. Fun all
-    the same.]
+- As much spicy pepper as you can handle#footnote[~Habaneros & ghost peppers work great
+    here. Fun for the whole family. Maybe not the whole family. Fun all the same.]
 - 425 g. (15 oz.) garbanzo beans, cooked
-- 30 to 60 g. (2 to 4 tbsp.) cold water#footnote[~More water #sym.arrow.r.double fluffier hummus.]
+- 30 to 60 g. (2 to 4 tbsp.) cold water#footnote[~More water #sym.arrow.r.double fluffier
+    hummus.]
 
 == Steps
 

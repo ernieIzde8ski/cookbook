@@ -14,9 +14,9 @@
   }
 
   let auths = document.author
-  auths = if auths.len() == 0 { none }
-  else if auths.len() == 2 { auths.join(" & ") }
-  else { auths.join("; ") }
+  auths = if auths.len() == 0 { none } else if auths.len() == 2 {
+    auths.join(" & ")
+  } else { auths.join("; ") }
   if auths != none [
     by #auths
   ]

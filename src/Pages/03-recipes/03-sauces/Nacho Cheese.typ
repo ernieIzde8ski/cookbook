@@ -2,8 +2,8 @@
 
 = Nacho Cheese
 
-This recipe is real easy and and its result doesn't taste of flour, thanks to
-a little molecular gastronomy.
+This recipe is real easy and and its result doesn't taste of flour, thanks to a little
+molecular gastronomy.
 
 == Equipment
 
@@ -13,7 +13,8 @@ a little molecular gastronomy.
 == Ingredients
 
 #let fn = (
-  cheese: footnote[~Shredded cheese will dissolve easier, but a block works just fine too.],
+  cheese: footnote[~Shredded cheese will dissolve easier, but a block works just fine
+    too.],
 )
 
 - 200 g. cheddar cheese#fn.cheese
@@ -26,7 +27,7 @@ a little molecular gastronomy.
 
 + Mix all ingredients into a small pot.
 
-+ Turn heat on medium-low and whisk until ingredients are fully
-  dissolved. If necessary, raise heat slightly, but do not overheat.
++ Turn heat on medium-low and whisk until ingredients are fully dissolved. If necessary,
+  raise heat slightly, but do not overheat.
 
 + Pour into another container.

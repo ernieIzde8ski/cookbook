@@ -33,13 +33,12 @@
 
 == Trivia
 
-Originally adapted from "Cottage Cheese Loaf Deluxe" (p.23, "Vegetarian
-Cookbook" by It's Your World ).#footnote[~This SDA-endorsed cookbook FASCINATES
-  me. It quotes Ellen G. White on how "spice and grease" dull intellectual
-  vigor (???). Largely horrific; I mostly like this recipe out of pure
-  nostalgia.]
+Originally adapted from "Cottage Cheese Loaf Deluxe" (p.23, "Vegetarian Cookbook" by It's
+Your World ).#footnote[~This SDA-endorsed cookbook FASCINATES me. It quotes Ellen G. White
+  on how "spice and grease" dull intellectual vigor (???). Largely horrific; I mostly like
+  this recipe out of pure nostalgia.]
 
-My recipe is largely guesswork due to vague original instructions. "Vegex" was
-presumably a vegetable bouillon brand.#footnote[~Here swapped for chicken
-  bouillon. I lack vegetable bouillon.] The "1/2 cup chopped nuts" probably
-meant simple kinds, like walnuts or pecans.
+My recipe is largely guesswork due to vague original instructions. "Vegex" was presumably
+a vegetable bouillon brand.#footnote[~Here swapped for chicken bouillon. I lack vegetable
+  bouillon.] The "1/2 cup chopped nuts" probably meant simple kinds, like walnuts or
+pecans.
