@@ -2,6 +2,7 @@ from collections.abc import Iterator
 from functools import partial
 from hashlib import sha256
 from pathlib import Path
+from shutil import which
 
 import yaml
 
@@ -17,6 +18,17 @@ VARIANTS = {
 }
 INDICES = set(LIBRARY_DIRECTORY.rglob("index.yaml"))
 LIBRARIES = ALL_SOURCES - VARIANTS
+
+
+def _get_tinymist():
+    # `tinymist` is normal, `tinymist-linux-x64` happens in GitHub Actions
+    for cmd in ("tinymist", "tinymist-linux-x64"):
+        if which(cmd) is not None:
+            return cmd
+    raise RuntimeError("No valid `tinymist` executable could be found :(")
+
+
+TINYMIST = _get_tinymist()
 
 
 def Action(*args: str | Path) -> list[str]:
@@ -37,7 +49,7 @@ def task_compile():
             "name": name,
             "actions": [
                 Action(
-                    "tinymist",
+                    TINYMIST,
                     "compile",
                     "--save-lock",
                     "--root",

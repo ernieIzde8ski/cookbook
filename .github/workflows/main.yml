@@ -1,0 +1,17 @@
+name: Continuous integration
+on: [push, pull_request]
+jobs:
+  prek:
+    name: prek-action
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Install Tinymist from GitHub Releases
+        uses: sigoden/install-binary@v1.2.0
+        with:
+          repo: Myriad-Dreamin/tinymist
+          name: tinymist-linux-x64
+          cache: true
+      - name: Checkout repository
+        uses: actions/checkout@v6
+      - name: Run pre-commit hooks via `prek`
+        uses: j178/prek-action@v2.0.0

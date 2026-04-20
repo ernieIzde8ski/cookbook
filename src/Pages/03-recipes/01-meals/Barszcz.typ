@@ -1,14 +1,15 @@
 #import "/formatting.typ": *
 
 #let fns = (
-  meat: fn[I'd recommend frying beef after having let it soak in a beef marinade for 12-24 hours. Sausage & ham work fine too, though you need plenty of ham for ham to work.],
+  meat: fn[I'd recommend frying beef after having let it soak in a beef marinade for 12-24
+    hours. Sausage & ham work fine too, though you need plenty of ham for ham to work.],
 )
 
 = Barszcz
 
-Red beet soup. Polish spelling. Alternate names include: Борщ
-(:flag_ukr:/:flag_rus:), Borsch(t) (direct transliteration), Боршч
-(:flag_blr:), Borshch (direct transliteration), ...
+Red beet soup. Polish spelling. Alternate names include: Борщ (:flag_ukr:/:flag_rus:),
+Borsch(t) (direct transliteration), Боршч (:flag_blr:), Borshch (direct transliteration),
+...
 
 == Ingredients
 
@@ -53,7 +54,8 @@ Red beet soup. Polish spelling. Alternate names include: Борщ
   }
 }
 
-Add as much or as little of each ingredient as you'd like. All ingredients aside from beets, salt, and water are optional.
+Add as much or as little of each ingredient as you'd like. All ingredients aside from
+beets, salt, and water are optional.
 
 == Steps
 
@@ -61,7 +63,8 @@ Add as much or as little of each ingredient as you'd like. All ingredients aside
 
 + Mix broth ingredients in a large pot. Season as desired.
 
-+ Boil broth until beets are cooked throughout. While this is happening, you may want to cook your meat & potatoes.
++ Boil broth until beets are cooked throughout. While this is happening, you may want to
+  cook your meat & potatoes.
 
 + After water cools down somewhat, toss meat & potatoes into broth.
 

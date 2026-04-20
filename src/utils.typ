@@ -33,8 +33,18 @@
 }
 
 #let as-bool(it) = {
-  return it not in (
-    0, decimal("0"), 0.0, float("NaN"), "", (), (:), [],
+  return (
+    it
+      not in (
+        0,
+        decimal("0"),
+        0.0,
+        float("NaN"),
+        "",
+        (),
+        (:),
+        [],
+      )
   )
 }
 
@@ -48,12 +58,7 @@
     } else if key == smartquote(double: true) {
       return "\""
     }
-    key
-      .fields()
-      .values()
-      .flatten()
-      .map(content-to-str)
-      .join("")
+    key.fields().values().flatten().map(content-to-str).join("")
   } else {
     panic("unsupported type: " + repr(key))
   }

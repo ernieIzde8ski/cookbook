@@ -33,5 +33,7 @@ repos:
         language: python
         always_run: true # doit has its own DAG, no worries
         additional_dependencies:
+          - doit
           - typer>=0.24.1
+          - PyYAML>=6.0.3
         pass_filenames: false
