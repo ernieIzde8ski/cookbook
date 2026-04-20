@@ -31,6 +31,22 @@ prbk-ch8:
   author: *prbk-author
   parent: *prbk
 
+ALL_RECIPES: &ar
+  type: Newspaper
+  title: "Allrecipes"
+  publisher: People Inc.
+
+ar_sugar-cookies:
+  type: Article
+  author: Stephanie
+  title: "Easy Sugar Cookies"
+  publisher: Allrecipes
+  date: 2026-02-05
+  url:
+    value: https://www.allrecipes.com/recipe/9870/easy-sugar-cookies/
+    date: 2026-04-19
+  parent: *ar
+
 FOOD_NETWORK_ULTIMATE_BAKING: &fnub
   type: Blog
   title: "Ultimate Baking Guide"

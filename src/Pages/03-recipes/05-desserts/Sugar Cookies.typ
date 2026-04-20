@@ -31,3 +31,9 @@
   + Flour, baking soda, & baking powder.
 + Roll dough into small balls on baking sheet.
 + Bake 8-10 minutes. Let cool completely before serving.
+
+== References
+
+#set cite(form: "full")
+
+@ar_sugar-cookies
