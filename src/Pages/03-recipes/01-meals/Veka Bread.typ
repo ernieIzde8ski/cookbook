@@ -7,52 +7,37 @@ Veka bread is a delicious, many-named#fn[Veka, weka, stangielka, angielka, linga
   bagietka wrocławska.] bread, native to the slopes of Poland and Czechia. It is
 reminiscent of the baguette.
 
-== Ingredients
-
 #columns(2)[
-  *Dry:*
+  *Dough:*
+  - 180 g. (3/4 cup) water
+  - 10 g. (2 tsp.) vegetable oil
+  #v(0em)
+
   - 250 g. (2 cups) all-purpose flour
   - 6 g. (1 tsp.) instant yeast
   - 1 g. (1/8 tsp.) sugar
   - 1 g. (1/4 tsp.) salt
 
-  *Wet:*
-  - 180 g. (3/4 cup) water
-  - 10 g. (2 tsp.) vegetable oil
-
-  #colbreak()
-
-  *Coating:*
+  *Glaze:*
   - 1-2 eggs
   - Water, roughly equal amount
 
   *Yields 1 loaf.*
-]
-
-== Steps
-
-#columns(2)[
-  *First rise:*
-  + Add dry ingredients first, then wet ingredients, and mix with fork.
-  + Transfer to dry surface and knead. Dough should be low/medium moisture, easy to
-    handle. // TODO: Add advice section for moisture
-  + Shape dough into round bun. Cover with dry towel and let rise, 45 minutes.
-  #v(0em)
-
-  *Second rise:*
-  + Press bun into flat oval, short side closest to you, as though you were folding a
-    burrito.
-  + Roll loaf up.
-  + Move loaf to baking sheet. Let rest for 30 minutes.
 
   #colbreak()
 
-  *Baking:*
+  + Add dough ingredients to bowl. Knead.
+  + Shape dough into round bun on work surface.
+  + Cover with dry towel and let rise, 45 minutes. #v(0.75em)
+  + Press bun into flat oval, short side closest to you, as though it were a burrito.
+  + Roll dough up.
+  + Move dough to baking sheet. Let rest for 30 minutes. #v(0.75em)
   + Preheat oven to 215°C (425°F).#footnote[Oh, how I would love an oven where I can
       actually try steaming my bread.]
   + Mix eggs and water together in a small bowl.
-  + Brush loaf with egg-water mixture.
-  + Move loaf to oven and reduce temperature to 200°C (400°F). Bake for 15-18 minutes.
+  + Brush dough with egg-water mixture.
+  + Reduce temperature to 200°C (400°F).
+  + Bake for 15-18 minutes.
 ]
 
 == References
