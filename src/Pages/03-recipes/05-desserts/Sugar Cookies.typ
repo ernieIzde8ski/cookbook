@@ -12,15 +12,15 @@
 
   == Ingredients
 
-  - 2 3/4 cup all-purpose flour
-  - 1 tsp. baking soda
+  - 365g (2 3/4 cup) all-purpose flour
+  - 6g (1 tsp.) baking soda
   // TODO: Does this need to be baking powder? Can we try 1/4 tsp. baking soda and 1/2 tsp.
   // white vinegar instead? How about lemon juice instead, for flavor?
-  - 1/2 tsp. baking powder
-  - 1 cup butter
-  - 1 1/2 cups white sugar
-  - 1 large egg
-  - 1 tsp. vanilla extract
+  - 2g (1/2 tsp.) baking powder
+  - 225g (1 cup) butter, softened
+  - 315g (1 1/2) cups white sugar
+  - 60g (1 large) egg
+  - 5g (1 tsp.) vanilla extract
 
   #colbreak()
 
