@@ -234,3 +234,4 @@
 
 #let blockquote = quote.with(block: true)
 #let bq = blockquote
+#let semibold = text.with(weight: "semibold")
