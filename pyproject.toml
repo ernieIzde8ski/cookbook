@@ -2,7 +2,9 @@
 name = "cookbook-2"
 version = "1.0.0"
 dependencies = [
+    "doit>=0.37.0",
     "pyyaml>=6.0.3",
+    "typer>=0.24.1",
 ]
 requires-python = ">=3.14"
 

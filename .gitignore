@@ -7,5 +7,6 @@
 
 # build artifacts
 __pycache__
+*.egg-info/
 .doit*
 tinymist.lock
