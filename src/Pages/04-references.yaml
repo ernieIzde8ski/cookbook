@@ -47,6 +47,19 @@ ar_sugar-cookies:
     date: 2026-04-19
   parent: *ar
 
+COOK_LIKE_CZECHS: &clc
+  type: blog
+  author: &clc_author Kupská, Petra
+  url: https://www.cooklikeczechs.com
+
+clc_veka-bread:
+  type: article
+  title: Veka White Wheat Bread
+  author: *clc_author
+  url:
+    value: https://www.cooklikeczechs.com/veka-bread-recipe/
+    date: 2026-04-20
+
 FOOD_NETWORK_ULTIMATE_BAKING: &fnub
   type: Blog
   title: "Ultimate Baking Guide"
