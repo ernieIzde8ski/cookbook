@@ -63,8 +63,9 @@
 
   + Set crock-pot to Warm.
   + Cut & crush celery.
-  + Mix celery & peppers into soup.
-  + Serve hot with cilantro. Good with tortillas or other carbs.
+  + Mix celery & hot peppers into soup.
+
+  Serve hot with cilantro. Good with tortillas or other carbs.
 ]
 
 == Trivia
