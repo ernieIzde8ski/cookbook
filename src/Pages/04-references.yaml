@@ -85,6 +85,7 @@ gav_mustard-sauce:
     date: 2026-04-19
   parent: *gav
 
+
 kis:
   type: post
   title: Dulce de Leche
@@ -144,6 +145,19 @@ tfl-flavor-flour:
   url:
     value: https://www.thefreshloaf.com/node/67360/flavor-flour
     date: 2026-04-17
+
+VEGETARIAN_COOKBOOK: &vcb
+  type: Book
+  title: Vegetarian Cookbook
+  author: It's Your World
+  publisher: The Seventh-day Adventist Church
+  page-total: 128
+
+vcb_loaves:
+  type: Chapter
+  title: Loaves
+  page-range: 19-26
+  parent: *vcb
 
 WIKIPEDIA: &wp
   type: reference
