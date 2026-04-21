@@ -37,7 +37,7 @@ peril.
   + Mix wet ingredients (incl. starter), then dry ingredients.
   + Add flour & salt. Mix until consistent, very wet.
   + Cover bowl with a damp towel. Let dough rise, 12-24 hours.
-  + Preheat oven to 245°C (475°F).
+  + Preheat oven to 230°C (450°F).
   + Punch dough into pizza crust on baking sheet.
   + Bake 20-25 minutes.
   + Remove pizza crust from tray. Add water to bottom of tray. Flip dough upside-down and
