@@ -47,6 +47,23 @@ ar_sugar-cookies:
     date: 2026-04-19
   parent: *ar
 
+A_SOUTHERN_SOUL: &ass
+  type: Blog
+  title: "A Southern Soul"
+  publisher: A Southern Soul
+  author: &ass_author Mullins, Donya
+  url: https://www.asouthernsoul.com
+
+ass_lemon-cake:
+  type: Article
+  title: "Best Lemon Pound Cake"
+  author: *ass_author
+  date: 2026-04-20
+  url:
+    value: https://www.asouthernsoul.com/lemon-pound-cake/
+    date: 2026-04-22
+  parent: *ass
+
 FOOD_NETWORK_ULTIMATE_BAKING: &fnub
   type: Blog
   title: "Ultimate Baking Guide"

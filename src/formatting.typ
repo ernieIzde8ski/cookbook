@@ -8,6 +8,20 @@
 
 #import "@preview/oxifmt:1.0.0": strfmt as fmt
 
+
+#let V = {
+  set align(center)
+  v(1em)
+  line(length: 50%)
+  v(1em)
+}
+
+#let LS = v(0.5em)
+#let blockquote = quote.with(block: true)
+#let bq = blockquote
+#let semibold = text.with(weight: "semibold")
+#let sb = semibold
+
 #let baby-blue = rgb("EAF2F5")
 
 #let mdtable = {
@@ -225,13 +239,54 @@
   body
 }
 
-#let V = {
-  set align(center)
-  v(1em)
-  line(length: 50%)
-  v(1em)
-}
+#let aside(body) = (
+  {
+    set text(style: "italic", weight: 600, size: 0.85em, fill: luma(20%))
+    [~~(#body)]
+  }
+)
 
-#let blockquote = quote.with(block: true)
-#let bq = blockquote
-#let semibold = text.with(weight: "semibold")
+#let pause(body) = aside(body) + v(0.5em)
+
+#import "@preview/meander:0.4.2"
+#let recipe(..args, panel-width: 36%, sources: none) = meander.reflow({
+  let Ingredients(body) = (
+    box(
+      stroke: 0.05em + gray,
+      inset: 0.5em,
+      fill: luma(90%),
+      width: panel-width,
+      radius: 5%,
+      body,
+    )
+      + h(1em)
+  )
+
+  import meander: *
+  let pos = args.pos().rev()
+
+  let ingredients = pos.remove(pos.len() - 1, default: none)
+  if ingredients != none {
+    placed(top + left, Ingredients({
+      set text(size: 0.95em)
+      ingredients
+    }))
+  }
+
+  let steps = pos.remove(pos.len() - 1, default: none)
+  container()
+  content({
+    steps
+
+    if type(sources) == label {
+      sources = (sources,)
+    }
+
+    if type(sources) != none {
+      [== References]
+      for lbl in sources {
+        cite(lbl, form: "full")
+      }
+    }
+  })
+})
