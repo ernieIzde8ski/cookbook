@@ -12,7 +12,7 @@ useful instead for experimentation.
 // TODO: Cite Mexican Rice here.
 
 Generally, you want to cook rice at a volumetric ratio of 2 water to 1 rice (or, even
-better, slightly less). Recipes like @sticky-rice or Mexican Rice (TO-DO) can get away
+better, slightly less). Dishes like @R_sticky-rice or Mexican Rice (TO-DO) can get away
 with using less by precooking. In the latter case, undercooked rice is even preferable.
 
 == Bread Dough
@@ -81,7 +81,7 @@ another in most recipes, adjusting hydration to compensate. Consult @fig-flour-f
 In wheat cereals, gluten content (that is, protein content@wp-gluten) directly correlates
 with density & elasticity. Thus, high-protein flours typically require more hydration, and
 because of _that_, they're typically dense, chewy flours. A thin pizza is probably best
-done with all-purpose flour; a @pizza-sourdough[thick, chewy pizza] might instead use
+done with all-purpose flour; a @R_sourdough-pizza[thick, chewy pizza] might instead use
 bread flour.
 
 ==== Other Wheats
@@ -101,9 +101,9 @@ Note also that most ancient grains, like all-purpose and whole-wheat flour, requ
 slightly more water than bread flour. Highly recommend learning a recipe without any
 modifications if uncertain how a particular grain behaves.
 
-As an incomplete thought: @r-potato-flour, made from boiled & dehydrated potatoes, makes
+As an incomplete thought: @R_potato-flour, made from boiled & dehydrated potatoes, makes
 for very fluffy bread, and has a subtler taste than most grains. I eventually plan to
-modify the @r-soft-sourdough-bread (initially intended to be a recipe for soft sourdough
+modify the @R_sourdough-milk-bread (initially intended to be a recipe for soft sourdough
 bread) to incorporate potato flour, though I have yet to discover the correct water ratio
 needed.
 
@@ -135,7 +135,7 @@ contradicts the purpose of autolysis.
 === Hydration <adv_hydration>
 
 Hydration refers to a recipe's water-flour ratio. Low-hydration (60-80%) is easier to
-handle; high-hydration (80%-100%) may be necessary for recipes like @pizza-sourdough:
+handle; high-hydration (80%-100%) may be necessary for recipes like @R_sourdough-pizza:
 
 #bq[
   - 240 grams (1 cup), active sourdough starter (100% hydration)

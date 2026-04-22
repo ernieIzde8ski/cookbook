@@ -1,37 +1,25 @@
 #import "/formatting.typ": *
 
-= Honey Mustard Salmon
-
-
-#columns(2)[
-  == Equipment
-  - Oven
-  - Baking sheet
-
-  == Ingredients
-  - 15g (1 tbsp.) olive oil
+#show: recipe.with(title: "Honey Mustard Salmon")[
+  - 15g olive oil #aside[1 tbsp.]
   - 1 fillet salmon
-  - 50g (2 tbsp.) @R_honey-mustard[honey mustard]
-  - 750mg (1/2 tbsp.) marjoram
+  - 50g @R_dill-honey-mustard[dill honey mustard] #aside[2 tbsp.]
+  - 750mg marjoram #aside[1/2 tbsp.]
   - Salt & black pepper, to taste
 
   *Yields 1 portion.*
-
-  #colbreak()
-
-  == Steps
-
-  + Preheat oven, 200°C (400°F).
-  + Cover baking sheet in olive oil.
-  + Transfer salmon to baking sheet.
-  + Glaze with mustard & seasonings.
-  + Bake 10-12 minutes. Fish should flake easily when pressed with fork.
-
-  == Trivia
-
-  I added this recipe, as well as @R_honey-mustard, to deal with the sauce packaged with
-  #link(
-    "https://www.costcobusinessdelivery.com/p/-/foppen-norwegian-smoked-salmon-slices-12-oz/100075738",
-    [the smoked salmon we get from Costco],
-  ). I then had to make more of it.
 ]
+
++ PREHEAT oven, 200°C. #aside[400°F]
++ COVER baking sheet in olive oil.
++ MOVE salmon to baking sheet.
++ GLAZE with mustard & seasonings.
++ BAKE 10-12 minutes. Fish should flake easily when pressed with fork.
+
+== Trivia
+
+I added this recipe, as well as @R_dill-honey-mustard, to deal with the sauce packaged
+with #link(
+  "https://www.costcobusinessdelivery.com/p/-/foppen-norwegian-smoked-salmon-slices-12-oz/100075738",
+  [the smoked salmon we get from Costco],
+). I then had to make more of it.

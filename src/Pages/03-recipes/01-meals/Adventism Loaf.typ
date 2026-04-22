@@ -1,30 +1,23 @@
 #import "/formatting.typ": *
 
-= Adventism Loaf
-
-#columns(2)[
-
-  #show list.item: set text(size: 0.95em, style: "italic")
-
-  - 1 medium onion, chopped fine
+#show: recipe.with(title: "Adventism Loaf")[
   - Cooking oil, to coat pan
-  - 460 g. (2 cups) cottage cheese
-  - 140 g. (1 cup) bread crumbs
+  - Onion, chopped fine #pause[1 medium]
+  - 460g cottage cheese #aside[2 cups]
+  - 140g bread crumbs #aside[1 cup]
   - 3 eggs
-  - 4\~ g. (1 tsp.) chicken bouillon
-  - 25 g. (2 tbsp.) soy sauce
-  - 50 g. (1/2 cup) chopped nuts
+  - 4g\~ chicken bouillon #aside[1 tsp.]
+  - 25g soy sauce #aside[2 tbsp.]
+  - 50g chopped nuts #aside[1/2 cup]
 
   *Yields 6 servings.*
-
-  #colbreak()
-
-  + Fry onions in oil until nearly caramelized. In the meantime...
-  + Mix eggs in bowl.
-  + Preheat oven to 200°C (400°F).
-  + When onions are done, mix all ingredients and transfer to loaf pan.
-  + Bake in loaf pan, 45 minutes.
 ]
+
++ Fry onions in oil until nearly caramelized. In the meantime...
++ Mix eggs in bowl.
++ Preheat oven to 200°C. #aside[400°F]
++ When onions are done, mix all ingredients and transfer to loaf pan.
++ Bake in loaf pan until set. #aside[45 minutes]
 
 == Trivia
 

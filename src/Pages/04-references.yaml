@@ -134,13 +134,13 @@ md-dulce-de-leche:
     value: https://www.muydelish.com/how-to-make-dulce-de-leche/
     date: 2026-04-08
 
-KABC_TIPS: &kabc-tips
+KABC_TIPS: &kabc_tips
   type: Blog
   title: Tips and Techniques
   publisher: King Arthur Baking Company, Inc.
   date: 2026
 
-ka-dulce-de-leche:
+kabc_dulce-de-leche:
   type: post
   title: How to make dulce de leche at home
   author: Bautista, Tatiana
@@ -148,7 +148,7 @@ ka-dulce-de-leche:
   url:
     value: https://www.kingarthurbaking.com/blog/2024/07/04/how-to-make-dulce-de-leche-at-home
     date: 2026-04-08
-  parent: *kabc-tips
+  parent: *kabc_tips
 
 kab-pizza-flour:
   type: post

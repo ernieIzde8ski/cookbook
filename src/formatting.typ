@@ -202,6 +202,8 @@
 
   show regex("^-\|$"): list-break
 
+  set enum(numbering: "1.A.I.i.")
+
   show quote.where(block: true): set block(above: auto, below: auto)
   show quote.where(block: true): box.with(
     inset: (left: 0.5em),
@@ -249,44 +251,59 @@
 #let pause(body) = aside(body) + v(0.5em)
 
 #import "@preview/meander:0.4.2"
-#let recipe(..args, panel-width: 36%, sources: none) = meander.reflow({
-  let Ingredients(body) = (
-    box(
-      stroke: 0.05em + gray,
-      inset: 0.5em,
-      fill: luma(90%),
-      width: panel-width,
-      radius: 5%,
-      body,
+#let recipe(title: none, description: none, refs: none, ..args, panel-width: 36%) = {
+  show regex("^.+:$"): semibold
+
+  if type(title) == str {
+    let tag = label(
+      "R_" + lower(title).replace(" ", "-").replace(regex("[^a-zA-Z_-]"), ""),
     )
-      + h(1em)
-  )
+    // see: https://forum.typst.app/t/label-b-occurs-multiple-times-in-the-document-when-including-outline/7531
+    [#[= #title] #tag]
+  } else { title }
 
-  import meander: *
-  let pos = args.pos().rev()
+  description
 
-  let ingredients = pos.remove(pos.len() - 1, default: none)
-  if ingredients != none {
-    placed(top + left, Ingredients({
-      set text(size: 0.95em)
-      ingredients
-    }))
-  }
+  meander.reflow({
+    let Ingredients(body) = (
+      box(
+        stroke: 0.05em + gray,
+        inset: 0.5em,
+        fill: luma(90%),
+        width: panel-width,
+        radius: 5%,
+        body,
+      )
+        + h(1em)
+    )
 
-  let steps = pos.remove(pos.len() - 1, default: none)
-  container()
-  content({
-    steps
+    import meander: *
+    let pos = args.pos().rev()
 
-    if type(sources) == label {
-      sources = (sources,)
+    let ingredients = pos.remove(pos.len() - 1, default: none)
+    if ingredients != none {
+      placed(top + left, Ingredients({
+        show list: it => it + v(0.5em)
+        set text(size: 0.95em)
+        ingredients
+      }))
     }
 
-    if type(sources) != none {
-      [== References]
-      for lbl in sources {
-        cite(lbl, form: "full")
+    let steps = pos.remove(pos.len() - 1, default: none)
+    container()
+    content({
+      steps
+
+      if type(refs) == label {
+        refs = (refs,)
       }
-    }
+
+      if refs != none {
+        [== References]
+        for lbl in refs {
+          cite(lbl, form: "full")
+        }
+      }
+    })
   })
-})
+}
