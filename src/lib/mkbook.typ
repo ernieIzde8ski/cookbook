@@ -54,35 +54,38 @@
 #let mkpgheader(gap: 0.5em) = none
 
 #let mkpgfooter(gap: 0.5em) = context {
-  let page-no = counter(page).display("1 of 1", both: true)
+  let page-display = counter(page).display("1 of 1", both: true)
   let sep = {
     h(gap)
     [---]
     h(gap)
   }
+  page-display = {
+    sep
+    page-display
+    sep
+  }
 
   if page.width < 40em.to-absolute() {
-    return align(end, sep + page-no + sep)
+    return align(end, page-display)
   }
 
   import "/lib/format.typ": format-date
   import "/utils.typ": as-bool
 
-  let today = format-date(datetime.today())
-  let title = if document.title != none {
-    let title = text(document.title, style: "italic")
-    if document.author.len() == 0 or document.author.len() > 2 {
-      title
-    } else [
-      #title, by #document.author.join(" & ")
-    ]
-  } else if document.author.len() < 3 {
-    document.author.join(" & ")
+  let page-no = counter(page).get().at(0)
+
+  let (l, r) = if calc.rem-euclid(page-no, 2) == 0 {
+    (page-display, [#format-date(datetime.today())])
+  } else {
+    (quote(document.title), page-display)
   }
 
-  set align(center)
-  set text(size: 14pt)
-  (title, page-no, [Accessed #today]).filter(as-bool).join(sep)
+  columns(2, {
+    align(left, l)
+    colbreak()
+    align(right, r)
+  })
 }
 
 #let mkreferences() = bibliography("/Pages/04-references.yaml")
@@ -90,9 +93,7 @@
 #let mkbook(
   authors: (),
   title: none,
-
   page-size: "us-letter",
-
   page-header: true,
   page-footer: true,
   cover: true,
