@@ -18,15 +18,15 @@
   - 1 lžíce hladké mouky
   - sůl, pepř
 
-  Suroviny na houskové knedlíky:
+  Ingredients for bread dumplings:
 
-  - 1/2kg hrubé mouky
-  - čtvrt kostky droždí (asi 10g)
-  - 250mL vlažného mléka
-  - 1 rohlík
-  - 1 vejce
-  - špetka soli
-  - špetka cukru
+  - 1/2kg coarse flour
+  - 1/4 cube yeast (roughly 10g)
+  - 250mL lukewarm milk
+  - 1 roll
+  - 1 egg
+  - A pinch of salt
+  - A pinch of sugar
 ][
   Maso prošpikujeme slaninou nakrájenou na proužky a vydatně ho osolíme a opepříme čerstvě
   mletým pepřem ze všech stran.
