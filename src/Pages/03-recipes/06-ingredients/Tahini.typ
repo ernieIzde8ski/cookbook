@@ -1,9 +1,13 @@
 #import "/formatting.typ": *
 
-#recipe(title: "Tahini", description: [
-  This Substance is useful for Hummus. Supposedly sometimes people eat it on its own, or
-  use it in other things; not that I would know.
-])[
+#recipe(
+  title: "Tahini",
+  description: [
+    This Substance is useful for Hummus. Supposedly sometimes people eat it on its own, or
+    use it in other things; not that I would know.
+  ],
+  panel-width: 13em,
+)[
 
   // TODO: metric
   - 1 cup sesame seeds

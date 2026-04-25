@@ -10,4 +10,4 @@
   - 1/4 cup Dijon mustard
   - 1 clove garlic, minced
   - Salt & pepper, to taste
-][It's a marinade.]
+]

@@ -251,7 +251,16 @@
 #let pause(body) = aside(body) + v(0.5em)
 
 #import "@preview/meander:0.4.2"
-#let recipe(title: none, description: none, refs: none, ..args, panel-width: 36%) = {
+#let recipe(title: none, description: none, refs: none, ..args, panel-width: auto) = {
+  let pos = args.pos().rev()
+
+  let ingredients = pos.remove(pos.len() - 1, default: none)
+  let steps = pos.remove(pos.len() - 1, default: none)
+
+  if panel-width == auto {
+    panel-width = if steps == none { 100% } else { 36% }
+  }
+
   show regex("^.+:$"): semibold
 
   if type(title) == str {
@@ -278,9 +287,6 @@
     )
 
     import meander: *
-    let pos = args.pos().rev()
-
-    let ingredients = pos.remove(pos.len() - 1, default: none)
     if ingredients != none {
       placed(top + left, Ingredients({
         show list: it => it + v(0.5em)
@@ -289,7 +295,6 @@
       }))
     }
 
-    let steps = pos.remove(pos.len() - 1, default: none)
     container()
     content({
       steps

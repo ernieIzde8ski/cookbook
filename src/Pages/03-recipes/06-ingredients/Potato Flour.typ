@@ -2,6 +2,7 @@
 
 #recipe(
   title: "Potato Flour",
+  panel-width: 11em,
 )[
   - Potatos, sliced or diced #aside[as needed]
 ][
