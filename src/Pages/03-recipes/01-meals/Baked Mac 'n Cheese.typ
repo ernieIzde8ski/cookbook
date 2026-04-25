@@ -2,26 +2,28 @@
 
 #recipe(title: "Baked Mac 'n Cheese")[
   Pasta:
-  - 4g salt@ss_pasta-salinity
-  - 200g macaroni or shells, dry
-  - 400g water
+  - 12g salt@ss_pasta-salinity
+  - 600g macaroni or shells, dry
+  - 1200g water
 
   Sauce:
-  - 225g cheese, shredded #aside[8oz]
-  - 225g water #aside[7oz]
-  - 10g sodium citrate
-  - (optional) 1/4 tsp. chili powder
+  - 675g milk #aside[3 cups]
+  - 450g cheddar, shredded #aside[2 packets]
+  - 225g monterey jack, shredded #aside[1 packet]
+  - 34g sodium citrate
+  - 2.5g chili powder #aside[3/4 tsp.]
+  - 1/2 tsp. liquid hickory smoke
   - (optional) Yellow food dye
 
   Topping:
-  + 35g bread crumbs #aside[1/4 cup]
-  + 14g butter #aside[1 tbsp.]
+  + 75g bread crumbs #aside[3/4 cup]
+  + 42g butter #aside[3 tbsp.]
 ][
   + ASYNCHRONOUSLY:~
-  - PREHEAT oven, 190°C (375°F).
-  - MELT sauce, mixing over low-medium heat until combined. Do not boil.
-  - BOIL pasta al dente. #aside[\~5-6 min.]
-  - MIX topping thoroughly.
+    - PREHEAT oven, 190°C. #aside[375°F]
+    - MELT sauce, mixing over low-medium heat until combined. Do not boil.
+    - BOIL pasta al dente. #aside[\~5-6 min.]
+    - MIX topping thoroughly.
   + POUR sauce into tall baking tray, then pasta.
   + MIX thoroughly.
   + COAT dish with topping.
@@ -32,6 +34,8 @@
 == References
 
 - @R_nacho-cheese
+- https://www.kingarthurbaking.com/learn/ingredient-weight-chart
 - https://justlovecooking.com/sodium-citrate-mac-and-cheese-recipe/
 - https://modernistcuisine.com/wp-content/uploads/2012/10/Mac-and-Cheese-recipe.jpg
+- https://wrightsliquidsmoke.com/recipe/smoky-mac-and-cheese/
 // TODO: - https://www.wikihow.com/Make-Panko-Bread-Crumbs
