@@ -5,8 +5,8 @@
   - Onion, chopped fine #pause[1 medium]
   - 460g cottage cheese #aside[2 cups]
   - 140g bread crumbs #aside[1 cup]
-  - 120g eggs (3 large eggs)
-  - 4g\~ chicken bouillon #aside[1 tsp.]
+  - 120g eggs #aside[3 large eggs]
+  - \~4g chicken bouillon #aside[1 tsp.]
   - 25g soy sauce #aside[2 tbsp.]
   - 50g chopped nuts #aside[1/2 cup]
 
