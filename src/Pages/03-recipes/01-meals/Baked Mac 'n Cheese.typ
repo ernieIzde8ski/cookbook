@@ -18,6 +18,8 @@
   Topping:
   + 75g bread crumbs #aside[3/4 cup]
   + 42g butter #aside[3 tbsp.]
+
+  *Yields 2+ quarts.*
 ][
   + ASYNCHRONOUSLY:~
     - PREHEAT oven, 190°C. #aside[375°F]
