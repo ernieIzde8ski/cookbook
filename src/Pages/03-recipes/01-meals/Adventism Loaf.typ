@@ -18,6 +18,7 @@
   + PREHEAT oven to 200°C. #aside[400°F]
   + MIX all on medium until combined. #pause[1-2 min.]
   + BAKE in 9"×5" loaf pan until set. #pause[45 min. covered, \~15 min. covered]
+  + REST covered outside oven. #pause[30 min.]
 ]
 
 
