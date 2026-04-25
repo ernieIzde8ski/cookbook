@@ -14,12 +14,10 @@
   - 300g eggs #pause[6 large OR 4 jumbo]
   - 75g lemon juice #aside[1/3 cup]
   - 10g lemon zest, grated #pause[1 1/4 tbsp.]
-  - 225g Sour Cream #aside[1 cup]
 
-  Glaze:
-  - 115g powdered sugar #aside[1 cup]
-  - 40g lemon juice #aside[3 tbsp.]
-  - (Optional) Yellow food dye
+  Extra:
+  - 225g sour cream #aside[1 cup]
+  - 200g @R_lemon-glaze[lemon glaze]
 ]
 
 0. RETRIEVE butter & eggs from refrigeration. Rest until room temperature #pause[\~1-2
