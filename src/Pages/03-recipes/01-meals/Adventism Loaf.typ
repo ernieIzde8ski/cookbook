@@ -1,6 +1,6 @@
 #import "/formatting.typ": *
 
-#show: recipe.with(title: "Adventism Loaf")[
+#show: recipe(title: "Adventism Loaf")[
   - Cooking oil, to coat pan
   - Onion, chopped fine #pause[1 medium]
   - 460g cottage cheese #aside[2 cups]
@@ -12,13 +12,14 @@
   - 50g chopped nuts #aside[1/2 cup]
 
   *Yields 6 servings.*
+][
+  + FRY onions in oil until nearly caramelized. In the meantime...
+  + MIX eggs in bowl.
+  + PREHEAT oven to 200°C. #aside[400°F]
+  + MIX all on medium until combined. #pause[1-2 min.]
+  + BAKE in 9"×5" loaf pan until set. #pause[45 min. covered, \~15 min. covered]
 ]
 
-+ Fry onions in oil until nearly caramelized. In the meantime...
-+ Mix eggs in bowl.
-+ Preheat oven to 200°C. #aside[400°F]
-+ When onions are done, mix all ingredients and transfer to loaf pan.
-+ Bake in loaf pan until set. #aside[45 minutes]
 
 == Trivia
 
