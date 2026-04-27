@@ -1,6 +1,7 @@
 from collections.abc import Iterator
 from functools import partial
 from hashlib import sha256
+import os
 from pathlib import Path
 from shutil import which
 
@@ -18,6 +19,10 @@ VARIANTS = {
 }
 INDICES = set(LIBRARY_DIRECTORY.rglob("index.yaml"))
 LIBRARIES = ALL_SOURCES - VARIANTS
+
+FONT_PATHS = (os.environ.get("TYPST_FONT_PATHS") or "").split(os.pathsep)
+FONT_PATHS.append("/usr/share/texmf-dist/fonts/opentype")
+os.environ["TYPST_FONT_PATHS"] = os.pathsep.join(filter(bool, FONT_PATHS))
 
 
 def _get_tinymist():

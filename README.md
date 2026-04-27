@@ -10,10 +10,13 @@ A cookbook written in Typst.
 - [`prek`](https://prek.j178.dev/installation/) (NOT pre-commit)
 - [`uv`](https://docs.astral.sh/uv/getting-started/installation/) (optional)
 - [`tinymist`](https://github.com/Myriad-Dreamin/tinymist) (optional)
+- Fonts:
+  - Source Sans Pro
+  - Lato
 
-  You will need to set the formatter to `typstyle`, `lineLength=90`, prose
-  wrapping, and `/path/to/checkout/src/` base directory. I find it works better
-  in neovim, for whatever reason.
+You will need to set the formatter to `typstyle`, `lineLength=90`, prose
+wrapping, and `/path/to/checkout/src/` base directory. I find it works better
+in neovim, for whatever reason.
 
 Setup:
 

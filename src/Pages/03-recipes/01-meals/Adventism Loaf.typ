@@ -1,6 +1,6 @@
 #import "/formatting.typ": *
 
-#show: recipe(title: "Adventism Loaf")[
+#show: recipe(title: "Adventism Loaf", yield: "1 9\"×5\" loaf")[
   - Cooking oil, to coat pan
   - Onion, chopped fine #pause[1 medium]
   - 460g cottage cheese #aside[2 cups]
@@ -10,8 +10,6 @@
   - 2g salt
   - 25g soy sauce #aside[2 tbsp.]
   - 50g chopped nuts #aside[1/2 cup]
-
-  *Yields 6 servings.*
 ][
   + FRY onions in oil until nearly caramelized. In the meantime...
   + MIX eggs in bowl.

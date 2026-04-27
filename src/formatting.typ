@@ -9,6 +9,10 @@
 #import "@preview/oxifmt:1.0.0": strfmt as fmt
 
 
+#let baby-blue = rgb("C2E8F7")
+#let pale-blue = rgb("D6E8F7")
+
+
 #let V = {
   set align(center)
   v(1em)
@@ -22,11 +26,9 @@
 #let semibold = text.with(weight: "semibold")
 #let sb = semibold
 
-#let baby-blue = rgb("EAF2F5")
-
 #let mdtable = {
   import "@preview/tablem:0.3.0": three-line-table
-  three-line-table.with(fill: (_, y) => if calc.odd(y) { baby-blue })
+  three-line-table.with(fill: (_, y) => if calc.odd(y) { pale-blue })
 }
 
 #let invisible(body) = hide(place(body, float: false))
@@ -133,9 +135,10 @@
   set par(
     first-line-indent: 0em,
     spacing: 0.85em,
-    leading: 0.45em,
+    leading: 0.35em,
   )
   set text(region: "US")
+  set enum(spacing: 0.55em)
 
   show heading.where(depth: 1): set text(size: 1.5em)
   show heading: it => {
@@ -228,15 +231,15 @@
 
   show footnote.entry: set text(0.85em)
 
-  show "1/8": "⅛"
-  show "1/4": "¼"
-  show "1/3": "⅓"
-  show "3/8": "⅜"
-  show "1/2": "½"
-  show "5/8": "⅝"
-  show "3/4": "¾"
-  show "5/6": "⅚"
-  show "7/8": "⅞"
+  show regex(" ?1/8"): "⅛"
+  show regex(" ?1/4"): "¼"
+  show regex(" ?1/3"): "⅓"
+  show regex(" ?3/8"): "⅜"
+  show regex(" ?1/2"): "½"
+  show regex(" ?5/8"): "⅝"
+  show regex(" ?3/4"): "¾"
+  show regex(" ?5/6"): "⅚"
+  show regex(" ?7/8"): "⅞"
 
   body
 }
@@ -248,67 +251,117 @@
   }
 )
 
-#let pause(body) = aside(body) + v(0.5em)
+#let pause(body) = aside(body) + v(0.50em)
 
-#import "@preview/meander:0.4.2"
-#let recipe(title: none, description: none, refs: none, ..args, panel-width: auto) = {
-  let pos = args.pos().rev()
+#let Label = label
 
-  let ingredients = pos.remove(pos.len() - 1, default: none)
-  let steps = pos.remove(pos.len() - 1, default: none)
-
-  if panel-width == auto {
-    panel-width = if steps == none { 100% } else { 36% }
-  }
+#let Recipe(
+  title,
+  label,
+  description,
+  ingredients,
+  yield,
+  panel-width,
+  steps,
+  refs,
+) = {
+  import "@preview/meander:0.4.2"
 
   show regex("^.+:$"): semibold
+  let box = box.with(stroke: 0.05em + gray, inset: 0.5em, radius: 0.5em)
 
-  if type(title) == str {
-    let tag = label(
-      "R_" + lower(title).replace(" ", "-").replace(regex("[^a-zA-Z_-]"), ""),
-    )
-    // see: https://forum.typst.app/t/label-b-occurs-multiple-times-in-the-document-when-including-outline/7531
-    [#[= #title] #tag]
-  } else { title }
+  if title != none [
+    #title #label
+  ]
 
-  description
+  if description != none {
+    set par(first-line-indent: (all: true, amount: 1.5em))
+    description
+    v(0.5em)
+  }
 
   meander.reflow({
-    let Ingredients(body) = (
-      box(
-        stroke: 0.05em + gray,
-        inset: 0.5em,
-        fill: luma(90%),
-        width: panel-width,
-        radius: 5%,
-        body,
-      )
-        + h(1em)
-    )
-
     import meander: *
+
     if ingredients != none {
-      placed(top + left, Ingredients({
-        show list: it => it + v(0.5em)
-        set text(size: 0.95em)
-        ingredients
-      }))
+      placed(
+        top + left,
+        {
+          show: box.with(width: panel-width, fill: luma(90%))
+          show list: it => it + v(0.5em)
+          set text(size: 0.95em)
+          ingredients
+        }
+          + h(1em)
+          + v(0.5em),
+      )
+    }
+
+    if yield != none {
+      placed(top + right, {
+        show: box.with(width: 100% - panel-width - 1.5em, fill: baby-blue.darken(12%))
+        show: align.with(right)
+        show: smallcaps
+        set text(
+          font: ("Ysabeau", "Source Sans Pro", "Bitstream Vera Sans"),
+          tracking: 0.06em,
+        )
+        text(fill: red.lighten(95%), weight: 900)[YIELD:~~]
+        yield
+      })
     }
 
     container()
     content({
       steps
-
-      if type(refs) == label {
-        refs = (refs,)
-      }
-
-      if refs != none {
-        [== References]
-        for lbl in refs {
-          cite(lbl, form: "full")
-        }
-      }
     })
   })
+
+  if refs != none {
+    [== References]
+    if type(refs) == array {
+      for lbl in refs {
+        cite(lbl, form: "full")
+      }
+    } else { refs }
+  }
+}
+
+#let recipe(
+  title: none,
+  description: none,
+  yield: none,
+  refs: none,
+  ..args,
+  panel-width: auto,
+) = {
+  let pos = args.pos().rev()
+
+  let label = none
+  if type(title) == str {
+    label = Label(
+      "R_" + lower(title).replace(" ", "-").replace(regex("[^a-zA-Z_-]"), ""),
+    )
+    // see: https://forum.typst.app/t/label-b-occurs-multiple-times-in-the-document-when-including-outline/7531
+    title = heading(title, level: 1)
+  }
+
+  let ingredients = pos.remove(pos.len() - 1, default: none)
+  let steps = pos.remove(pos.len() - 1, default: none)
+
+  if type(yield) in (int, float, decimal) {
+    yield = fmt("{} serving{}", yield, if yield == 1 { "" } else { "s" })
+  }
+
+  if panel-width == auto {
+    panel-width = if ingredients == none { 0% } else if steps == none {
+      if yield == none { 100% } else { 75% }
+    } else { 36% }
+  }
+
+  if type(refs) == label {
+    refs = (refs,)
+  }
+
+  Recipe(title, label, description, ingredients, yield, panel-width, steps, refs)
 }
