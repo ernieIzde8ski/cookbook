@@ -13,15 +13,13 @@
   - 40g Dijon mustard (1/4 cup)
   - 34g sodium citrate
   - 2.5g chili powder #aside[3/4 tsp.]
-  - 1--2g liquid hickory smoke#footnote[Careful with hickory smoke. Adds a delicious
-      flavor, but it's extremely bitter.] #aside[1/4--1/2 tsp.]
+  - 1--2g liquid hickory smoke#footnote[Careful with hickory smoke! Delicious flavor, but
+      it's extremely bitter.] #aside[1/4--1/2 tsp.]
   - (optional) Yellow food dye
 
   Topping:
   + 75g bread crumbs #aside[3/4 cup]
   + 42g butter #aside[3 tbsp.]
-
-  *Yields 2+ liters.*
 ][
   + ASYNCHRONOUSLY:~
     - PREHEAT oven, 190°C. #aside[375°F]
