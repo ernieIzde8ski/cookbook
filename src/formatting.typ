@@ -321,7 +321,11 @@
     [== References]
     if type(refs) == array {
       for lbl in refs {
-        cite(lbl, form: "full")
+        if str(lbl).starts-with("R_") {
+          ref(lbl)
+        } else {
+          cite(lbl, form: "full")
+        }
       }
     } else { refs }
   }
