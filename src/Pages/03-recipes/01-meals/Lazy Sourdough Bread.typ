@@ -5,7 +5,7 @@
   - 300g water, lukewarm #pause[1 1/4 cup]
   - 350g bread flour #aside[3 cups]
   - 100g einkorn flour #aside[3/4 cup]
-  - 8g salt #aside[1/2 tsp.]
+  - 8g salt #aside[1/2 tbsp.]
 ][
   + Mix in wet ingredients.
   + Mix in dry ingredients.
