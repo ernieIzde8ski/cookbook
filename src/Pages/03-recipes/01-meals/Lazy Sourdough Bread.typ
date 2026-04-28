@@ -1,20 +1,12 @@
 #import "/formatting.typ": *
 
-= Sourdough Bread
-
-#columns(2)[
-  #show list.item: set text(style: "italic")
-
+#recipe(title: "Lazy Sourdough Bread", yield: "1 loaf, 9\"×5\"")[
   - 90g sourdough starter
   - 300g water, lukewarm
   - 350g bread flour
   - 100g einkorn flour
   - 8g salt
-
-  *Yields 1 loaf.*
-
-  #colbreak()
-
+][
   + Mix in wet ingredients.
   + Mix in dry ingredients.
   + Cover bowl. Let rise 8-24 hours.
