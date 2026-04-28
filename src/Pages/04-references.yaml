@@ -168,6 +168,18 @@ kab-pizza-flour:
   type: post
   title: "Which flour is best for your pizza?"
 
+rdh_easy-sourdough:
+  type: Article
+  title: "No-Knead, No-Stretch and Fold, Sourdough Bread Recipe"
+  date: 2025-01-19
+  url:
+    value: https://rooteddeephome.com/no-knead-no-stretch-and-fold-sourdough-bread-recipe/
+    date: 2026-04-21
+  parent:
+    type: Blog
+    title: "Rooted Deep Home"
+    author: Alicia
+
 tfl-flavor-flour:
   type: thread
   title: "Flavor of flour?"
