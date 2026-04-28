@@ -359,7 +359,7 @@
     } else { 36% }
   }
 
-  if type(refs) == label {
+  if type(refs) == Label {
     refs = (refs,)
   }
 
