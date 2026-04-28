@@ -64,7 +64,7 @@
 )
 
 #let PAGE_DIMENSIONS = (
-  "Kobo Clara BW": dimensions-from-diagonal-length(6in, 1448, 1072),
+  "Kobo Clara": dimensions-from-diagonal-length(6in, 1448, 1072),
   "iPhone 16e": dimensions-from-ppi(460, 2532, 1170),
 )
 
