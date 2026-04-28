@@ -7,7 +7,7 @@
   panel-width: 14.5em,
 )[
   - 90g sourdough starter #aside[3/8 cup]
-  - 300g water, lukewarm #pause[1 1/4 cup]
+  - 300mℓ water, lukewarm #pause[1 1/4 cup]
   - 350g bread flour #aside[3 cups]
   - 100g einkorn flour #aside[3/4 cup]
   - 9g salt #aside[1/2 tbsp.]
