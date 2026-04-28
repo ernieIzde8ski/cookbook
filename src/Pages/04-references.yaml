@@ -102,7 +102,6 @@ gav_mustard-sauce:
     date: 2026-04-19
   parent: *gav
 
-
 kis:
   type: post
   title: Dulce de Leche
@@ -179,6 +178,21 @@ rdh_easy-sourdough:
     type: Blog
     title: "Rooted Deep Home"
     author: Alicia
+
+SERIOUS_EATS: &ss
+  type: Newspaper
+  title: "Serious Eats"
+  publisher: "People Inc."
+
+ss_pasta-salinity:
+  type: Article
+  title: "How Salty Should Pasta Water Be?"
+  author: Gritzer, Daniel
+  date: 2023-03-28
+  url:
+    value: https://www.seriouseats.com/how-salty-should-pasta-water-be
+    date: 2026-04-25
+  parent: *ss
 
 tfl-flavor-flour:
   type: thread
