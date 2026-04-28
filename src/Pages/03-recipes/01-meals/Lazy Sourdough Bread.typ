@@ -6,10 +6,10 @@
   yield: [1 large loaf#footnote[My large loaf pan is 11"×5" and holds up to 4ℓ.]],
   panel-width: 14.5em,
 )[
-  - 90g sourdough starter #aside[3/8 cup]
   - 300mℓ water, lukewarm #pause[1 1/4 cup]
   - 350g bread flour #aside[3 cups]
-  - 100g einkorn flour #aside[3/4 cup]
+  - 100g einkorn flour #pause[3/4 cup]
+  - 90g sourdough starter #aside[3/8 cup]
   - 9g salt #aside[1/2 tbsp.]
 ][
   + MIX water and flours in bowl.
