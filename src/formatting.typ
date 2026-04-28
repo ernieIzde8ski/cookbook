@@ -347,7 +347,7 @@
       "R_" + lower(title).replace(" ", "-").replace(regex("[^a-zA-Z_-]"), ""),
     )
     // see: https://forum.typst.app/t/label-b-occurs-multiple-times-in-the-document-when-including-outline/7531
-    title = heading(title, level: 1)
+    title = [= #title]
   }
 
   let ingredients = pos.remove(pos.len() - 1, default: none)
