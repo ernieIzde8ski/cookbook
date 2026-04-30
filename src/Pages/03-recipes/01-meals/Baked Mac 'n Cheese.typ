@@ -18,7 +18,7 @@
   - (optional) Yellow food dye
 
   Topping:
-  + 75g bread crumbs #aside[3/4 cup]
+  + 75g @R_panko-breadcrumbs[panko breadcrumbs] #aside[3/4 cup]
   + 42g butter #aside[3 tbsp.]
 ][
   + ASYNCHRONOUSLY:~
