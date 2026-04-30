@@ -216,6 +216,20 @@ vcb_loaves:
   page-range: 19-26
   parent: *vcb
 
+WIKIHOW: &wh
+  type: blog
+  title: wikiHow
+  url: https://www.wikihow.com
+
+wh_panko-breadcrumbs:
+  type: article
+  title: How to Make Panko Bread Crumbs
+  author: Gibson, Jessica
+  editor: Levasseur, Jennifer
+  url:
+    value: https://www.wikihow.com/Make-Panko-Bread-Crumbs
+    date: 2026-04-30
+
 WIKIPEDIA: &wp
   type: reference
   title: Wikipedia, The Free Encyclopedia
