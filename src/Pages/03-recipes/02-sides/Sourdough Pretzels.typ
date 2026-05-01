@@ -10,7 +10,7 @@
   - 40g honey #aside[2 tbsp.]
   - 12g salt #aside[2 tsp.]
   - 450g all-purpose flour #aside[3 1/4 cups]
-  - _(optional)_ 6g Easy Roll Dough Improver#footnote[From:
+  - _(optional)_ 6g Easy Roll Dough Improver#footnote[~From King Arthur Baking#h(0em):
       https://shop.kingarthurbaking.com/items/easy-roll-dough-improver. I actually haven't
       tried this yet. It should make stretching the dough easier, though.] #aside[2 tsp.]
 
@@ -36,8 +36,8 @@
   + PREHEAT oven to 425°F.
   + BOIL water for water bath. Add baking soda, sugar.
   + FOR each pretzel:
-    + BOIL for 30 seconds per side.#footnote[I recommend a frying basket, like the one
-        I've bought: https://www.amazon.com/dp/B001VZARVK]
+    + BOIL for 30 seconds per side.#footnote[~I recommend a frying basket, like the one
+        I've bought:~https://www.amazon.com/dp/B001VZARVK]
     + TRANSFER to baking sheet.
   + BRUSH each pretzel with egg wash.
   + BAKE until goldenbrown. #pause[\~15 min.]
