@@ -1,6 +1,6 @@
 #import "/formatting.typ": *
 
-#recipe(title: "Baked Mac 'n Cheese", yield: "2+ ℓ")[
+#recipe(title: "Baked Mac 'n Cheese", yield: "2.5+ ℓ")[
   Pasta:
   - 6g salt@ss_pasta-salinity
   - 600g macaroni or shells, dry
