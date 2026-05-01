@@ -321,6 +321,7 @@
     [== References]
     if type(refs) == array {
       for lbl in refs {
+        parbreak()
         if str(lbl).starts-with("R_") {
           ref(lbl)
         } else {

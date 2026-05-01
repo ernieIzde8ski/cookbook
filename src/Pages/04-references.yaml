@@ -64,6 +64,23 @@ ass_lemon-cake:
     date: 2026-04-22
   parent: *ass
 
+FARMHOUSE_ON_BOONE: &fob
+  type: Blog
+  title: Farmhouse on Boone
+  author: &fob_author Bass, Lisa
+  publisher: Farmhouse on Boone
+
+fob_sourdough-pretzels:
+  type: Article
+  title: The Best Sourdough Pretzels
+  author: *fob_author
+  date: 2024-09-01
+  url:
+    value: https://www.farmhouseonboone.com/the-best-soft-sourdough-pretzels/
+    date: 2026-05-01
+  parent: *fob
+
+
 FOOD_NETWORK_ULTIMATE_BAKING: &fnub
   type: Blog
   title: "Ultimate Baking Guide"
@@ -147,6 +164,15 @@ md-dulce-de-leche:
     value: https://www.muydelish.com/how-to-make-dulce-de-leche/
     date: 2026-04-08
 
+kabc_roll-dough-improver:
+  type: Web
+  title: Easy Roll Dough Improver
+  publisher: King Arthur Baking Company, Inc.
+  date: 2026
+  url:
+    value: https://shop.kingarthurbaking.com/items/easy-roll-dough-improver
+    date: 2026-05-01
+
 KABC_TIPS: &kabc_tips
   type: Blog
   title: Tips and Techniques
@@ -229,6 +255,7 @@ wh_panko-breadcrumbs:
   url:
     value: https://www.wikihow.com/Make-Panko-Bread-Crumbs
     date: 2026-04-30
+  parent: *wh
 
 WIKIPEDIA: &wp
   type: reference
