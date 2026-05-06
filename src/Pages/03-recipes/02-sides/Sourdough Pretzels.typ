@@ -20,12 +20,11 @@
   - 15g brown sugar #aside[1 tbsp.]
 
   Egg Wash:
-  // Weight?
-  - 1 large egg yolk
+  - 23g egg yolk #aside[1 large]
+  - 36g sugar #aside[2 tbsp.]
   - 14g water #aside[1 tbsp.]
-  - Salt, to taste // How much?
-  - Sugar, to taste // How much?
-  - Cinnamon, to taste // How much?
+  - 5g cinnamon #aside[2 tsp.]
+  - Pretzel salt, to taste
 ][
   + MIX batter on low. #pause[10 min.]
   + COVER with solid lid until doubled. #pause[8-12 hr.]
