@@ -50,7 +50,7 @@ def main(section: str, title: str):
     os.chdir(ROOT)
     _ = subprocess.run(("git", "add", "-N", target.as_posix()), check=True)
     print("Began tracking new path in git.")
-    _ = subprocess.run(("doit", "build_index"), check=True)
+    _ = subprocess.run(("doit", "compile:letter"), check=True)
     print("Regenerated index file.")
 
 
