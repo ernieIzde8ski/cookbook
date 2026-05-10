@@ -9,4 +9,18 @@
   - 750mg baking soda #aside[0.6162mℓ]
   - 187.5mg salt #pause[0.154mℓ]
   - 28.25g walnuts, chopped #aside[59.1mℓ]
+][
+  + MIX on low:
+    + Butter & brown sugar, until light & fluffy. #aside[\~5-7 min.]
+    + Eggs & vanilla.
+    + 15g walnuts. #aside[\~1/2]
+  + SHAPE into roll. #aside[\~9 cm.]
+  + ROLL chopped nuts into roll.
+  + WRAP in waxed paper.
+  + REFRIGERATE until firm. #pause[\~2 hr.]
+  + PREHEAT oven to 150°C. #aside[300°F]
+  + CUT 6mm slices. #aside[\~15 total]
+  + PLACE on greased baking sheet(s).
+  + BAKE until lightly browned. #pause[\~12 min.]
+  + COOL on wire racks.
 ]
