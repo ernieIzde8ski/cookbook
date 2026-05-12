@@ -6,7 +6,7 @@
 
 #recipe(
   title: "Agua de Jamaica",
-  description: [Agua de Jamaica is apparently just a tisane. Who knew?],
+  description: [Jamaica is apparently just a tisane. Who knew?],
   panel-width: 12em,
   yield: [4ℓ],
 )[
