@@ -20,7 +20,7 @@
 ][
   + ADD all ingredients except white sugar to pot.
   + BOIL.
-  + REDUCE temperature & simmer. #pause[20-30 min.]
+  + REDUCE temperature & simmer. #pause[10-15 min.]
   + STRAIN into grease keeper. *Do NOT throw ingredients away yet.*
   + IF grease keeper is partially empty AND leaves are still potent:~
     + ADD 1L fresh water to pot.
