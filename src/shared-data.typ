@@ -54,8 +54,8 @@
     food-processor: [You can technically get away with a blender, but it's a hell of a lot
       more tedious.],
     grease-keeper: [In the absence of a #url(key: "grease keeper")[fine-mesh grease
-        keeper], a cheesecloth or a metal fine-mesh strainer, and a generic 4-liter
-      container, will do fine.],
+        keeper], a cheesecloth or a metal fine-mesh strainer, and a generic 4ℓ container,
+      will do fine.],
     rice-cooker: [My rice cooker cooks up to 12 cups.],
     sodium-citrate: [Sodium citrate is a cheese emulsifier; that is, it helps keep cheese
       molecules bound to water molecules. It's also somewhat saline, so you get to use

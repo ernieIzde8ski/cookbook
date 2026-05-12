@@ -10,8 +10,8 @@
     doesn't add anything _new_ here.]
   #let piloncillo = footnote[Substitute 1:1 with brown sugar.]
 
-  - 4L (1 gal.) fine-mesh grease keeper#Footnotes.grease-keeper
-  - 1L water per iteration (see recipe)
+  - 4ℓ (1 gal.) fine-mesh grease keeper#Footnotes.grease-keeper
+  - 1ℓ water per iteration (see recipe)
   - 70g hibiscus petals #aside[1 cup]
   - 1 cinnamon stick
   - 1 pinch ground cloves
@@ -25,7 +25,7 @@
   + REDUCE temperature & simmer. #pause[10-15 min.]
   + STRAIN into grease keeper. *Do NOT throw ingredients away yet.*
   + IF grease keeper is partially empty AND leaves are still potent:~
-    + ADD 1L fresh water to pot.
+    + ADD 1ℓ fresh water to pot.
     + GOTO step 2. #footnote[This repetition makes the jamaica incredibly strong; this is
         why we only use one cup of hibiscus petals while others use multiple.]
     ELSE:~
