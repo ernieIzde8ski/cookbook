@@ -15,7 +15,7 @@
   - 1 pinch ground cloves
   - 1 pinch ground nutmeg
   - 1 pinch ground allspice (optional#allspice)
-  - 90g piloncillo#piloncillo #aside[1/2 cup]
+  - 120g piloncillo#piloncillo #aside[1/2 cup]
   - 200g white sugar #aside[1 cup]
 ][
   + ADD all ingredients except white sugar to pot.
