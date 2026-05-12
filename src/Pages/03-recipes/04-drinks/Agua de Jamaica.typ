@@ -4,6 +4,7 @@
 #recipe(
   title: "Agua de Jamaica",
   description: [Agua de Jamaica is apparently just a tisane. Who knew?],
+  panel-width: 12em,
   yield: [4ℓ],
 )[
   #let allspice = footnote[Allspice has the taste of cinnamon, cloves, and nutmeg---it
@@ -23,17 +24,13 @@
   - 1 pinch ground allspice (optional#allspice)
   - 120g piloncillo#piloncillo #aside[1/2 cup]
 ][
-  + ADD all ingredients except white sugar to pot.
-  + BOIL.
-  + REDUCE temperature & simmer. #pause[10-15 min.]
-  + STRAIN into grease keeper. *Do NOT throw ingredients away yet.*
-  + IF grease keeper is partially empty AND leaves are still potent:~
-    + ADD *only* 1ℓ fresh water to pot.
-    + GOTO step 2. #footnote[This repetition makes the jamaica incredibly strong; this is
-        why we only use one cup of hibiscus petals while others use multiple.]
-    ELSE:~
-    + TOSS leaves.
-  + STIR white sugar into grease keeper.
-  + REFRIGERATE. #pause[minimum 4 hr.]
-  + SERVE chilled.
+  + WHILE grease keeper has room AND boiled water is not translucent#footnote[This
+      repetition makes the jamaica incredibly strong; this is why we only use one cup of
+      hibiscus petals while others use multiple.]:
+    + SIMMER spices over *1ℓ* fresh water, covered. #pause[10-15 min.]
+    + STRAIN into grease keeper. #pause-spacer
+  + STIR white sugar into grease keeper and fill remainder with water.
+  + COOL uncovered until comfortable to hold. #pause[\~30 min.; 50°C/125°F]
+  + REFRIGERATE covered. #pause[≥ 4 hr.]
+  + SERVE chilled, within 3 mo.
 ]
