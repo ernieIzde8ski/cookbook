@@ -3,7 +3,7 @@
 
 #recipe(
   title: "Agua de Jamaica",
-  description: [Agua de Jamaica is apparently just a tea. Who knew?],
+  description: [Agua de Jamaica is apparently just a tisane. Who knew?],
   yield: [4ℓ],
 )[
   #let allspice = footnote[Allspice has the taste of cinnamon, cloves, and nutmeg---it
