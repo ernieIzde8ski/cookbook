@@ -12,6 +12,9 @@
 
   - 4ℓ fine-mesh grease keeper#Footnotes.grease-keeper #aside[\~1 gal.]
   - \~6ℓ water #aside[\~1.5 gal., see recipe]
+  - 200g white sugar #aside[1 cup]
+
+  Spices:
   - 70g hibiscus petals, dried#fn[Use a bit less if you don't like your jamaica sour.]
     #aside[1 cup]
   - 10g cinnamon #aside[2-3 long sticks]
@@ -19,7 +22,6 @@
   - 1 pinch ground nutmeg
   - 1 pinch ground allspice (optional#allspice)
   - 120g piloncillo#piloncillo #aside[1/2 cup]
-  - 200g white sugar #aside[1 cup]
 ][
   + ADD all ingredients except white sugar to pot.
   + BOIL.
