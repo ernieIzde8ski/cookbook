@@ -41,6 +41,8 @@
 
 #let Footnotes = utils.map-values(
   (
+    allspice: [Allspice tastes of cinnamon, cloves, and nutmeg; it doesn't add a _new_
+      flavor.],
     bean-expansion: [Dry beans expand to 2-3 times their size.],
     bean-seasoning: [#url[Chicken bouillon] works even better! Toss in your favorite
       seasonings. Sometimes I like assorted Italian seasoning, onion powder, garlic
@@ -53,9 +55,9 @@
       survive. A pinch too much of cumin? Completely inedible.],
     food-processor: [You can technically get away with a blender, but it's a hell of a lot
       more tedious.],
-    grease-keeper: [In the absence of a #url(key: "grease keeper")[fine-mesh grease
-        keeper], a cheesecloth or a metal fine-mesh strainer, and a generic 4ℓ container,
-      will do fine.],
+    grease-keeper: [If lacking a #url(key: "grease keeper")[fine-mesh grease keeper], a
+      fine-mesh strainer & a 4ℓ bucket will do just fine.],
+    piloncillo: [Piloncillo substitutes 1-to-1 with brown sugar, particularly unrefined.],
     rice-cooker: [My rice cooker cooks up to 12 cups.],
     sodium-citrate: [Sodium citrate is a cheese emulsifier; that is, it helps keep cheese
       molecules bound to water molecules. It's also somewhat saline, so you get to use
@@ -70,11 +72,14 @@
 
 #let Fn = Footnotes
 
-#let fn(body) = {
+#let sharedfn(body) = {
   let key = content-to-str(body)
   let key = normalize-key(content-to-str(body))
+  // backwards compat; deprecated behavior
   if key != none and key in Footnotes {
     return Footnotes.at(key)
   }
   return footnote[~#body]
 }
+// backwards compat
+#let fn = sharedfn
