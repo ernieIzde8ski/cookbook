@@ -36,6 +36,17 @@ ALL_RECIPES: &ar
   title: "Allrecipes"
   publisher: People Inc.
 
+ar_jamaica:
+  type: Article
+  author: Sherbear1
+  title: Agua de Jamaica (Iced Hibiscus Tea)
+  publisher: Allrecipes
+  date: 2026-10-20
+  url:
+    value: https://www.allrecipes.com/recipe/214366/agua-de-jamaica-hibiscus-water/
+    date: 2026-05-12
+  parent: *ar
+
 ar_sugar-cookies:
   type: Article
   author: Stephanie

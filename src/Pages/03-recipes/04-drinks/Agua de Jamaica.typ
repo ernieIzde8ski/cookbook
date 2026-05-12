@@ -14,7 +14,7 @@
   - \~6ℓ water #aside[\~1.5 gal., see recipe]
   - 200g white sugar #aside[1 cup]
 
-  Spices:
+  #text(weight: "semibold")[Spices@ar_jamaica:]
   - 120g piloncillo#sharedfn[piloncillo] #aside[1/2 cup@ac_piloncillo]
   - 70g hibiscus petals, dried#fn[Use a bit less if you don't like sour jamaica.]
     #aside[1 cup]
