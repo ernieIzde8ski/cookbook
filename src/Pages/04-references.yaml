@@ -64,6 +64,20 @@ ass_lemon-cake:
     date: 2026-04-22
   parent: *ass
 
+AQUA_CALC: &ac
+  type: Web
+  title: Aqua-Calc
+  publisher: AVCalc LLC
+  url: https://www.aqua-calc.com
+
+ac_piloncillo:
+  type: Web
+  title: "Weight of PILONCILLO, UPC: 712810000056"
+  url:
+    value: https://www.aqua-calc.com/calculate/food-volume-to-weight/substance/piloncillo-coma-and-blank-upc-column--blank-712810000056
+    date: 2026-05-12
+  parent: *ac
+
 FARMHOUSE_ON_BOONE: &fob
   type: Blog
   title: Farmhouse on Boone
@@ -79,7 +93,6 @@ fob_sourdough-pretzels:
     value: https://www.farmhouseonboone.com/the-best-soft-sourdough-pretzels/
     date: 2026-05-01
   parent: *fob
-
 
 FOOD_NETWORK_ULTIMATE_BAKING: &fnub
   type: Blog

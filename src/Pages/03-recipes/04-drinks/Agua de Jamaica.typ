@@ -21,7 +21,7 @@
   - 1 pinch ground cloves
   - 1 pinch ground nutmeg
   - 1 pinch ground allspice (optional#sharedfn[allspice])
-  - 120g piloncillo#sharedfn[piloncillo] #aside[1/2 cup]
+  - 120g piloncillo#sharedfn[piloncillo] #aside[1/2 cup@ac_piloncillo]
 ][
   + WHILE grease keeper has room AND petals remain potent#fn-potency:
     + SIMMER spices over *1ℓ* fresh water, covered. #pause[10-15 min.]
