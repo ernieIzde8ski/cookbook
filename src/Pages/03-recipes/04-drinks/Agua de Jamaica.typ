@@ -1,9 +1,11 @@
 #import "/formatting.typ": *
 #import "/shared-data.typ": *
 
-#recipe(title: "Agua de Jamaica", description: [Agua de Jamaica is apparently just a tea.
-  Who knew?
-])[
+#recipe(
+  title: "Agua de Jamaica",
+  description: [Agua de Jamaica is apparently just a tea. Who knew?],
+  yield: [4ℓ],
+)[
   #let allspice = footnote[Allspice has the taste of cinnamon, cloves, and nutmeg---it
     doesn't add anything _new_ here.]
   #let piloncillo = footnote[Substitute 1:1 with brown sugar.]
