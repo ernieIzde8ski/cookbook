@@ -7,9 +7,9 @@
   panel-width: 12em,
   yield: [4ℓ],
 )[
-  #let allspice = footnote[Allspice has the taste of cinnamon, cloves, and nutmeg---it
-    doesn't add anything _new_ here.]
-  #let piloncillo = footnote[Substitute 1:1 with brown sugar.]
+  #let allspice = fn[Allspice has the taste of cinnamon, cloves, and nutmeg; it doesn't
+    add anything _new_ here.]
+  #let piloncillo = fn[Substitute 1:1 with brown sugar.]
 
   - 4ℓ fine-mesh grease keeper#Footnotes.grease-keeper #aside[\~1 gal.]
   - \~6ℓ water #aside[\~1.5 gal., see recipe]
@@ -24,9 +24,9 @@
   - 1 pinch ground allspice (optional#allspice)
   - 120g piloncillo#piloncillo #aside[1/2 cup]
 ][
-  + WHILE grease keeper has room AND boiled water is not translucent#footnote[This
-      repetition makes the jamaica incredibly strong; this is why we only use one cup of
-      hibiscus petals while others use multiple.]:
+  + WHILE grease keeper has room AND boiled water is not translucent#fn[This repetition
+      makes the jamaica incredibly strong; this is why we only use one cup of hibiscus
+      petals while others use multiple.]:
     + SIMMER spices over *1ℓ* fresh water, covered. #pause[10-15 min.]
     + STRAIN into grease keeper. #pause-spacer
   + STIR white sugar into grease keeper and fill remainder with water.
