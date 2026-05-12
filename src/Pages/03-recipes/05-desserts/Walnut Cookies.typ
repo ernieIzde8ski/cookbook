@@ -1,6 +1,6 @@
 #import "/formatting.typ": *
 
-#recipe(title: "Walnut Cookies", yield: "15 cookies")[
+#recipe(title: "Walnut Cookies", yield: "15 cookies", refs: <toh_walnut-cookies>)[
   - 53.25g brown sugar #aside[60mℓ, packed]
   - 28g butter, soft #pause[30mℓ]
   - 12.5 egg #aside[1/4 large]

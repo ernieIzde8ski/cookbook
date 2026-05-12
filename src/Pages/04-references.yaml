@@ -194,6 +194,19 @@ ss_pasta-salinity:
     date: 2026-04-25
   parent: *ss
 
+TASTE_OF_HOME:
+  type: Blog
+  title: Taste of Home
+
+toh_walnut-cookies:
+  type: Article
+  title: Walnut cookies
+  author: Richeson, Lauren Paige
+  date: 2024-08-21
+  url:
+    value: https://www.tasteofhome.com/recipes/black-walnut-cookies/
+    date: 2026-05-10
+
 tfl-flavor-flour:
   type: thread
   title: "Flavor of flour?"
@@ -229,6 +242,7 @@ wh_panko-breadcrumbs:
   url:
     value: https://www.wikihow.com/Make-Panko-Bread-Crumbs
     date: 2026-04-30
+  parent: *wh
 
 WIKIPEDIA: &wp
   type: reference
