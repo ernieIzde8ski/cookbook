@@ -32,6 +32,6 @@
     ELSE:~
     + TOSS leaves.
   + STIR white sugar into grease keeper.
-  + REFRIGERATE. #pause[minimum 8-12 hr.]
+  + REFRIGERATE. #pause[minimum 4 hr.]
   + SERVE chilled.
 ]
