@@ -132,6 +132,26 @@ gav_mustard-sauce:
     date: 2026-04-19
   parent: *gav
 
+HANDBOOK_OF_SPICES_SECOND_EDITION: &hos2
+  type: Book
+  title: Handbook of Spices, Seasonings, and Flavorings
+  edition: 2
+  author: Raghavan, Susheela
+  publisher:
+    name: CRC Press
+    location: Boca Raton, Florida
+  organization: Taylor & Francis Group
+  date: 2006
+  serial-number:
+    isbn: 9781420004366 # PDF released 2013-09-25
+  page-total: 330
+
+hos2_allspice:
+  type: Chapter
+  title: Allspice
+  page-range: 64-66
+  parent: *hos2
+
 kis:
   type: post
   title: Dulce de Leche

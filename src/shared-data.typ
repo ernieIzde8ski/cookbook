@@ -41,8 +41,8 @@
 
 #let Footnotes = utils.map-values(
   (
-    allspice: [Allspice tastes of cinnamon, cloves, and nutmeg; it doesn't add a _new_
-      flavor.],
+    allspice: [Allspice tastes of cinnamon, cloves, and nutmeg@hos2_allspice; it doesn't
+      add a _new_ flavor.],
     bean-expansion: [Dry beans expand to 2-3 times their size.],
     bean-seasoning: [#url[Chicken bouillon] works even better! Toss in your favorite
       seasonings. Sometimes I like assorted Italian seasoning, onion powder, garlic
