@@ -4,7 +4,7 @@
 // https://www.recipetineats.com/how-to-make-ghee-and-clarified-butter/
 #recipe(title: "Clarified Butter")[
   - Bain-marie
-  - (optional) Cheesecloth
+  - Cheesecloth #pause[optional]
   - 110g butter #aside[1/2 cup]
 ][
   + STEAM butter in bain-marie over simmering water, until molten.
