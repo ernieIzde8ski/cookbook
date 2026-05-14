@@ -245,12 +245,12 @@
   body
 }
 
-#let aside(body) = (
-  {
-    set text(style: "italic", weight: 600, size: 0.85em, fill: luma(20%))
-    [~~(#body)]
-  }
-)
+#let beside(body) = {
+  set text(style: "italic", weight: 600, size: 0.85em, fill: luma(20%))
+  body
+}
+
+#let aside(body) = beside[~~(#body)]
 
 #let pause(body) = aside(body) + v(0.50em)
 
