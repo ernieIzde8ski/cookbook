@@ -20,7 +20,7 @@ SECTIONS = {path.name[3:]: path for path in RECIPE_DIR.iterdir() if path.is_dir(
 def template(title: str) -> str:
     return f"""#import "/formatting.typ": *
 
-= #recipe(title: "{title}")
+#recipe(title: "{title}")
 """
 
 
