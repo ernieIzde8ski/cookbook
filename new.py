@@ -5,7 +5,6 @@ import subprocess
 import sys
 from functools import partial
 from pathlib import Path
-from textwrap import dedent
 
 import typer
 
@@ -18,12 +17,11 @@ assert RECIPE_DIR.is_dir()
 SECTIONS = {path.name[3:]: path for path in RECIPE_DIR.iterdir() if path.is_dir()}
 
 
-def template(title: str):
-    return dedent(f"""
-    #import "/formatting.typ": *
+def template(title: str) -> str:
+    return f"""#import "/formatting.typ": *
 
-    = {title}
-    """).strip()
+= #recipe(title: "{title}")
+"""
 
 
 app = typer.Typer()
