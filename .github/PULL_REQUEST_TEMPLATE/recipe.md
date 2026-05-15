@@ -1,0 +1,5 @@
+- [ ] Add/update recipe as needed
+- [ ] Validate recipe
+  - [ ] Test recipe by preparation
+  - [ ] Ensure both metric & imperial units are available
+- [ ] Credit sources
