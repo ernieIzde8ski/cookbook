@@ -252,7 +252,8 @@
 
 #let aside(body) = beside[~~(#body)]
 
-#let pause(body) = aside(body) + v(0.50em)
+#let pause-spacer = v(0.50em)
+#let pause(body) = aside(body) + pause-spacer
 
 #let Label = label
 
