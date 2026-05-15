@@ -11,4 +11,5 @@
   + PREHEAT oven to 350°F.
   + ADD sliced potatoes to baking sheet.
   + COAT with butter sauce.
+  + BAKE. #aside[30-35 min.]
 ]
