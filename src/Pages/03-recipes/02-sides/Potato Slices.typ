@@ -1,6 +1,6 @@
 #import "/formatting.typ": *
 
-#recipe(title: "Potato Slices")[
+#recipe(title: "Potato Slices", panel-width: 14.75em)[
   - 450g potatoes, sliced #aside[3 medium]
 
   Sauce:
