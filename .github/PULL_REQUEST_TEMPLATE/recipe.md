@@ -1,5 +1,6 @@
 - [ ] Add/update recipe as needed
 - [ ] Validate recipe
   - [ ] Test recipe by preparation
-  - [ ] Ensure both metric & imperial units are available
+  - [ ] List ingredients in both metric weights & volumetric (or
+        "conventional", eg. "2 sticks butter") units
 - [ ] Credit sources
