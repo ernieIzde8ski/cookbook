@@ -146,10 +146,10 @@
   yield: "8 flatbreads",
 )[
   Dough:
-  - 240g all-purpose flour #aside(metric-volume("2 cup")))
+  - 240g all-purpose flour #aside(metric-volume("2 cup"))
   - 60g einkorn flour #aside(metric-volume("1/2 cup"))
   - 120g levain #aside(metric-volume("1/2 cup"))
-  - 115g water, lukewarm #aside(metric-volume("1/2 cup"))
+  - 115g water, lukewarm
   - 55g Greek yogurt #aside(metric-volume("1/4 cup"))
   - 9g chicken bouillon #aside(metric-volume("3/2 tsp"))
   - 12g baking powder #aside(metric-volume("1 tbsp"))
