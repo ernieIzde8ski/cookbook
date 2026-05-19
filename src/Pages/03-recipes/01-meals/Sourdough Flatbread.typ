@@ -162,7 +162,7 @@
   + COVER. #pause[15 min.]
   + PREHEAT oven to 260°C. #aside[500°F]
   + KNEAD completely smooth.
-  + DIVIDE into 8 equal pieces.
+  + DIVIDE eightfold.
   + REST. #pause[5 min., optional]
   + FLATTEN into thin patties on baking sheet.
   + BAKE. #pause[5 min.]
