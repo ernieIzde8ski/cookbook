@@ -143,7 +143,7 @@
 #recipe(
   title: "Sourdough Flatbread",
   description: [Easy way to use up some starter.],
-  yield: "8",
+  yield: "8 flatbreads",
 )[
   Dough:
   - 240g all-purpose flour #aside(metric-volume("2 cup")))
@@ -155,7 +155,7 @@
   - 12g baking powder #aside(metric-volume("1 tbsp"))
 
   Sauce:
-  - 30g butter #aside(metric-volume("2 tbsp"))
+  - 30g butter #aside(metric-volume("2.14 tbsp"))
   - 7.5g garlic, minced #aside[4 cloves]
 ][
   + COMBINE ingredients roughly in large bowl.
@@ -163,7 +163,7 @@
   + PREHEAT oven to 260°C. #aside[500°F]
   + KNEAD completely smooth.
   + DIVIDE into 8 equal pieces.
-  + REST. #pause[5 min.]
+  + REST. #pause[5 min., optional]
   + FLATTEN into thin patties on baking sheet.
   + BAKE. #pause[5 min.]
   + FLIP patties and brush with sauce.
