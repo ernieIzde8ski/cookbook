@@ -146,16 +146,17 @@
   yield: "8 flatbreads",
 )[
   Dough:
-  - 240g all-purpose flour #aside(metric-volume("2 cup"))
-  - 60g einkorn flour #aside(metric-volume("1/2 cup"))
-  - 120g levain #aside(metric-volume("1/2 cup"))
-  - 115g water, lukewarm
-  - 55g Greek yogurt #aside(metric-volume("1/4 cup"))
-  - 9g chicken bouillon #aside(metric-volume("3/2 tsp"))
-  - 12g baking powder #aside(metric-volume("1 tbsp"))
+  - 240g all-purpose flour #aside[450 mℓ]
+  - 60g einkorn flour #aside[115 mℓ]
+  - 120g levain #aside[125 mℓ]
+  - 115 mℓ water, lukewarm
+  - 55g Greek yogurt #aside[60 mℓ]
+  // 300mℓ = 255g
+  - 9g chicken bouillon #aside[11 mℓ]
+  - 12g baking powder #aside[13 mℓ]
 
   Sauce:
-  - 30g butter #aside(metric-volume("2.14 tbsp"))
+  - 30g butter #aside[30 mℓ]
   - 7.5g garlic, minced #aside[4 cloves]
 ][
   + COMBINE ingredients roughly in large bowl.
