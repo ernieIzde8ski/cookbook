@@ -9,13 +9,13 @@
   panel-width: 40%,
 )[
   Dough:
-  - 150g water, warm #aside[2/3 cup]
-  - 5g instant yeast #aside[1/2 tbsp.]
+  - 150mℓ water, warm
+  - 5g instant yeast #aside[8mℓ]
   - 240g all-purpose flour #footnote[~While you _can_ use bread flour, it will not work
-      well, because this recipe is very thin.] #aside[2 cups]
-  - 3g salt #aside[1/2 tsp.]
-  - 4g baking powder #aside[1 tsp.]
-  - 40g olive oil #aside[3 tbsp.]
+      well, because this recipe is very thin.] #aside[450mℓ]
+  - 3g salt #aside[2mℓ]
+  - 4g baking powder #aside[5mℓ]
+  - 40g olive oil #aside[45mℓ]
 
 
   Recommended toppings:
