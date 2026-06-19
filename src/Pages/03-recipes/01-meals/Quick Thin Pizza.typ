@@ -12,10 +12,15 @@
   - 150mℓ water, warm
   - 5g instant yeast #aside[8mℓ]
   - 40g olive oil #aside[45mℓ]
-  - 240g all-purpose flour #footnote[~While you _can_ use bread flour, it will not work
-      well, because this recipe is very thin.] #aside[450mℓ]
+  - 200g all-purpose flour #footnote[~00 Pizza Flour should, theoretically, provide better
+      results. Bread flour is OK, but not advisable; produces a chewy pizza.]
+    #aside[380mℓ]
+  - 40g einkorn flour #aside[76mℓ]
   - 3g salt #aside[2mℓ]
-  - 4g baking powder #aside[5mℓ]
+  - 3mℓ basil, dried
+  - 3mℓ oregano, dried
+  - 3mℓ marjoram, dried
+  - 4g baking powder #aside[5mℓ] // Also (cont.) we're missing weights lol.
 
 
   Recommended toppings:

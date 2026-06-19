@@ -264,6 +264,10 @@ ss_pasta-salinity:
     date: 2026-04-25
   parent: *ss
 
+TASTE_OF_HOME:
+  type: Newspaper
+  title: "Taste of Home"
+
 tfl-flavor-flour:
   type: thread
   title: "Flavor of flour?"
