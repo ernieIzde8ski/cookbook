@@ -20,7 +20,7 @@
 
   Recommended toppings:
   - Tomato sauce
-  - Shredded mozarrella
+  - Shredded mozzarella
   - Turkey pepperoni
 
   *Yields 1 pizza.*
