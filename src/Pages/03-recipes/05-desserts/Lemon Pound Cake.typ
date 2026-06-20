@@ -1,20 +1,20 @@
 #import "/formatting.typ": *
 
 #show: recipe.with(title: "Lemon Pound Cake", yield: "1 loaf")[
-  #sb[Dry:]
-  - 180g all-purpose flour #aside[1 1/2 cups]
-  - 1.5g baking soda #aside[1/4 tsp.]
-  - 1.5g salt #aside[1/4 tsp.]
+  Dry:
+  - 180g all-purpose flour #aside[340mℓ]
+  - 1.5g baking soda #aside[1.2mℓ]
+  - 1.5g salt #aside[1.2mℓ]
 
   Wet:
   - 113g butter #aside[1 stick]
-  - 300g sugar #pause[1 1/2 cups]
+  - 300g sugar #pause[340mℓ]
   - 150g eggs #pause[3 large]
-  - 40g lemon juice #aside[1/6 cup]
-  - 5g lemon zest, grated #pause[5/8 tbsp.]
+  - 40g lemon juice #aside[38mℓ]
+  - 5g lemon zest, grated #pause[9mℓ]
 
   Extra:
-  - 113g sour cream #aside[1/2 cup]
+  - 113g sour cream #aside[114mℓ]
   - 100g @R_lemon-glaze[lemon glaze]
 ]
 
