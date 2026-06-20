@@ -1,23 +1,21 @@
 #import "/formatting.typ": *
 
-= Lemon Pound Cake
-
-#show: recipe.with()[
+#show: recipe.with(title: "Lemon Pound Cake", yield: "1 loaf")[
   #sb[Dry:]
-  - 360g all-purpose flour #aside[3 cups]
-  - 3g baking soda #aside[1/2 tsp.]
-  - 3g salt #aside[1/2 tsp.]
+  - 180g all-purpose flour #aside[1 1/2 cups]
+  - 1.5g baking soda #aside[1/4 tsp.]
+  - 1.5g salt #aside[1/4 tsp.]
 
   Wet:
-  - 225g butter #aside[2 sticks]
-  - 600g sugar #pause[3 cups]
-  - 300g eggs #pause[6 large OR 4 jumbo]
-  - 75g lemon juice #aside[1/3 cup]
-  - 10g lemon zest, grated #pause[1 1/4 tbsp.]
+  - 113g butter #aside[1 stick]
+  - 300g sugar #pause[1 1/2 cups]
+  - 150g eggs #pause[3 large]
+  - 40g lemon juice #aside[1/6 cup]
+  - 5g lemon zest, grated #pause[5/8 tbsp.]
 
   Extra:
-  - 225g sour cream #aside[1 cup]
-  - 200g @R_lemon-glaze[lemon glaze]
+  - 113g sour cream #aside[1/2 cup]
+  - 100g @R_lemon-glaze[lemon glaze]
 ]
 
 0. RETRIEVE butter & eggs from refrigeration. Rest until room temperature #pause[\~1-2
@@ -30,8 +28,8 @@
   + Lemon juice & lemon zest. #aside[until combined]
 + SWAP mixer attachment for Dutch hook.
 + MIX into wet ingredients, low speed: dry ingredients; sour cream.
-+ GREASE two 9"×5" loaf pans.#footnote[The original recipe suggests a single, 10-12 cup
-    Bundt pan may work better.]
++ GREASE a 9"×5" loaf pan.#footnote[The original recipe suggests a 10-12 cup Bundt pan may
+    work better for two loaves.]
 + POUR batter into loaf pans.
 + BAKE covered, until knife tests clean. #pause[\~1 hour]
 + COOL within loaf pan. #pause[\~15 min.]
