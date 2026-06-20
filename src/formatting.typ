@@ -1,3 +1,4 @@
+#import "/lib/Zlomek.typ"
 #import "/lib/emoji.typ": display-emoji
 #import "/lib/format.typ": display
 #import "/lib/format.typ": format-date
