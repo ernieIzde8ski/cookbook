@@ -31,7 +31,7 @@
 + GREASE a 9"×5" loaf pan.#footnote[The original recipe suggests a 10-12 cup Bundt pan may
     work better for two loaves.]
 + POUR batter into loaf pans.
-+ BAKE covered, until knife tests clean. #pause[\~1 hour]
++ BAKE covered, until knife tests clean. #pause[40-45 min.]
 + COOL within loaf pan. #pause[\~15 min.]
 + TRANSFER to flat surface.
 + COAT with glaze.
