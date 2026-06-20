@@ -237,6 +237,21 @@ kab-pizza-flour:
   type: post
   title: "Which flour is best for your pizza?"
 
+KABC_RECIPES: &kabc_recipes
+  type: Newspaper
+  title: "King Arthur Baking"
+  url: https://www.kingarthurbaking.com/recipes
+  publisher: King Arthur Baking Company, Inc
+
+kabr_baguettes:
+  type: Article
+  title: Classic Baguettes
+  author: PJ Hamel
+  url:
+    value: https://www.kingarthurbaking.com/recipes/classic-baguettes-recipe
+    date: 2026-06-16
+  parent: *kabc_recipes
+
 rdh_easy-sourdough:
   type: Article
   title: "No-Knead, No-Stretch and Fold, Sourdough Bread Recipe"
@@ -325,5 +340,4 @@ wp-flour:
   url:
     value: https://en.wikipedia.org/wiki/Flour
     date: 2026-04-17
-
   parent: *wp
