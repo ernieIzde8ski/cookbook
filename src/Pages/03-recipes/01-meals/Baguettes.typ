@@ -9,7 +9,7 @@
   - 115mℓ water
   - EITHER: 200mg instant yeast #aside[350µℓ] \
     OR: 25g sourdough starter #aside[15mℓ]
-  - 120g all-purpose flour #aside[115mℓ]
+  - 120g all-purpose flour #aside[230mℓ]
 
   Dough:
   - 255mℓ water
@@ -17,7 +17,7 @@
   - 5g instant yeast #aside[7mℓ]
   - 420g all-purpose flour #aside[800mℓ]
   - 12g salt #aside[9mℓ]
-  - 2g basil, dried
+  - 2g basil, dried #aside[10mℓ]
   // TODO: try rosemary
 ][
   + MIX pre-ferment ingredients roughly.
