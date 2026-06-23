@@ -5,16 +5,30 @@ import subprocess
 import sys
 from functools import partial
 from pathlib import Path
+from typing import TYPE_CHECKING, Literal, LiteralString, Never
 
-import typer
+from cyclopts import App, CycloptsError
+from rich import print
 
 eprint = partial(print, file=sys.stderr)
+
+
+def abort(msg: str | None = None, /) -> Never:
+    raise CycloptsError(msg)
+
 
 ROOT = Path(__file__).parent
 RECIPE_DIR = ROOT / "src" / "Pages" / "03-recipes"
 assert RECIPE_DIR.is_dir()
 
-SECTIONS = {path.name[3:]: path for path in RECIPE_DIR.iterdir() if path.is_dir()}
+SECTIONS = {
+    path.name[3:].lower(): path for path in RECIPE_DIR.iterdir() if path.is_dir()
+}
+
+if TYPE_CHECKING:
+    SectionKey = LiteralString
+else:
+    SectionKey = Literal[*SECTIONS.keys()]
 
 
 def template(title: str) -> str:
@@ -24,23 +38,16 @@ def template(title: str) -> str:
 """
 
 
-app = typer.Typer()
+app = App()
 
 
-@app.command()
-def main(section: str, title: str):
-    section = section.strip().lower()
-    target_directory = SECTIONS.get(section)
-    if target_directory is None:
-        eprint(
-            f"Invalid section '{section};\n  expected one of: '{"', '".join(SECTIONS)}'"
-        )
-        raise typer.Abort()
+@app.default
+def main(section: SectionKey, title: str, /):
+    target_directory = SECTIONS[section]
 
     target = target_directory / (title.strip() + ".typ")
     if target.exists():
-        eprint("Target already exists.")
-        raise typer.Abort()
+        abort("Target already exists.")
 
     _ = target.write_text(template(title))
     print("Wrote to path:", target)
