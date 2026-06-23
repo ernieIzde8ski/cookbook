@@ -1,5 +1,6 @@
 default_install_hook_types: ["pre-commit", "pre-push"]
 repos:
+  # General fixes
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: "v6.0.0"
     hooks:
@@ -9,22 +10,27 @@ repos:
   - repo: https://github.com/asottile/pyupgrade
     rev: v3.21.2
     hooks:
-    - id: pyupgrade
-      args: [--py314-plus]
+      - id: pyupgrade
+        args: [--py314-plus]
+  # Typst formatting
   - repo: https://github.com/typstyle-rs/pre-commit-typstyle
     rev: "v0.14.4"
     hooks:
-    - id: typstyle
-      args: ["-i", "--line-width", "90", "--wrap-text", "--"]
+      - id: typstyle
+        args: ["-i", "--line-width", "90", "--wrap-text", "--"]
+  # Python linting & formatting
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    # Ruff version.
     rev: v0.15.18
     hooks:
-      # Run the linter.
       - id: ruff-check
-        args: [ --fix ]
-      # Run the formatter.
+        args: [--fix]
       - id: ruff-format
+  - repo: https://github.com/DetachHead/basedpyright-prek-mirror
+    rev: 1.39.8
+    hooks:
+      - id: basedpyright
+        pass_filenames: false
+  # Project building
   - repo: local
     hooks:
       - id: doit
