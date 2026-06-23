@@ -208,6 +208,18 @@ md-dulce-de-leche:
     value: https://www.muydelish.com/how-to-make-dulce-de-leche/
     date: 2026-04-08
 
+KABC_CATALOG_2026-06: &kabc_cat-26-06
+  type: Periodical
+  title: "The Baker's Catalogue"
+  publisher: King Arthur Baking Company
+  date: 2026-06-01
+  page-total: 68 # including the final unmarked page
+
+kabc_beer-bread:
+  type: Article
+  title: "Sourdough Beer Bread"
+  parent: *kabc_cat-26-06
+
 KABC_TIPS: &kabc_tips
   type: Blog
   title: Tips and Techniques
