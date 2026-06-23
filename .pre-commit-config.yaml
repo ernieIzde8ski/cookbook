@@ -29,6 +29,10 @@ repos:
     rev: 1.39.8
     hooks:
       - id: basedpyright
+        additional_dependencies: &python-dependencies
+          - doit>=0.37.0
+          - cyclopts>=4.19.0
+          - pyyaml>=6.0.3
         pass_filenames: false
   # Project building
   - repo: local
@@ -39,8 +43,5 @@ repos:
         entry: doit
         language: python
         always_run: true # doit has its own DAG, no worries
-        additional_dependencies:
-          - doit
-          - typer>=0.24.1
-          - PyYAML>=6.0.3
+        additional_dependencies: *python-dependencies
         pass_filenames: false
