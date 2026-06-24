@@ -7,20 +7,21 @@
   description: [A great dipping bread.],
 )[
   Soaker:
-  - 141g King Arthur Rolled Oats #aside[1 1/4 cups]
-  - 113mℓ boiling water #aside[1/2 cup]
+  - 141g King Arthur Rolled Oats #aside[285mℓ]
+  - 113mℓ boiling water
 
   Dough:
-  - 420g King Arthur Artisan Bread Flour #aside[3 1/2 cups]
-  - 255g beer#fn[amber or dark ale preferred] #aside[1 cup plus 2 tbsp.]
-  - 227g ripe sourdough starter #aside[1 cup]
-  - 1 tsp. SAF Instant Yeast #missing[weight]
-  - 21g honey #aside[1 tbsp.]
-  - 12g table salt #aside[2 tsp.]
+  - 420g King Arthur Artisan Bread Flour #aside[795mℓ]
+  - 255mℓ beer, medium to dark #aside[255g]
+  - 227g ripe sourdough starter #aside[227mℓ]
+  - 3g SAF Instant Yeast #aside[5mℓ]
+  - 21g honey #aside[15mℓ]
+  - 12g table salt #aside[10mℓ]
 ][
   + COMBINE soaker ingredients in medium bowl.
   + COVER and set aside.
-  + MIX flour, beer, starter, and yeast, until well combined.#missing[duration & strength]
+  + MIX flour, beer, starter, and yeast, until well combined. #pause[1-2 min. on
+      medium-low speed]
   + COVER. #pause[30 min.]
   + MIX soaker & remaining ingredients into dough until combined. #pause[3-4 min.
       #missing[strength]]
