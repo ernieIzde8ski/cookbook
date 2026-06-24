@@ -23,8 +23,8 @@
   + MIX flour, beer, starter, and yeast, until well combined. #pause[1-2 min. on
       medium-low speed]
   + COVER. #pause[30 min.]
-  + MIX soaker & remaining ingredients into dough until combined. #pause[3-4 min.
-      #missing[strength]]
+  + MIX soaker & remaining ingredients into dough until combined. #pause[3-4 min. on
+      medium-low speed]
   + COVER. #pause[30 min.]
   + PERFORM one round of stretch & folds.
   + COVER. #pause[30 min.]
