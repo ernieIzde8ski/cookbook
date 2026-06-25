@@ -9,7 +9,8 @@ A cookbook written in Typst.
 - git (duh)
 - [`prek`](https://prek.j178.dev/installation/) (NOT pre-commit)
 - [`uv`](https://docs.astral.sh/uv/getting-started/installation/) (optional)
-- [`tinymist`](https://github.com/Myriad-Dreamin/tinymist) (optional)
+- [`tinymist`](https://github.com/Myriad-Dreamin/tinymist) (optional, built
+  against Typst v0.15.0 or higher)
 - Fonts:
   - Source Sans Pro
   - Lato
@@ -21,6 +22,9 @@ in neovim, for whatever reason.
 Setup:
 
 ```bash
+# Prek will auto-install all the tools we need in an isolated environment for
+# us. The "optional" utils are only required if you want to run them manually
+# too.
 prek install
 
 # optional, for Python scripts

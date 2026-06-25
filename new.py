@@ -21,9 +21,7 @@ ROOT = Path(__file__).parent
 RECIPE_DIR = ROOT / "src" / "Pages" / "03-recipes"
 assert RECIPE_DIR.is_dir()
 
-SECTIONS = {
-    path.name[3:].lower(): path for path in RECIPE_DIR.iterdir() if path.is_dir()
-}
+SECTIONS = {path.name[3:].lower(): path for path in RECIPE_DIR.iterdir() if path.is_dir()}
 
 if TYPE_CHECKING:
     SectionKey = LiteralString

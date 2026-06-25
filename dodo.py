@@ -1,11 +1,23 @@
+import logging
+import os
+import subprocess as sp
 from collections.abc import Iterator
 from functools import partial
 from hashlib import sha256
-import os
 from pathlib import Path
 from shutil import which
+from typing import NamedTuple
 
 import yaml
+
+
+class Version(NamedTuple):
+    major: int
+    minor: int
+    patch: int = 0
+
+
+MINIMUM_TYPST_VERSION = Version(0, 15)
 
 LIBRARY_DIRECTORY = Path("src")
 VARIANT_DIRECTORY = LIBRARY_DIRECTORY / "variants"
@@ -27,10 +39,36 @@ os.environ["TYPST_FONT_PATHS"] = os.pathsep.join(filter(bool, FONT_PATHS))
 
 def _get_tinymist():
     # `tinymist` is normal, `tinymist-linux-x64` happens in GitHub Actions
-    for cmd in ("tinymist", "tinymist-linux-x64"):
-        if which(cmd) is not None:
-            return cmd
-    raise RuntimeError("No valid `tinymist` executable could be found :(")
+    for command in ("tinymist", "tinymist-linux-x64"):
+        full_path = which(command)
+        if full_path is None:
+            continue
+
+        version_output = sp.check_output((command, "--version"), encoding="utf8")
+        version = (
+            next(
+                line
+                for line in version_output.splitlines()
+                if line.startswith("Typst Version:")
+            )
+            .split(":")[1]
+            .strip()
+            .split(".")
+        )
+        version = Version(*(int(x) for x in version))
+
+        if version < MINIMUM_TYPST_VERSION:
+            logging.warning(
+                f"Skipping executable: discovered version ({version})"
+                f" is lower than required minimum version ({MINIMUM_TYPST_VERSION})\n"
+                f"  Command: {command}\n"
+                f"  Full path: {full_path}"
+            )
+            continue
+
+        return command
+    else:
+        raise RuntimeError("No valid `tinymist` executable could be found :(")
 
 
 TINYMIST = _get_tinymist()
