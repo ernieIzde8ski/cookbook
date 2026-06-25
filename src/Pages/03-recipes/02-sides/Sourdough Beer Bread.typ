@@ -22,12 +22,12 @@
   - 113mℓ boiling water
 
   Dough:
-  - 420g King Arthur Artisan Bread Flour #aside[795mℓ]
+  - 420g bread flour #aside[795mℓ]
   - 255mℓ beer, medium to dark #aside[255g]
-  - 227g ripe sourdough starter #aside[227mℓ]
-  - 3g SAF Instant Yeast #aside[5mℓ]
+  - 227g fed sourdough starter #aside[227mℓ]
+  - 3g instant yeast #aside[5mℓ]
   - 21g honey #aside[15mℓ]
-  - 12g table salt #aside[10mℓ]
+  - 12g salt #aside[10mℓ]
 ][
   + COMBINE soaker ingredients in medium-small bowl.
   + COVER and set aside.
