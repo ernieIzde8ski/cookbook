@@ -27,6 +27,20 @@
 #let semibold = text.with(weight: "semibold")
 #let sb = semibold
 
+#let checklist = {
+  import "@preview/cheq:0.4.0": *
+
+  let marker = text.with(baseline: -0.1em)
+
+  checklist.with(
+    extras: true,
+    marker-map: (
+      ".": marker(sym.dot.c + h(0.10em)),
+      "*": marker(sym.ast, size: 0.8em),
+    ),
+  )
+}
+
 #let mdtable = {
   import "@preview/tablem:0.3.0": three-line-table
   three-line-table.with(fill: (_, y) => if calc.odd(y) { pale-blue })
@@ -116,6 +130,7 @@
 
   set pagebreak(weak: true)
 
+  show: checklist
   show: display-emoji
 
   let OUTLINE_DEPTH = state("PREV_OUTLINE_DEPTH", none)
@@ -141,6 +156,7 @@
   )
   set text(region: "US")
   set enum(spacing: 0.55em)
+  set list(marker: text(baseline: -0.06em)[---], body-indent: 0.35em)
 
   show heading.where(depth: 1): set text(size: 1.5em)
   show heading: it => {
