@@ -5,7 +5,7 @@
   yield: [1 \~1500mℓ loaf#fn[For a round loaf, roughly 20cm or 8" in diameter.
 
       Unless otherwise specified, all gear used is round or bowl-like, with those
-      dimensions, and with a maximum capacity of at least 2000mℓ.]<FN_round-loaf>],
+      dimensions, and with a maximum capacity of at least 2000mℓ.]],
   refs: <kabc_beer-bread>,
   description: [A great dipping bread. Goes well with soups like @R_barszcz.],
 )[
@@ -26,13 +26,14 @@
   - 255mℓ beer, medium to dark #aside[255g]
   - 227g fed sourdough starter #aside[227mℓ]
   - 3g instant yeast #aside[5mℓ]
+  - (optional) 3.5g dough enhancer #aside[5mℓ]
   - 21g honey #aside[15mℓ]
   - 12g salt #aside[10mℓ]
 ][
   + COMBINE soaker ingredients in medium-small bowl.
   + COVER and set aside.
-  + MIX in new bowl, until well-combined: flour, beer, starter, and yeast. #pause[1-2 min.
-      on medium-low speed]
+  + MIX in new bowl until well-combined: flour, beer, starter, yeast, and dough enhancer.
+    #pause[1-2 min. on medium-low speed]
   + COVER. #pause[30 min.]
   + MIX soaker & remaining ingredients into dough until combined. #pause[3-4 min. on
       medium-low speed]
@@ -42,7 +43,7 @@
   + SHAPE dough into circle on round surface.
   + COVER. #pause[20 min.]
   + SHAPE dough into compact boule.
-  + FLOUR a brotform.@FN_round-loaf
+  + FLOUR a brotform.
   + MOVE boule seam-side up to brotform. #pause[1 hour]
   + PREHEAT oven, with dutch oven on center rack, to 230°C. #pause[30 min.; 450°F]
   + INVERT dough onto parchment.
