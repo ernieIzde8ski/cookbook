@@ -33,11 +33,11 @@
 
 #Recipe(
   title: "Veka",
-  description: [
-    Veka is a delicious, many-namèd bread#fn(name-clause), native to those temperate
-    forests of Poland and Czechia. It is reminiscent of the @R_baguettes[baguette], except
-    for that it has a higher rise and a soft shell.
-  ],
+  // description: [
+  //   Veka is a delicious, many-namèd bread#fn(name-clause), native to those temperate
+  //   forests of Poland and Czechia. It is reminiscent of the @R_baguettes[baguette], except
+  //   for that it has a higher rise and a soft shell.
+  // ],
   yield: "na 2 veky",
 )[
   #set text(lang: "cz")
