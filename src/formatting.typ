@@ -4,7 +4,7 @@
 #import "/lib/format.typ": format-date
 #import "/lib/size-mult.typ"
 
-#import "utils.typ": as-bool
+#import "utils.typ": as-bool, is-truthy
 #import "shared-data.typ": *
 
 #import "@preview/oxifmt:1.0.0": strfmt as fmt
