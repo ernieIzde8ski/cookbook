@@ -173,6 +173,11 @@
     first-line-indent: 0em,
     spacing: 0.85em,
     leading: 0.35em,
+    // We don't usually use justified text, but if/when we do, character-level
+    // justification is a HUGE boon.
+    justification-limits: (
+      tracking: (min: -0.01em, max: 0.02em),
+    ),
   )
   set text(region: "US")
   set enum(spacing: 0.55em)
