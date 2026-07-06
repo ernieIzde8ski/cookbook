@@ -37,44 +37,27 @@ Several factors impact elasticity in bread:
 
 === Flour <adv-flour>
 
-In this cookbook, "generic flour" refers to bread flour, all-purpose flour, and whole
-wheat flour. I use this as a baseline because you can substitute these flours 1:1 with one
-another in most recipes, adjusting hydration to compensate. Consult @fig-flour-faq: // TODO: Should this be in an appendix?
+// TODO: Should this be in an appendix?
+Consult @fig_flour-faq: #include "/Figures/flour-reference.typ"
 
-#figure(
-  caption: [Quick reference for various flours.@wp-flour @kab-pizza-flour
-    @tfl-flavor-flour @fnub_flour-101 @prbk_ch4[p. 57-60]],
-  {
-    let All-Purpose = {
-      let names = ("All-Purpose", "Refined", "Plain", "Restaurant", "Hotel")
-      let sampling = names.slice(0, 3).sorted().join("; ")
-      let full = names.map(lower).sorted().join(" flour, ") + " flour"
+Ash refers to the amount of mineral content found in bread.#fn[Ash is measured in Poland
+  in _typ_ (lit. "type"): T500 flour, for instance, represents 500 grams of ash per 100
+  kilograms of flour. This can be converted to permyriads of ash by simply dividing by 10:
 
-      sampling
-      footnote[I have thus far discovered the following names for this flour: #full, and
-        simply "flour". I suspect there are more.]
-    }
+  #let ash = $"g"_"ash"$
+  #let kflour = $"kg"_"flour"$
+  #let flour = $"g"_"flour"$
 
-    let fn2 = footnote[~Almost (if not always) used as an additive.]
-
-    let fn-cake = footnote[~I could not find a source for this, nor do I own any myself,
-      but this seems like a reasonable conclusion, since white flour has a lower ash
-      content than all other commonplace white flours@prbk_ch4[p. 59] and because it is
-      used in cake.]
-
-    // @typstyle off
-    mdtable(align: center + horizon)[
-      | *Category*  | *Variety*    | *Flavor*               | *Gluten*           |
-      | :---:       | :---:        | :---:                  | :---:              |
-      | White Flour | Cake Flour, Bleached | Negligible.#fn-cake | Low, 8%.      |
-      | White Flour | #All-Purpose | Mildly nutty.          | Medium, 10-11.5%.  |
-      | White Flour | Bread        | Mildly nutty.          | Mid-high, 12-14%.  |
-      | White Flour | Gluten       | N/A#fn2                | Nearly pure, 100%. |
-      | Whole-Wheat Flour      | < | Strong, earthy, nutty. | Mid-high, 12-13%.  |
-      | Einkorn Flour          | < | Strong, rustic, sour.  | Uncertain.         |
-    ]
-  },
-) <fig-flour-faq>
+  $
+    "T500"
+    = (500 ash) / (100 kflour)
+    = (500 ash) / (100 (1000 flour))
+    = 0.005 ash / flour
+    = 50"%%" "ash"
+  $
+] Protein refers to the amount of gluten-forming present by weight.#fn[Technically
+  speaking, white flour (most of the list) does not contain gluten. It contains proteins
+  which, when mixed into dough, produce gluten strands.@prbk_ch4[p. 59]]
 
 ==== Common Wheat
 
@@ -106,6 +89,10 @@ for very fluffy bread, and has a subtler taste than most grains. I eventually pl
 modify the @R_sourdough-milk-bread (initially intended to be a recipe for soft sourdough
 bread) to incorporate potato flour, though I have yet to discover the correct water ratio
 needed.
+
+==== International Variations
+
+Different countries use different kinds of flour. Have a chart.
 
 === Autolysis <autolysis>
 
