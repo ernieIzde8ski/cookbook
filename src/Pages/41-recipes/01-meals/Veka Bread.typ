@@ -41,18 +41,18 @@
   yield: "na 2 veky",
 )[
   #set text(lang: "cz")
-  - 500g pšeničné hladké mouky
-  - 5g cukru krupice
-  - 10g soli
-  - 15g čerstvého droždí
-  - 20g rostlinného oleje, 25ml vody
+  - 500g hladká mouka #aside[North America: all-purpose flour, 950mℓ]
+  - 5g granulated sugar
+  - 10g salt
+  - 15g fresh yeast
+  - 20g vegetable oil, 25ml water
 ][
   #set text(lang: "cz")
-  Do mísy nalijeme vlažnou vodu (asi 30 °C) a přidáme ostatní suroviny. Promícháme,
-  přendáme do robotu, a necháme pomalu míchat 10 minut. Dohladka vypracované těsto
-  vyklopíme na slabě pomoučený vál, rozdělíme na 2 díly a vypracujeme bochánky. Velmi
-  lehce je poprášíme moukou, přikryjeme utěrkou nebo potravinářskou fólií, aby neoschly,
-  a necháme 30 až 45 minut zrát.
+  Pour lukewarm water (roughly 30°C) into bowl and add other ingredients. Mix, move
+  to [robotu], and mix on low speed for 10 minutes. Dump the well-mixed dough onto a
+  lightly-floured surface. Divide into two parts and knead bochánky. Velmi lehce je
+  poprášíme moukou, přikryjeme utěrkou nebo potravinářskou fólií, aby neoschly, a necháme
+  30 až 45 minut zrát.
 
   #image[a long wide loaf resting on a wooden worksurface]
 
