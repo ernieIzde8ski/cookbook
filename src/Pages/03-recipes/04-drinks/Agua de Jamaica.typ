@@ -18,10 +18,10 @@
   - 120g piloncillo#sharedfn[piloncillo] #aside[1/2 cup@ac_piloncillo]
   - 70g hibiscus petals, dried#fn[Use a bit less if you don't like sour jamaica.]
     #aside[1 cup]
-  - 10g cinnamon #aside[2-3 long sticks]
-  - 1 pinch ground cloves
-  - 1 pinch ground nutmeg
-  - 1 pinch ground allspice (optional#sharedfn[allspice])
+  - 12-15g cinnamon #aside[3-4 long sticks]
+  - 0.1g ground cloves #aside[1 pinch]
+  - 0.1g ground nutmeg #aside[1 pinch]
+  - 0.1g ground allspice #aside[optional#sharedfn[allspice], 1 pinch]
 ][
   + WHILE grease keeper has room AND petals remain potent#fn-potency:
     + SIMMER spices over *1ℓ* fresh water, covered. #pause[10-15 min.]
