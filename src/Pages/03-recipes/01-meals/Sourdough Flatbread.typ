@@ -6,12 +6,11 @@
   yield: "8 flatbreads",
 )[
   Dough:
-  - 240g all-purpose flour #aside[450 mℓ]
+  - 240g all-purpose flour #aside[455 mℓ]
   - 60g einkorn flour #aside[115 mℓ]
   - 120g levain #aside[125 mℓ]
   - 115 mℓ water, lukewarm
   - 55g Greek yogurt #aside[60 mℓ]
-  // 300mℓ = 255g
   - 9g chicken bouillon #aside[11 mℓ]
   - 12g baking powder #aside[13 mℓ]
 
