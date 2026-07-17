@@ -212,7 +212,7 @@ KABC_CATALOG_2026-06: &kabc_cat-26-06
   type: Periodical
   title: "The Baker's Catalogue"
   publisher: King Arthur Baking Company
-  date: 2026-06
+  date: 2026-06-01
   page-total: 68 # including the final unmarked page
 
 kabc_beer-bread:

@@ -126,7 +126,7 @@ Sometimes, deciding which ingredients you incorporate into an autolyse requires 
 thinking. Generally speaking, avoid ingredients like salt & seasonings, as they interfere
 with proper hydrolization#CN and contain neither flour nor water. However, some recipes
 make substantial use of ingredients containing large amounts of flour and water, such as
-liquor, milk, or levain (in sourdough beer bread, @R_sourdough-milk-bread). In these
+liquor, milk, or levain (@R_sourdough-beer-bread, @R_sourdough-milk-bread). In these
 cases, you should first incorporate all of prescribed water & flour. If the total
 @adv_hydration[hydration] of the water & flour by itself is less than \~60%, you should
 incorporate other ingredients to compensate.
