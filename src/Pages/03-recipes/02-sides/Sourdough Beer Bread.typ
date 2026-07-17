@@ -26,9 +26,9 @@
   - 255mℓ beer, medium to dark #aside[255g]
   - 227g fed sourdough starter #aside[227mℓ]
   - 3g instant yeast #aside[5mℓ]
-  - (optional) 3.5g dough enhancer #aside[5mℓ]
+  - (optional) 2.3g dough enhancer #aside[4mℓ]
   - 21g honey #aside[15mℓ]
-  - 12g salt #aside[10mℓ]
+  - 13g salt #aside[10mℓ]
 ][
   + COMBINE soaker ingredients in medium-small bowl.
   + COVER and set aside.
