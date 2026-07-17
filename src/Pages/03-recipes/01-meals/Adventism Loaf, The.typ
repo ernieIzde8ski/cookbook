@@ -1,6 +1,6 @@
 #import "/formatting.typ": *
 
-#show: recipe(title: "Adventism Loaf", yield: "1 9\"×5\" loaf")[
+#show: recipe(title: "The Adventism Loaf", yield: "1 9\"×5\" loaf")[
   - Cooking oil, to coat pan
   - Onion, chopped fine #pause[1 medium]
   - 460g cottage cheese #aside[2 cups]
