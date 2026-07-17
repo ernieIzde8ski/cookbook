@@ -4,6 +4,7 @@
   title: "Sourdough Flatbread",
   description: [Easy way to use up some starter.],
   yield: "8 flatbreads",
+  refs: <mid_flatbread>,
 )[
   Dough:
   - 240g all-purpose flour #aside[455 mℓ]
