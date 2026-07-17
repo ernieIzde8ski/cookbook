@@ -72,6 +72,8 @@
       return "\""
     }
     key.fields().values().flatten().map(content-to-str).join("")
+  } else if type(key) == label {
+    return repr(key)
   } else {
     panic("unsupported type: " + repr(key))
   }

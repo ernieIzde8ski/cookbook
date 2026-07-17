@@ -13,7 +13,17 @@
 #let baby-blue = rgb("C2E8F7")
 #let pale-blue = rgb("D6E8F7")
 
+/// Returns superscript red text marking missing content.
+///
+/// - thing (content | text): name of thing needed
+/// -> content
+#let missing(thing) = {
+  set text(fill: red)
+  super[[#thing needed]]
+}
+#let CN = missing[citation]
 
+/// -> content
 #let V = {
   set align(center)
   v(1em)
