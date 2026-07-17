@@ -42,7 +42,7 @@ wheat flour. I use this as a baseline because you can substitute these flours 1:
 another in most recipes, adjusting hydration to compensate. Consult @fig-flour-faq: // TODO: Should this be in an appendix?
 
 #figure(
-  caption: [Quick reference for various flours.@wp-flour @kab-pizza-flour
+  caption: [Quick reference for various flours.@wp-flour @kabt_pizza-flour
     @tfl-flavor-flour @fnub_flour-101 @prbk_ch4[p. 57-60]],
   {
     let All-Purpose = {
@@ -57,16 +57,11 @@ another in most recipes, adjusting hydration to compensate. Consult @fig-flour-f
 
     let fn2 = footnote[~Almost (if not always) used as an additive.]
 
-    let fn-cake = footnote[~I could not find a source for this, nor do I own any myself,
-      but this seems like a reasonable conclusion, since white flour has a lower ash
-      content than all other commonplace white flours@prbk_ch4[p. 59] and because it is
-      used in cake.]
-
     // @typstyle off
     mdtable(align: center + horizon)[
       | *Category*  | *Variety*    | *Flavor*               | *Gluten*           |
       | :---:       | :---:        | :---:                  | :---:              |
-      | White Flour | Cake Flour, Bleached | Negligible.#fn-cake | Low, 8%.      |
+      | White Flour | Cake Flour, Bleached | Negligible.#CN | Low, 8%.           |
       | White Flour | #All-Purpose | Mildly nutty.          | Medium, 10-11.5%.  |
       | White Flour | Bread        | Mildly nutty.          | Mid-high, 12-14%.  |
       | White Flour | Gluten       | N/A#fn2                | Nearly pure, 100%. |
@@ -127,10 +122,19 @@ starches" @prbk-ch8[p. 159], and protease enzymes break down proteins in the dou
 it easier to knead dough. Some bakers also believe this improves the flavor of dough:
 minimal kneading prevents @oxidation[oxidation].
 
-Salt is not added because it interferes with proper hydrolization. There is some dispute
-over whether yeast should be added before autolysis. Gisslen advises against it: the
-acidity produced by yeast makes dough more @elastic[elastic] @prbk-ch8[p. 159], which
-contradicts the purpose of autolysis.
+Sometimes, deciding which ingredients you incorporate into an autolyse requires some
+thinking. Generally speaking, avoid ingredients like salt & seasonings, as they interfere
+with proper hydrolization#CN and contain neither flour nor water. However, some recipes
+make substantial use of ingredients containing large amounts of flour and water, such as
+liquor, milk, or levain (in sourdough beer bread, @R_sourdough-milk-bread). In these
+cases, you should first incorporate all of prescribed water & flour. If the total
+@adv_hydration[hydration] of the water & flour by itself is less than \~60%, you should
+incorporate other ingredients to compensate.
+
+There is some dispute over whether yeast ought to be included. Gisslen advises against it:
+the acidity produced by yeast makes dough more @elastic[elastic] @prbk-ch8[p. 159], which
+prohibits the intended hydrolization. Other authors suggest the effect is negligible,#CN
+though I have yet to figure out why they _would_ do it.
 
 === Hydration <adv_hydration>
 

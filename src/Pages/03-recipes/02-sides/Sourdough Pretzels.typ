@@ -2,7 +2,7 @@
 
 #recipe(title: "Sourdough Pretzels", panel-width: 12.25em, yield: "10 pretzels", refs: (
   <fob_sourdough-pretzels>,
-  <kabc_roll-dough-improver>,
+  <kabt_roll-dough-improver>,
 ))[
   Batter:
   - 100g sourdough starter #aside[1/2 cup]

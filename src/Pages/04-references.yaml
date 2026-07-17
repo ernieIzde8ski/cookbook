@@ -208,7 +208,13 @@ md-dulce-de-leche:
     value: https://www.muydelish.com/how-to-make-dulce-de-leche/
     date: 2026-04-08
 
-kabc_roll-dough-improver:
+KABC_TIPS: &kabc_tips
+  type: Blog
+  title: Tips and Techniques
+  publisher: King Arthur Baking Company, Inc.
+  date: 2026
+
+kabt_roll-dough-improver:
   type: Web
   title: Easy Roll Dough Improver
   publisher: King Arthur Baking Company, Inc.
@@ -217,13 +223,7 @@ kabc_roll-dough-improver:
     value: https://shop.kingarthurbaking.com/items/easy-roll-dough-improver
     date: 2026-05-01
 
-KABC_TIPS: &kabc_tips
-  type: Blog
-  title: Tips and Techniques
-  publisher: King Arthur Baking Company, Inc.
-  date: 2026
-
-kabc_dulce-de-leche:
+kabt_dulce-de-leche:
   type: post
   title: How to make dulce de leche at home
   author: Bautista, Tatiana
@@ -233,7 +233,7 @@ kabc_dulce-de-leche:
     date: 2026-04-08
   parent: *kabc_tips
 
-kab-pizza-flour:
+kabt_pizza-flour:
   type: post
   title: "Which flour is best for your pizza?"
 
