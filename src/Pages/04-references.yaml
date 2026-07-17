@@ -185,6 +185,23 @@ kair_breads:
   page-range: 64-72
   parent: *kair
 
+MAKE_IT_DOUGH: &mid
+  type: Blog
+  title: "Make It Dough"
+  author: &mid_author "Dela Cruz, Hannah"
+  publisher: "Maeven Media LLC"
+  url: https://makeitdough.com
+
+mid_flatbread:
+  type: Article
+  title: "Sourdough Discard Flatbread Recipe (No Yeast & No Rise Time)"
+  author: *mid_author
+  date: "2025-10-19"
+  url:
+    value: https://makeitdough.com/sourdough-discard-flatbread/
+    date: 2026-05-10
+  parent: *mid
+
 MARTHA_STEWART: &ms
   type: Blog
   title: "Martha Stewart"
