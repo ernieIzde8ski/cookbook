@@ -51,7 +51,7 @@
   + MOVE loaf with parchment onto dutch oven.
   + BAKE covered. #pause[15 min.]
   + COOL oven to 200°C. #aside[400°F]
-  + BAKE uncovered, until dark brown. #pause[30-35 min.]
+  + BAKE uncovered, until dark brown. #pause[35-40 min.]
   + MOVE loaf to wire rack.
   + COOL loaf to room temperature.
 ]
