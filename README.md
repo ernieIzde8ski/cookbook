@@ -1,6 +1,6 @@
 # cookbook
 
-A cookbook written in Typst.
+A cookbook written in Typst. [Downloads updated daily here.](https://github.com/ernieIzde8ski/cookbook/releases/tag/latest)
 
 ## Development
 
