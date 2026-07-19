@@ -212,6 +212,9 @@
     set text(size: text-size)
     it
   }
+  show heading.where(level: 4): set heading(outlined: false)
+  show heading.where(level: 5): set heading(outlined: false)
+  show heading.where(level: 6): set heading(outlined: false)
 
   show ref: it => {
     let elem = it.element

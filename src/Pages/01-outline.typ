@@ -2,9 +2,6 @@
 
 #{
   v(2em)
-  outline(
-    title: none,
-    depth: 3,
-  )
+  outline(title: none)
   pagebreak(weak: true)
 }
