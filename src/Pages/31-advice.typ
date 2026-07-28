@@ -1,0 +1,168 @@
+#import "/prelude.typ": *
+
+= Broad Advice
+
+It should be possible to prepare any recipe in this cookbook without needing to read this
+section. If that is your intent, jump directly to @recipes. The following advice will be
+useful instead for experimentation.
+
+
+== Rice
+
+// TODO: Cite Mexican Rice here.
+
+Generally, you want to cook rice at a volumetric ratio of 2 water to 1 rice (or, even
+better, slightly less). Dishes like @R_sticky-rice or Mexican Rice (TO-DO) can get away
+with using less by precooking. In the latter case, undercooked rice is even preferable.
+
+== Bread Dough
+=== Elasticity & Extensibility <elastic>
+
+Firstly: Elasticity refers to a substance's ability to "spring back" to its original
+shape. Extensibility refers to a substance's ability to stretch. You typically want bread
+dough to have some degree of both. For instance, while performing stretch & folds for
+sourdough bread, you want the bread to be able to stretch without ripping apart
+(extensibility), but still be able to snap back together (elasticity). Increasing
+elasticity often, if not always, correlates with decreasing extensibility, and vice versa.
+
+Several factors impact elasticity in bread:
+
+- A lengthy @autolysis[autolysis phase] increases extensibility.
+- Higher hydration increases extensibility. #footnote[I am not certain about the impact of
+    non-water fluids.]
+- Increased stretch & folds, and longer durations between stretch & folds, increases
+  extensibility.
+- Using @adv-flour[(wheat) flour] with higher gluten content, such as bread flour or
+  gluten flour.
+
+=== Flour <adv-flour>
+
+In this cookbook, "generic flour" refers to bread flour, all-purpose flour, and whole
+wheat flour. I use this as a baseline because you can substitute these flours 1:1 with one
+another in most recipes, adjusting hydration to compensate. Consult @fig-flour-faq: // TODO: Should this be in an appendix?
+
+#figure(
+  caption: [Quick reference for various flours.@wp-flour @kabt_pizza-flour
+    @tfl-flavor-flour @fnub_flour-101 @prbk_ch4[p. 57-60]],
+  {
+    let All-Purpose = {
+      let names = ("All-Purpose", "Refined", "Plain", "Restaurant", "Hotel")
+      let sampling = names.slice(0, 3).sorted().join("; ")
+      let full = names.map(lower).sorted().join(" flour, ") + " flour"
+
+      sampling
+      footnote[I have thus far discovered the following names for this flour: #full, and
+        simply "flour". I suspect there are more.]
+    }
+
+    let fn2 = footnote[~Almost (if not always) used as an additive.]
+
+    // @typstyle off
+    mdtable(align: center + horizon)[
+      | *Category*  | *Variety*    | *Flavor*               | *Gluten*           |
+      | :---:       | :---:        | :---:                  | :---:              |
+      | White Flour | Cake Flour, Bleached | Negligible.#CN | Low, 8%.           |
+      | White Flour | #All-Purpose | Mildly nutty.          | Medium, 10-11.5%.  |
+      | White Flour | Bread        | Mildly nutty.          | Mid-high, 12-14%.  |
+      | White Flour | Gluten       | N/A#fn2                | Nearly pure, 100%. |
+      | Whole-Wheat Flour      | < | Strong, earthy, nutty. | Mid-high, 12-13%.  |
+      | Einkorn Flour          | < | Strong, rustic, sour.  | Uncertain.         |
+    ]
+  },
+) <fig-flour-faq>
+
+==== Common Wheat
+
+In wheat cereals, gluten content (that is, protein content@wp-gluten) directly correlates
+with density & elasticity. Thus, high-protein flours typically require more hydration, and
+because of _that_, they're typically dense, chewy flours. A thin pizza is probably best
+done with all-purpose flour; a @R_sourdough-pizza[thick, chewy pizza] might instead use
+bread flour.
+
+==== Other Wheats
+
+Any recipe ordinarily calling for generic flour may also safely include up to 25% of
+"ancient grain" flours: einkorn (my favorite), spelt, buckwheat, barley, emmer, amaranth,
+…#footnote[I am skeptical of the phrase "ancient grain", because it is clearly a marketing
+  term, but it is nonetheless useful terminology to talk about other wheat-like varieties.
+  "Unincorporated wheats" might prove more specific & more useful, but for now, I'll use
+  the phrase people are more likely to be familiar with.]. These grains allow for much
+more interesting flavors than pure bread flour or whole-wheat flour can allow for. This is
+of course not a hard limit---my mother frequently makes a bread that is maybe 50% ancient
+grain---but performing a substitution above 25% when the recipe does not call for it may
+have unanticipated effects on the texture of your dough.
+
+Note also that most ancient grains, like all-purpose and whole-wheat flour, require
+slightly more water than bread flour. Highly recommend learning a recipe without any
+modifications if uncertain how a particular grain behaves.
+
+As an incomplete thought: @R_potato-flour, made from boiled & dehydrated potatoes, makes
+for very fluffy bread, and has a subtler taste than most grains. I eventually plan to
+modify the @R_sourdough-milk-bread (initially intended to be a recipe for soft sourdough
+bread) to incorporate potato flour, though I have yet to discover the correct water ratio
+needed.
+
+=== Autolysis <autolysis>
+
+A typical sourdough bread recipe#footnote[Autolysis can be done with any bread, but I find
+  it most frequently associated with "traditional" styles such as sourdough.] may open
+with these steps:
+
+#bq[
+  + Mix flour and water together in a large bowl.
+  + Let bread sit for 1 hour.
+  + Mix sourdough starter, salt, and seasonings into dough.
+  + ...
+]
+
+The second step, in which the flour-water mixture rests for anywhere between 20 to 60
+minutes, is the autolysis phase. While autolysis is an optional step, it allows flour to
+"hydrate fully"; that is, "the water is completely absorbed by the flour’s proteins and
+starches" @prbk-ch8[p. 159], and protease enzymes break down proteins in the dough, making
+it easier to knead dough. Some bakers also believe this improves the flavor of dough:
+minimal kneading prevents @oxidation[oxidation].
+
+Sometimes, deciding which ingredients you incorporate into an autolyse requires some
+thinking. Generally speaking, avoid ingredients like salt & seasonings, as they interfere
+with proper hydrolization#CN and contain neither flour nor water. However, some recipes
+make substantial use of ingredients containing large amounts of flour and water, such as
+liquor, milk, or levain (@R_sourdough-beer-bread, @R_sourdough-milk-bread). In these
+cases, you should first incorporate all of prescribed water & flour. If the total
+@adv_hydration[hydration] of the water & flour by itself is less than \~60%, you should
+incorporate other ingredients to compensate.
+
+There is some dispute over whether yeast ought to be included. Gisslen advises against it:
+the acidity produced by yeast makes dough more @elastic[elastic] @prbk-ch8[p. 159], which
+prohibits the intended hydrolization. Other authors suggest the effect is negligible,#CN
+though I have yet to figure out why they _would_ do it.
+
+=== Hydration <adv_hydration>
+
+Hydration refers to a recipe's water-flour ratio. Low-hydration (60-80%) is easier to
+handle; high-hydration (80%-100%) may be necessary for recipes like @R_sourdough-pizza:
+
+#bq[
+  - 240 grams (1 cup), active sourdough starter (100% hydration)
+  - 170 grams (1/2 cup), warm water
+  - 40 grams (2 tbsp.) olive oil
+  - 275 grams (2 1/2 cups), bread flour
+  - 5 grams (1 tsp.) salt
+]
+
+We can calculate the hydration:
+
+$ m_"net water" = m_"starter" / 2 + m_"water" = (240"g") / 2 + 170"g" = 290"g" $
+
+$ m_"net flour" = m_"starter" / 2 + m_"flour" = (240"g") / 2 + 275"g" = 395"g" $
+
+#let hydration = calc.round(290 / 395 * 100, digits: 1)
+$ "hydration" = m_"net water" / m_"net flour" = hydration% $
+
+
+== Oxidation <oxidation>
+
+Oxidation occurs when oxygen naturally present in the air reacts with particles in a
+substance, such as in the sifting or mixing of flour. Oxidization is sometimes somewhat
+desirable, especially in fermentation-based processes such as kefir or maintaining a
+sourdough starter, but it typically should be kept to a minimum as it can destroy
+flavors@prbk-ch5[p. 95]. This gives oxidation its other name, "oxygen bleaching".

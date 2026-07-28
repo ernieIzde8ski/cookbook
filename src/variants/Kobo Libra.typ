@@ -1,2 +1,2 @@
-#import "./_base.typ": mkbook
+#import "/std/mkbook.typ": mkbook
 #mkbook(page-size: "Kobo Libra")
