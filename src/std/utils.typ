@@ -1,19 +1,3 @@
-#let map-keys(data, map: ()) = {
-  if type(map) == function {
-    let result = (:)
-    for (key, value) in data {
-      result.insert(map(key), value)
-    }
-    return result
-  }
-
-  for func in map {
-    data = map-keys(data, map: map)
-  }
-  data
-}
-
-
 /// Determines if an object appears to be an empty or zero-ish value.
 ///
 /// - obj (any): object to check
