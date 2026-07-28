@@ -1,5 +1,5 @@
 #import "utils.typ"
-#import "utils.typ": content-to-str
+#import "String.typ"
 #import "uri.typ"
 
 
@@ -24,7 +24,7 @@
 
 #let url(display, key: auto) = {
   if key == auto { key = display }
-  key = content-to-str(key)
+  key = String.from-content(key)
   if uri.is-uri(key) {
     return link(key, display)
   }

@@ -12,12 +12,12 @@
 }
 
 #let use-syntax(body, error-color: red) = {
-  import "/std/utils.typ": content-to-str
+  import "String.typ"
 
   let pattern = regex(":([a-zA-Z_-]+):")
 
   show pattern: match => context {
-    let capture = content-to-str(match).match(pattern).captures.at(0)
+    let capture = String.from-content(match).match(pattern).captures.at(0)
 
     let res = get(capture)
     if res == none { text(fill: error-color, match) } else { res }
