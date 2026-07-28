@@ -8,7 +8,6 @@
 #import "/std/String.typ"
 #import "/std/String.typ": title-case
 #import "/std/Zlomek.typ"
-#import "/std/format.typ": display
 #import "/std/format.typ": fmt
 #import "/std/format.typ": format
 #import "/std/format.typ": format-date

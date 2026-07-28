@@ -2,20 +2,6 @@
 
 #let fmt = format
 
-#let display(obj) = context {
-  import "./format.typ": format
-
-  if type(obj) == regex {
-    let string = repr(obj).replace(
-      regex("regex\(\"(.+)\"\)"),
-      obj => obj.captures.at(0).replace("\\\\", "\\"),
-    )
-
-    set text(fill: page.fill)
-    raw(format("/{}/", string), lang: "regex")
-  } else [#obj]
-}
-
 #let format-date(date) = fmt(
   "{year:<04}-{month:<02}-{day:<02}",
   year: date.year(),
