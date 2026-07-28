@@ -19,7 +19,6 @@
   }
 
   import "/std/format.typ": format-date
-  import "/std/utils.typ": as-bool
 
   let page-no = counter(page).get().at(0)
 

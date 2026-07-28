@@ -13,5 +13,4 @@
 #import "/std/format.typ": format
 #import "/std/format.typ": format-date
 #import "/std/size-mult.typ"
-#import "/std/utils.typ": as-bool
 #import "/std/utils.typ": is-truthy

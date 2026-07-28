@@ -13,25 +13,6 @@
   data
 }
 
-/// deprecated
-#let map-values(data, mapper: none, mappers: ()) = {
-  if type(mapper) == array {
-    return map-values(data, mappers: mapper)
-  }
-
-  if mapper != none {
-    let res = (:)
-    for (key, value) in data {
-      res.insert(key, mapper(value))
-    }
-    return res
-  }
-
-  for mapper in mappers {
-    data = map-values(data, mapper: mapper)
-  }
-  data
-}
 
 /// Determines if an object appears to be an empty or zero-ish value.
 ///
@@ -60,9 +41,6 @@
 /// - obj (any): object to check
 /// -> bool: truthiness of the `obj`
 #let is-truthy(obj) = not is-falsy(obj)
-
-/// deprecated
-#let as-bool = is-truthy
 
 #let content-to-str(key) = {
   if type(key) == str {
