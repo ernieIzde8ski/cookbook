@@ -14,11 +14,3 @@
 #import "/std/size-mult.typ"
 #import "/std/utils.typ": as-bool
 #import "/std/utils.typ": is-truthy
-
-
-/// - len (relative): length
-/// - parent-length (length): absolute parent to relative length
-/// -> length
-#let resolve-length(len, parent-length) = {
-  len.length + len.ratio / 100% * parent-length
-}
