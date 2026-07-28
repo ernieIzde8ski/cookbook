@@ -1,7 +1,7 @@
 #let ISO_3166-1 = (:)
 #let ISO_3166-2 = (:)
 
-#for row in csv("/shared-data/flags.csv") {
+#for row in csv("./flags.csv") {
   row = row.map(str.trim)
   let (code-2, code-3, value) = row
   if value == "" { continue }

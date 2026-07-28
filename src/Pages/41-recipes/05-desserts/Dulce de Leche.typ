@@ -1,5 +1,4 @@
 #import "/prelude.typ": *
-#import "/std/shared-data.typ": *
 
 #show: Recipe.with(title: "Dulce de Leche", description: [
   Preparing dulce de leche without condensed milk is a larger time investment, but on the

@@ -1,6 +1,7 @@
 #import "/std/palette.typ" as palette: *
-#import "/std/shared-data.typ": *
+#import "/std/common-urls.typ": *
 #import "/std/element.typ" as element: *
+#import "/std/footnotes.typ": *
 
 #import "/std/Dimensions.typ"
 #import "/std/Emoji.typ"

@@ -1,5 +1,4 @@
 #import "/prelude.typ": *
-#import "/std/shared-data.typ": *
 
 #show: Recipe.with(title: "Bean Soup, Rice Cooker")[
   - Dried beans

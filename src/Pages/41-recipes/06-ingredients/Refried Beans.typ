@@ -1,5 +1,4 @@
 #import "/prelude.typ": *
-#import "/std/shared-data.typ": *
 
 #Recipe(title: "Refried Beans")[
   - Dried beans

@@ -1,5 +1,4 @@
 #import "/prelude.typ": *
-#import "/std/shared-data.typ": *
 
 #show: Recipe.with(
   title: "Sourdough Milk Bread",
