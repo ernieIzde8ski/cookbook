@@ -102,7 +102,7 @@
   recipes: (),
   references: true,
 ) = {
-  import "/formatting.typ": stylize-elements
+  import "/formatting.typ": stylize-document
 
   set document(author: authors, title: title)
   set page(
@@ -110,7 +110,7 @@
     footer: mkpgfooter(),
   )
 
-  show: stylize-elements(page-size: page-size)
+  show: stylize-document(page-size: page-size)
 
   let pages = (
     if cover { mkcover() },

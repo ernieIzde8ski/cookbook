@@ -114,7 +114,7 @@
   "iPhone 16e": dimensions-from-ppi(460, 2532, 1170),
 )
 
-#let stylize-elements(
+#let stylize-document(
   page-size: "us-letter",
   uri-default: blue,
   uri-label: green.darken(20%),
