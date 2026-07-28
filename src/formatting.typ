@@ -146,6 +146,8 @@
     body
   }
 
+  set underline(evade: true)
+
   show raw.where(block: false): it => {
     show: box.with(
       fill: bg-dim,
