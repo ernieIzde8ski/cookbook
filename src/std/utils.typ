@@ -25,3 +25,11 @@
 /// - obj (any): object to check
 /// -> bool: truthiness of the `obj`
 #let is-truthy(obj) = not is-falsy(obj)
+
+#let supports-numbering(it) = type(it) == content and it.func() != bibliography
+#let has-numbering(it) = supports-numbering(it) and it.numbering != none
+
+#assert(not has-numbering(none))
+#assert(not has-numbering(heading(numbering: none)[foo]))
+#heading(numbering: "1.")[foo].func()
+#assert(has-numbering(heading(numbering: "1.")[foo]))

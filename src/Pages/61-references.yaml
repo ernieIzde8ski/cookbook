@@ -237,6 +237,12 @@ kabc_beer-bread:
   title: "Sourdough Beer Bread"
   parent: *kabc_cat-26-06
 
+KABC_CHART:
+  type: Web
+  title: "Ingredient Weight Chart"
+  publisher: "King Arthur Baking Company"
+  url: https://www.kingarthurbaking.com/learn/ingredient-weight-chart
+
 KABC_TIPS: &kabc_tips
   type: Blog
   title: Tips and Techniques

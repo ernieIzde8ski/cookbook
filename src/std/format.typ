@@ -22,6 +22,8 @@
   import "Emoji.typ"
   import "element.fn.typ": checklist
   import "element.typ": list-break
+  import "utils.typ": has-numbering
+  import "utils.typ": supports-numbering
 
   let page-args
   if type(page-size) == str {
@@ -126,7 +128,7 @@
       }
     }
 
-    if elem == none or elem.numbering != none {
+    if not supports-numbering(elem) or has-numbering(elem) {
       return it
     }
 
