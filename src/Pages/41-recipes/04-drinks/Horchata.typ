@@ -1,6 +1,6 @@
 #import "/prelude.typ": *
 
-#Recipe(title: "Horchata")[
+#Recipe(title: "Horchata", refs: <dl_horchata>)[
   // 99g = 113.65mL
   // 120g = 137.76mL
   - 120g white rice#fn[Long grain preferred.] #aside[140mℓ]
