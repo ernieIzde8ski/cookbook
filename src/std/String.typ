@@ -1,7 +1,14 @@
+/// Return the input with the first character guaranteed to be uppercase.
+//
+/// - string (str): String to sentence case.
+/// -> str
+#let sentence-case(string) = upper(string.at(0)) + string.slice(1)
+#assert(sentence-case("bina, veka") == "Bina, veka")
 
 #let title-case(string) = (
   string.split().map(it => upper(it.at(0)) + lower(it.slice(1))).join(" ")
 )
+#assert(title-case("bina") == "Bina")
 
 /// Converts some content to a string. Panics on failure.
 ///

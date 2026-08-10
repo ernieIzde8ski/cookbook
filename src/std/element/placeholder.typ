@@ -1,10 +1,10 @@
-
 /// Returns a placeholder wrapped inside a figure.
 ///
 /// - body (content): the content to display (or `none`)
 /// - supplement (str): the type for the placeholder, eg `image` or `content`
 /// -> content
 #let Placeholder(body, supplement: none) = {
+  import "../utils.typ": is-truthy
   // used https://rgbcolorpicker.com, pretty good
   let LIGHT = color.rgb("#f8f8ab")
   let DARK = LIGHT.darken(40%)
