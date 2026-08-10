@@ -18,7 +18,7 @@ def abort(msg: str | None = None, /) -> Never:
 
 
 ROOT = Path(__file__).parent
-RECIPE_DIR = ROOT / "src" / "Pages" / "03-recipes"
+RECIPE_DIR = ROOT / "src" / "Pages" / "41-recipes"
 assert RECIPE_DIR.is_dir()
 
 SECTIONS = {path.name[3:].lower(): path for path in RECIPE_DIR.iterdir() if path.is_dir()}
@@ -30,9 +30,9 @@ else:
 
 
 def template(title: str) -> str:
-    return f"""#import "/formatting.typ": *
+    return f"""#import "/prelude.typ": *
 
-#recipe(title: "{title}")
+#Recipe(title: "{title}")
 """
 
 
