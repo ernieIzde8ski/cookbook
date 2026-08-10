@@ -12,8 +12,17 @@ A cookbook written in Typst. [Downloads updated daily here.](https://github.com/
 - [`tinymist`](https://github.com/Myriad-Dreamin/tinymist) (optional, built
   against Typst v0.15.0 or higher)
 - Fonts:
+  - Bitstream Vera Sans
   - Source Sans Pro
-  - Lato
+  - Ysabeau
+  - Twemoji
+
+On Void Linux:
+
+```
+xi -u
+xi source-sans-pro texlive-core ttf-bitstream-vera twemoji
+```
 
 You will need to set the formatter to `typstyle`, `lineLength=90`, prose
 wrapping, and `/path/to/checkout/src/` base directory. I find it works better
