@@ -31,7 +31,7 @@
   } else {
     page-args = page-size
   }
-  set page(..page-args)
+  set page(..page-args, margin: (x: 7%, y: 7%))
 
   show: body => context {
     // 41.7 with my phone, 78.6 with `us-letter`
