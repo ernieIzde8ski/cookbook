@@ -9,5 +9,15 @@
   // 198g = 227.3mℓ
   - 150-200g sugar #aside[170-230mℓ]
   - 500mℓ rice milk#fn[Regular milk also works, but is heavier.]
-  - Ground cinnamon, to serve
+  - Ground cinnamon & ice, to serve
+][
+  + BLEND rice into fine-ish particles.
+  + MIX rice, water, and cinnamon stick in bowl.
+  + COVER & refrigerate. #pause[min. 8 hours]
+  + REMOVE cinnamon stick.
+  + BLEND.
+  + STRAIN through cheesecloth.
+  + MIX milk & sugar into drink till fully dissolved.
+  + REFRIGERATE till chilled.
+  + SERVE with ice & sprinkled ground cinnamon.
 ]
