@@ -68,7 +68,8 @@ def _get_tinymist():
 
         return command
     else:
-        raise RuntimeError("No valid `tinymist` executable could be found :(")
+        print("No valid `tinymist` executable could be found :(")
+        exit(1)
 
 
 TINYMIST = _get_tinymist()
