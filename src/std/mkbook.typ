@@ -60,7 +60,8 @@
     include "/Pages/20-outline.typ",
     include "/Pages/30-advice.typ",
     include "/Pages/40-recipes.typ",
-    include "/Pages/50-references.typ",
+    include "/Pages/50-appendix.typ",
+    include "/Pages/60-references.typ",
   )
 
   pages.join(pagebreak(weak: true))
