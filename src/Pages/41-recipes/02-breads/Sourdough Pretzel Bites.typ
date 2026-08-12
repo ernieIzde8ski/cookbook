@@ -6,9 +6,10 @@
   - 150g milk #aside[145mL]
   - 25g brown sugar #pause[27mL]
   - 75g sourdough starter #pause[75mL]
-  - 240g bread flour #pause[455mL]
+  - 240g bread flour #aside[455mL]
   - 12g chicken bouillon #aside[14mL]
-  - 3g salt #pause[2.5mL]
+  - 3g salt #aside[2.5mL]
+  - 1.2g dough enhancer #pause[optional; 2mL]
   - 14g butter #aside[15mL]
 
   Water Bath:
