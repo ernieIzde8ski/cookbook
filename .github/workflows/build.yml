@@ -1,35 +1,35 @@
 name: package
 on:
-  schedule:
-    - cron: '0 12 * * *'
-  workflow_dispatch:
+  push:
+    branches:
+      - master
 
 jobs:
   package:
     name: Package
     runs-on: ubuntu-24.04
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
       - name: Install Tinymist from GitHub Releases
         uses: sigoden/install-binary@v1.2.0
         with:
           repo: Myriad-Dreamin/tinymist
           name: tinymist-linux-x64
           cache: true
-      - name: Setup Python
+      - name: Install Python
         uses: actions/setup-python@v6.2.0
         with:
           python-version: 3.14
-      - name: Checkout repository
-        uses: actions/checkout@v6
-      - name: Setup virtual environment
+      - name: Setup Python virtual environment
         run: |
           python3 -m pip install -U pip
           python3 -m venv .venv
           . .venv/bin/activate
           pip install -e .
-      - name: Build
+      - name: Build PDFs
         run: .venv/bin/python3 -m doit
-      - name: Package/Release
+      - name: Distribute build artifacts
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
