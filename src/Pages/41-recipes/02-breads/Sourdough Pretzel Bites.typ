@@ -30,11 +30,9 @@
   + CUT 3cm bites out of each log.
   + PREHEAT oven to 220°C. #aside[425°F]
   + FREEZE dough for 15 minutes.
-  + BOIL each bite for 30 seconds on both sides.#footnote[I recommend a frying basket,
-      like the one I've bought:~https://www.amazon.com/dp/B001VZARVK]
+  + BOIL each bite for 30 seconds on both sides.#Fn.fry-basket
   + MOVE bites to baking sheet, at least 1-2 cm apart.
   + STREW pretzel salt atop.
   + BAKE until goldenbrown. #aside[12-15 min.]
   + COAT with molten butter.
-
 ]

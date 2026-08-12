@@ -35,9 +35,8 @@
   + PREHEAT oven to 425°F.
   + BOIL water for water bath. Add baking soda, sugar.
   + FOR each pretzel:
-    + BOIL for 30 seconds per side.#footnote[I recommend a frying basket, like the one
-        I've bought:~https://www.amazon.com/dp/B001VZARVK]
-    + TRANSFER to baking sheet.
+    + BOIL for 30 seconds per side.#Fn.fry-basket
+  + TRANSFER to baking sheet.
   + BRUSH each pretzel with egg wash.
   + BAKE until goldenbrown. #pause[\~15 min.]
 ]
