@@ -1,8 +1,8 @@
 #import "/prelude.typ": *
 
-#Recipe(title: "Mexican Rice")[
+#Recipe(title: "Mexican Rice", refs: <tbfs_mexican-rice>)[
   - 325g white rice, long grain #pause[350mL]
-  - 70mℓ cooking oil #pause[#missing[weight]]
+  - 70mℓ @R_clarified-butter #pause[#missing[weight]]
   - 675mL water
   - 300g tomato, puréed #pause[2 tomatoes]
   - 1 carrot, diced #aside(missing[weight])
