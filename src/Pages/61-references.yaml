@@ -89,6 +89,19 @@ ac_piloncillo:
     date: 2026-05-12
   parent: *ac
 
+COOK_LIKE_CZECHS: &clc
+  type: blog
+  author: &clc_author Kupská, Petra
+  url: https://www.cooklikeczechs.com
+
+clc_veka-bread:
+  type: article
+  title: Veka White Wheat Bread
+  author: *clc_author
+  url:
+    value: https://www.cooklikeczechs.com/veka-bread-recipe/
+    date: 2026-04-20
+
 FARMHOUSE_ON_BOONE: &fob
   type: Blog
   title: Farmhouse on Boone
