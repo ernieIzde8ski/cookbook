@@ -1,6 +1,6 @@
 #import "/prelude.typ": *
 
-#Recipe(title: "Sourdough Pretzel Bites")[
+#Recipe(title: "Sourdough Pretzel Bites", refs: <mid_pretzel-bites>)[
   Dough:
   - 7g active-dry yeast
   - 150g milk #aside[145mL]
