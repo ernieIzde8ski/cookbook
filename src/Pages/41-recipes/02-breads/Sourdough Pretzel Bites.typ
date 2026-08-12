@@ -23,7 +23,7 @@
   + COVER until foamy. #pause[10+ min.]
   + MIX starter into yeast.
   + KNEAD dry ingredients into yeast until smooth. #pause[\~90s, medium-low speed]
-  + MIX butter into dough until smooth. #pause[~60s, medium-low speed]
+  + MIX butter into dough until smooth. #pause[\~60s, medium-low speed]
   + DIVIDE dough fivefold.
   + COVER. #pause[15-30 min.]
   + ROLL each lump into semi-thick (2-3cm) log.
