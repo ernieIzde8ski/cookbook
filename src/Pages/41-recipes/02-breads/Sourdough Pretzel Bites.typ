@@ -29,7 +29,9 @@
   + ROLL each lump into semi-thick (2-3cm) log.
   + CUT 3cm bites out of each log.
   + PREHEAT oven to 220°C. #aside[425°F]
-  + FREEZE dough for 15 minutes.
+  + FREEZE dough. #pause[15 min.]
+  + BOIL water bath.
+  + ADD baking soda to water bath.
   + BOIL each bite for 30 seconds on both sides.#Fn.fry-basket
   + MOVE bites to baking sheet, at least 1-2 cm apart.
   + STREW pretzel salt atop.
