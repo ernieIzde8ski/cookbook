@@ -33,7 +33,7 @@
   + FREEZE dough. #pause[15 min.]
   + BOIL water bath.
   + ADD baking soda to water bath.
-  + BOIL each bite for 30 seconds on both sides.#Fn.fry-basket
+  + BOIL each bite until they float.#Fn.fry-basket #pause[\~60s]
   + MOVE bites to baking sheet, at least 1-2 cm apart.
   + STREW pretzel salt atop.
   + BAKE until goldenbrown. #aside[12-15 min.]
