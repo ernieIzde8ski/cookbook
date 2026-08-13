@@ -35,6 +35,10 @@
   show regex(" ?3/4"): "¾"
   show regex(" ?5/6"): "⅚"
   show regex(" ?7/8"): "⅞"
+  show regex(`(?:\b|\d)[kmµ]?L\b`.text): it => {
+    show "L": "ℓ"
+    it
+  }
 
   include path
 }

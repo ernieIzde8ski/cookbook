@@ -191,7 +191,6 @@ MAKE_IT_DOUGH: &mid
   author: &mid_author "Dela Cruz, Hannah"
   publisher: "Maeven Media LLC"
   url: https://makeitdough.com
-
 mid_flatbread:
   type: Article
   title: "Sourdough Discard Flatbread Recipe (No Yeast & No Rise Time)"
@@ -200,6 +199,15 @@ mid_flatbread:
   url:
     value: https://makeitdough.com/sourdough-discard-flatbread/
     date: 2026-05-10
+  parent: *mid
+mid_pretzel-bites:
+  type: Article
+  title: Sourdough Discard Pretzel Bites
+  author: *mid_author
+  date: 2026-07-11
+  url:
+    value: https://makeitdough.com/sourdough-discard-pretzel-bites/
+    date: 2026-08-12
   parent: *mid
 
 MARTHA_STEWART: &ms

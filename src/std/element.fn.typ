@@ -1,13 +1,18 @@
 #import "palette.typ": *
 
 
-/// Returns superscript red text marking missing content.
+#let _super = super
+#let _no-op(val) = val
+
+/// Returns superscript (by default) red text marking missing content.
 ///
-/// - thing (content | text): name of thing needed
+/// - thing (any): name of thing needed
+/// - super (bool): render using superscript
 /// -> content
-#let missing(thing) = {
+#let missing(thing, super: true) = {
   set text(fill: red)
-  super[[#thing needed]]
+  let f = if super { _super } else { _no-op }
+  f[[#thing needed]]
 }
 
 #let blockquote = quote.with(block: true)

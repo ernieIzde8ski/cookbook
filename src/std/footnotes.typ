@@ -19,6 +19,8 @@
     cream: [Americans: #url[Cream], not #url[sour cream]!],
     cumin: [Be VERY careful with cumin. A pinch too much of salt? Salty, but you'll
       survive. A pinch too much of cumin? Completely inedible.],
+    fry-basket: [I recommend a fry basket. I own this
+      one:~https://www.amazon.com/dp/B001VZARVK],
     food-processor: [You can technically get away with a blender, but it's a hell of a lot
       more tedious.],
     grease-keeper: [If lacking a #url(key: "grease keeper")[fine-mesh grease keeper], a
