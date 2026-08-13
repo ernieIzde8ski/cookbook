@@ -2,7 +2,7 @@
 
 #Recipe(title: "Sourdough Pretzel Bites", refs: <mid_pretzel-bites>)[
   Dough:
-  - 7g active-dry yeast #VN
+  - 7g active-dry yeast #aside[12mL]
   - 150g milk #aside[145mL]
   - 25g brown sugar #pause[27mL]
   - 75g sourdough starter #pause[75mL]
