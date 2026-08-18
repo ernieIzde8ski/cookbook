@@ -89,6 +89,22 @@ ac_piloncillo:
     date: 2026-05-12
   parent: *ac
 
+DAVID_LEBOVITZ: &david
+  type: Blog
+  title: david lebovitz
+  author: Lebovitz, David
+  publisher: Lebovitz, David
+  url: https://www.davidlebovitz.com
+
+dl_horchata:
+  type: Article
+  title: horchata
+  author: Lebovitz, David
+  url:
+    value: https://www.davidlebovitz.com/horchata-recipe-mexican-rice-drink/
+    date: 2026-08-09
+  parent: *david
+
 FARMHOUSE_ON_BOONE: &fob
   type: Blog
   title: Farmhouse on Boone
