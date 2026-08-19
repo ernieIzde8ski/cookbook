@@ -25,6 +25,8 @@
       more tedious.],
     grease-keeper: [If lacking a #url(key: "grease keeper")[fine-mesh grease keeper], a
       fine-mesh strainer & a 4ℓ bucket will do just fine.],
+    liquid-hickory: [Careful with hickory smoke! Delicious flavor, but it's extremely
+      bitter.],
     piloncillo: [Piloncillo substitutes 1-to-1 with brown sugar, particularly unrefined.],
     rice-cooker: [My rice cooker cooks up to 12 cups.],
     sodium-citrate: [Sodium citrate is a cheese emulsifier; that is, it helps keep cheese
