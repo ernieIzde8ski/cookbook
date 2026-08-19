@@ -1,9 +1,19 @@
 #import "element/RecycledInstruction.typ"
 #import "element/RecycledInstruction.typ" as RI
-#import "element/fn.typ": (
-  blockquote, blockquote as bq, checklist, missing, semibold, semibold as sb, checklist,
-  mdtable, invisible, HR, beside, aside, pause-spacer, pause,
-)
+#import "element/fn.typ": HR
+#import "element/fn.typ": aside
+#import "element/fn.typ": beside
+#import "element/fn.typ": blockquote
+#import "element/fn.typ": blockquote as bq
+#import "element/fn.typ": checklist
+#import "element/fn.typ": checklist
+#import "element/fn.typ": invisible
+#import "element/fn.typ": mdtable
+#import "element/fn.typ": missing
+#import "element/fn.typ": pause
+#import "element/fn.typ": pause-spacer
+#import "element/fn.typ": semibold
+#import "element/fn.typ": semibold as sb
 #import "element/placeholder.typ": Placeholder
 #import "element/recipe.typ": Recipe
 
