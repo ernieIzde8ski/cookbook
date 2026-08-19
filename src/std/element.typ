@@ -18,7 +18,9 @@
 #import "element/recipe.typ": Recipe
 
 #let CN = missing[citation]
-#let VN = aside(missing(super: false)[volume])
+#let VN = missing[volume]
+#let WN = missing[weight]
+
 /// -> content
 #let V = {
   set align(center)
