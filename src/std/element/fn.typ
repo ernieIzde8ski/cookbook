@@ -1,5 +1,4 @@
-#import "palette.typ": *
-
+#import "../palette.typ": *
 
 #let _super = super
 #let _no-op(val) = val
@@ -10,9 +9,11 @@
 /// - super (bool): render using superscript
 /// -> content
 #let missing(thing, super: true) = {
+  let thing = [[#thing needed]]
+  if super { thing = _super(thing) }
+
   set text(fill: red)
-  let f = if super { _super } else { _no-op }
-  f[[#thing needed]]
+  thing
 }
 
 #let blockquote = quote.with(block: true)
@@ -51,7 +52,7 @@
   body
 }
 
-#let aside(body) = beside[~~(#body)]
+#let aside(body, left: "(", right: ")") = beside[~~#left#body#right]
 
 #let pause-spacer = v(0.50em)
 #let pause(body) = aside(body) + pause-spacer

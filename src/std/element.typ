@@ -1,4 +1,6 @@
-#import "element.fn.typ": (
+#import "element/RecycledInstruction.typ"
+#import "element/RecycledInstruction.typ" as RI
+#import "element/fn.typ": (
   blockquote, blockquote as bq, checklist, missing, semibold, semibold as sb, checklist,
   mdtable, invisible, HR, beside, aside, pause-spacer, pause,
 )

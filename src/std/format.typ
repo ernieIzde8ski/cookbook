@@ -20,7 +20,7 @@
   import "/std/size-mult.typ"
   import "Dimensions.typ"
   import "Emoji.typ"
-  import "element.fn.typ": checklist
+  import "element.typ": checklist
   import "element.typ": list-break
   import "utils.typ": has-numbering
   import "utils.typ": supports-numbering
