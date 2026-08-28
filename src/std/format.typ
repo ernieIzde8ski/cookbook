@@ -124,7 +124,7 @@
     if it.form == "page" {
       return context {
         let page-no = locate(it.citation.key).page()
-        [pg. #page-no]
+        [p. #page-no]
       }
     }
 
