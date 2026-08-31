@@ -1,6 +1,12 @@
 #import "/prelude.typ": *
 
 #Recipe(title: "Bagels")[
+  Equipment:
+  - 6 bagel molds#fn[I use the molds sold by King Arthur Baking
+      Company:~https://shop.kingarthurbaking.com/items/bagel-molds]
+  - Bowl.
+  - Oven, supporting up to 200°C.
+
   Dough:
   - 210g bread flour #aside[400mL]
   - 33g granulated sugar #aside[33g]
@@ -12,5 +18,23 @@
 
   Boiling:
   - 5g baking soda #aside[5mL]
-  - Water, to fill pot
+  - Water #pause[to fill pot]
+  - Toppings #fn[Poppy seeds, sesame seeds, various mixes, ...] #aside[optional]
+][
+  - MIX ingredients in medium-large bowl, in order:~
+    - Dry ingredients.
+    - Water.
+    - Butter.
+  - COVER. #pause[40 min.]
+  - SPLIT dough sixfold. #aside[\~70g each]
+  - STAKE dough lumps onto bagel molds.
+  - #RI.PREHEAT(obj: "oven", temperature: 395)
+  - WAIT. #pause[20 min.]
+  - BOIL water in pot.
+  - ADD baking soda to pot.
+  - BOIL bagel molds. #aside[8-10 sec. each]
+  - MOVE bagel molds to baking sheet.
+  - ADD toppings.
+  - BAKE. #pause[15-20 min.]
+  - COOl outside oven.
 ]
