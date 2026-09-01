@@ -7,13 +7,14 @@
   - Bowl.
   - Oven, supporting up to 200°C.
 
-  Dough:
+  Dry:
   - 210g bread flour #aside[400mL]
-  - 33g granulated sugar #aside[33g]
-  - 10g Easy-Roll Dough Improver#Fn.erdi #aside[optional, 25mL]
   - 7g active dry yeast #aside[10mL]
-  - 2.3g salt #pause[2.5mL]
-  - 125mL water #pause-spacer
+  - 2.3g salt #aside[2.5mL]
+  - 10g Easy-Roll Dough Improver#Fn.erdi #aside[optional, 25mL]
+
+  Wet:
+  - 125mL water
   - 30g @R_clarified-butter[clarified butter] #aside[33mL]
 
   Boiling:
@@ -21,20 +22,18 @@
   - Water #pause[to fill pot]
   - Toppings #fn[Poppy seeds, sesame seeds, various mixes, ...] #aside[optional]
 ][
-  - MIX ingredients in medium-large bowl, in order:~
-    - Dry ingredients.
-    - Water.
-    - Butter.
+  - MIX dry ingredients in medium-large bowl.
+  - MIX liquid ingredients into same bowl.
   - COVER. #pause[40 min.]
-  - SPLIT dough sixfold. #aside[\~70g each]
+  - SPLIT dough sixfold. #aside[\~65g each]
   - STAKE dough lumps onto bagel molds.
-  - #RI.PREHEAT(obj: "oven", temperature: 395)
+  - #RI.PREHEAT(obj: "oven", temperature: 395, space: none)
   - WAIT. #pause[20 min.]
   - BOIL water in pot.
   - ADD baking soda to pot.
-  - BOIL bagel molds. #aside[8-10 sec. each]
-  - MOVE bagel molds to baking sheet.
-  - ADD toppings.
+  - BOIL bagels. #pause[8-10 sec. each]
+  - ADD bagels to baking sheet.
+  - ADD toppings to bagels.
   - BAKE. #pause[15-20 min.]
   - COOl outside oven.
 ]
