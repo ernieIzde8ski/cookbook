@@ -23,7 +23,7 @@
   - Toppings #fn[Poppy seeds, sesame seeds, various mixes, ...] #aside[optional]
 ][
   - MIX dry ingredients in medium-large bowl.
-  - MIX liquid ingredients into same bowl.
+  - MIX wet ingredients into same bowl.
   - COVER. #pause[40 min.]
   - SPLIT dough sixfold. #aside[\~65g each]
   - STAKE dough lumps onto bagel molds.
