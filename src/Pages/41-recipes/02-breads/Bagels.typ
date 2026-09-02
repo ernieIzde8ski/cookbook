@@ -8,17 +8,17 @@
   - Oven, supporting up to 200°C.
 
   Dry:
-  - 210g bread flour #aside[400mL]
-  - 7g active dry yeast #aside[10mL]
-  - 2.3g salt #aside[2.5mL]
-  - 10g Easy-Roll Dough Improver#Fn.erdi #aside[optional, 25mL]
+  - 250g bread flour #aside[475mL]
+  - 8g active dry yeast #aside[12mL]
+  - 2.8g salt #aside[3mL]
+  - 13g Easy-Roll Dough Improver#Fn.erdi #aside[optional, 31mL]
 
   Wet:
-  - 125mL water
-  - 30g @R_clarified-butter[clarified butter] #aside[33mL]
+  - 150mL water
+  - 35g @R_clarified-butter[clarified butter] #aside[39mL]
 
   Boiling:
-  - 5g baking soda #aside[5mL]
+  - 6g baking soda #aside[6mL]
   - Water #pause[to fill pot]
   - Toppings #fn[Poppy seeds, sesame seeds, various mixes, ...] #aside[optional]
 ][
