@@ -13,6 +13,7 @@
     impure-name,
     pure-mg-per-liter,
     purity-concentration,
+    include-footnote: true,
   ) = {
     let purity_z = Z.new(purity-concentration)
     let pure-grams = Z.new(pure-mg-per-liter)
@@ -20,14 +21,16 @@
     let impure-grams = Z.div(pure-grams, purity_z)
     let impure-milligrams = Z.mult(impure-grams, 1000)
 
-    let g-purity_f = purity_z.numerator / purity_z.denominator
-    let assumption = if g-purity_f < 1.0 {
-      let mg-purity_i = calc.round(g-purity_f * 1000)
-      [#mg-purity_i;mg]
-    } else [#calc.round(g-purity_f);g]
+    let assumption = if include-footnote {
+      let g-purity_f = purity_z.numerator / purity_z.denominator
+      let assumption = if g-purity_f < 1.0 {
+        let mg-purity_i = calc.round(g-purity_f * 1000)
+        [#mg-purity_i;mg]
+      } else [#calc.round(g-purity_f);g]
+      fn[Assuming roughly #assumption of #pure-name per gram of commercial #impure-name.]
+    }
 
-    let r = [#impure-name#fn[Assuming roughly #assumption of #pure-name per gram of
-        commercial #impure-name.]]
+    let r = [#impure-name#assumption]
     (r, impure-milligrams)
   }
 
@@ -50,6 +53,7 @@
     "sucralose",
     31,
     (600, 1),
+    include-footnote: false,
   ))
 
   W
