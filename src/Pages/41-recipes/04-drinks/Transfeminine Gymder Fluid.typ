@@ -59,6 +59,7 @@
   W
 }
 
+#let smartround(t) = calc.round(t, digits: if t < 1 { 2 } else if t < 10 { 1 } else { 0 })
 #let n-servings = 50
 #let grams-per-serving = {
   let z = W.map(it => it.at(1)).reduce(Zlomek.add)
@@ -70,7 +71,7 @@
   description: [A potassium-free energy drink formulation. Inspired by Electrolit, Green
     Apple flavor.],
   yield: [#n-servings liters\
-    (\~#calc.round(grams-per-serving, digits: 1) g. dry mix per L)],
+    (\~#smartround(grams-per-serving)g dry mix per L)],
   for (key, mg) in W {
     let g = mg.numerator / mg.denominator / 1000
     g *= n-servings
@@ -78,4 +79,7 @@
     g = calc.round(g, digits: digits)
     [- #g;g #key]
   },
-)[]
+)[
+  + MIX powder, crushing if necessary.
+  + ADD #smartround(grams-per-serving)g of powder to 1L of water.
+]
