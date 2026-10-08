@@ -94,3 +94,14 @@ Transgender women often take the anti-androgen spironolactone, which, alongside 
 traits, acts as a potassium-preserving diuretic. Essentially, electrolytes go into body,
 potassium stays in, everything else gets flushed out. For gymgoers, an energy drink that
 does not feature potassium can thus prove very helpful.
+
+#let safetyLimit = 15
+Because we use sucralose in place of sugar, there are safety limits. At time of writing,
+we call for 31 milligrams of sucralose per liter of fluid, and the EFSA & the FDA advise
+that individuals consume no more than #safetyLimit milligrams of sucralose per kilogram of
+body weight per day. That is to say, if you weigh 60 kilograms, you should consume no more
+than $(60 times safetyLimit)/31
+= #{ calc.round(60 * safetyLimit / 31, digits: 1) }#[~] frac("L", "day", style: "skewed")$
+of this stuff a day on average. This statement & its containing document has not been
+approved by the FDA or any other health organizations; you prepare this product at your
+own risk.
