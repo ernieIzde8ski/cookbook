@@ -88,3 +88,9 @@
   + MIX powder, crushing if necessary.
   + ADD #smartround(grams-per-serving)g of powder to 1L of water.
 ]
+
+== Trivia
+Transgender women often take the anti-androgen spironolactone, which, alongside other
+traits, acts as a potassium-preserving diuretic. Essentially, electrolytes go into body,
+potassium stays in, everything else gets flushed out. For gymgoers, an energy drink that
+does not feature potassium can thus prove very helpful.
