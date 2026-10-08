@@ -73,7 +73,7 @@
       )[pill crusher]. Each pill weighs about 1.44 grams.],
   ))
 
-  W
+  W.sorted(key: ((_, z)) => -z.numerator / z.denominator)
 }
 
 #let smartround(t) = calc.round(t, digits: if t < 1 { 2 } else if t < 10 { 1 } else { 0 })
