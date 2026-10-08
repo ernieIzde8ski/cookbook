@@ -14,6 +14,7 @@
     pure-mg-per-liter,
     purity-concentration,
     include-footnote: true,
+    product: none,
   ) = {
     let purity_z = Z.new(purity-concentration)
     let pure-grams = Z.new(pure-mg-per-liter)
@@ -27,7 +28,10 @@
         let mg-purity_i = calc.round(g-purity_f * 1000)
         [#mg-purity_i;mg]
       } else [#calc.round(g-purity_f);g]
-      fn[Assuming roughly #assumption of #pure-name per gram of commercial #impure-name.]
+      fn({
+        [Assuming roughly #assumption of #pure-name per gram of #impure-name.]
+        if product != none [\ Referenced product: #product]
+      })
     }
 
     let r = [#impure-name#assumption]
@@ -43,9 +47,10 @@
 
   W.push(Substance(
     "magnesium",
-    "magnesium diglycinate",
+    "lemon-flavored magnesium diglycinate",
     (30, 625),
-    (117, 1000),
+    (250, 4500),
+    product: [https://www.walgreens.com/store/c/walgreens-magnesium-glycinate-powder-lemon/ID=300455406-product],
   ))
 
   W.push(Substance(
