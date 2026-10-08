@@ -77,7 +77,7 @@
 }
 
 #let smartround(t) = calc.round(t, digits: if t < 1 { 2 } else if t < 10 { 1 } else { 0 })
-#let n-servings = 150
+#let n-servings = 263
 #let grams-per-serving = {
   let z = W.map(it => it.at(1)).reduce(Zlomek.add)
   (z.numerator / z.denominator) / 1000
