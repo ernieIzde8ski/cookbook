@@ -56,16 +56,23 @@
   W.push(Substance(
     "sugar",
     "sucralose",
-    31,
+    (31000, 650),
     (600, 1),
     include-footnote: false,
+  ))
+
+  W.push(Substance(
+    "calcium",
+    "calcium citrate",
+    (50, 650),
+    (500 * 18, 25950),
   ))
 
   W
 }
 
 #let smartround(t) = calc.round(t, digits: if t < 1 { 2 } else if t < 10 { 1 } else { 0 })
-#let n-servings = 50
+#let n-servings = 150
 #let grams-per-serving = {
   let z = W.map(it => it.at(1)).reduce(Zlomek.add)
   (z.numerator / z.denominator) / 1000
@@ -96,12 +103,14 @@ potassium stays in, everything else gets flushed out. For gymgoers, an energy dr
 does not feature potassium can thus prove very helpful.
 
 #let safetyLimit = 15
+#let sucraloseGrams = 47.7
+#let weightEstimate = 60
 Because we use sucralose in place of sugar, there are safety limits. At time of writing,
-we call for 31 milligrams of sucralose per liter of fluid, and the EFSA & the FDA advise
-that individuals consume no more than #safetyLimit milligrams of sucralose per kilogram of
-body weight per day. That is to say, if you weigh 60 kilograms, you should consume no more
-than $(60 times safetyLimit)/31
-= #{ calc.round(60 * safetyLimit / 31, digits: 1) }#[~] frac("L", "day", style: "skewed")$
+we call for #sucraloseGrams milligrams of sucralose per liter of fluid, and the EFSA & the
+FDA advise that individuals consume no more than #safetyLimit milligrams of sucralose per
+kilogram of body weight per day. That is to say, if you weigh #weightEstimate kilograms,
+you should consume no more than $(weightEstimate times safetyLimit)/sucraloseGrams
+= #{ calc.round(weightEstimate * safetyLimit / sucraloseGrams, digits: 1) }#[~] frac("L", "day", style: "skewed")$
 of this stuff a day on average. This statement & its containing document has not been
 approved by the FDA or any other health organizations; you prepare this product at your
 own risk.
