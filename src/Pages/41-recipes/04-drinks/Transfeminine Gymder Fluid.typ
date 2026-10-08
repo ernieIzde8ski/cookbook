@@ -66,6 +66,11 @@
     "calcium citrate",
     (50, 650),
     (500 * 18, 25950),
+    product: [#link(
+        "https://www.walgreens.com/store/c/walgreens-calcium-citrate-500-mg-tablets-(100-days)/ID=300437334-product",
+      )[Walgreens Calcium Citrate 500 mg Tablets], crushed into powder with their #link(
+        "https://www.walgreens.com/store/c/walgreens-pill-crusher/ID=prod6328102-product?criteria=Recently+Viewed+Items&position=3&wic=932130",
+      )[pill crusher]. Each pill weighs about 1.44 grams.],
   ))
 
   W
