@@ -116,6 +116,7 @@ FDA advise that individuals consume no more than #safetyLimit milligrams of sucr
 kilogram of body weight per day. That is to say, if you weigh #weightEstimate kilograms,
 you should consume no more than $(weightEstimate times safetyLimit)/sucraloseGrams
 = #{ calc.round(weightEstimate * safetyLimit / sucraloseGrams, digits: 1) }#[~] frac("L", "day", style: "skewed")$
-of this stuff a day on average. This statement & its containing document has not been
-approved by the FDA or any other health organizations; you prepare this product at your
-own risk.
+of this stuff a day on average.
+
+Neither this recipe nor any claims made herein have been reviewed by the FDA or any other
+health organizations; you prepare this product at your own risk.
