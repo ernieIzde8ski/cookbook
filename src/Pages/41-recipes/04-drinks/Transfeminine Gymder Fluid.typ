@@ -50,15 +50,17 @@
     "lemon-flavored magnesium diglycinate",
     (30, 625),
     (250, 4500),
-    product: [https://www.walgreens.com/store/c/walgreens-magnesium-glycinate-powder-lemon/ID=300455406-product],
+    product: link(
+      "https://www.walgreens.com/store/c/walgreens-magnesium-glycinate-powder-lemon/ID=300455406-product",
+    )[Walgreens Magnesium Glycinate Powder Lemon],
   ))
 
   W.push(Substance(
-    "sugar",
+    "glucose-equivalent sweetness",
     "sucralose",
     (31000, 650),
     (600, 1),
-    include-footnote: false,
+    // include-footnote: false,
   ))
 
   W.push(Substance(
@@ -97,15 +99,17 @@
     [- #g;g #key]
   },
 )[
-  + MIX powder, crushing if necessary.
-  + ADD #smartround(grams-per-serving)g of powder to 1L of water.
+  + BLEND powderized ingredients together.
+  + SIFT into storage container.
+  + SHAKE well. \ \ // ugly hack
+  + ADD #smartround(grams-per-serving)g (\~$1/2$ tsp.) of powder per 1L of water.
 ]
 
 == Trivia
-Transgender women often take the anti-androgen spironolactone, which, alongside other
-traits, acts as a potassium-preserving diuretic. Essentially, electrolytes go into body,
-potassium stays in, everything else gets flushed out. For gymgoers, an energy drink that
-does not feature potassium can thus prove very helpful.
+Transgender women often take the anti-androgen spironolactone, which also acts as a
+potassium-preserving diuretic. Essentially, electrolytes go into body, potassium stays in,
+everything else gets flushed out. For gymgoers, an energy drink that does not feature
+potassium can thus prove very helpful.
 
 #let safetyLimit = 15
 #let sucraloseGrams = 47.7
