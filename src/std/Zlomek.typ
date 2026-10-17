@@ -101,10 +101,36 @@
 
 #assert(new(("1.5", "4.5")) == (numerator: decimal(1), denominator: decimal(3)))
 
-///
-///
-/// - left (dictionary):
-/// - right (dictionary):
+#let neg(zlomek) = {
+  let zlomek = new(zlomek)
+  return new((-1 * zlomek.numerator, zlomek.denominator))
+}
+#assert(neg(-2) == (numerator: 2, denominator: 1))
+
+#let add(augend, addend) = {
+  let augend = new(augend)
+  let addend = new(addend)
+  let d = calc.lcm(augend.denominator, addend.denominator)
+  let ln = augend.numerator * d / augend.denominator
+  let rn = addend.numerator * d / addend.denominator
+  let n = ln + rn
+  assert(n == int(n))
+  new((n, d))
+}
+#assert(add((1, 2), (1, 3)) == (numerator: 5, denominator: 6))
+
+#let sub(minuend, subtrahend) = add(minuend, neg(subtrahend))
+
+#let sum(..args) = args.pos().reduce(add)
+
+#let inverse(zlomek) = {
+  let z = new(zlomek)
+  new((z.denominator, z.numerator))
+}
+#let inv = inverse
+
+/// - left (dictionary): a zlomek
+/// - right (dictionary): a zlomek
 /// -> dictionary
 #let mult(left, right) = {
   let left = new(left)
@@ -112,6 +138,15 @@
   new((left.numerator * right.numerator, left.denominator * right.denominator))
 }
 #assert(mult((1, 3), (1, 3)) == (numerator: 1, denominator: 9))
+
+#let divide(dividend, divisor) = {
+  let dividend = new(dividend)
+  let divisor = new(divisor)
+
+  return mult(dividend, inverse(divisor))
+}
+#let div = divide
+#assert(divide(1, 3) == (numerator: 1, denominator: 3))
 
 #let prod(..args) = args.pos().reduce(mult)
 #assert(prod((1, 2), (3, 4), (5, 6)) == new((15, 48)))
