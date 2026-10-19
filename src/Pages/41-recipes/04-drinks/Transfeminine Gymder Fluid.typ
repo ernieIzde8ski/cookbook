@@ -1,5 +1,20 @@
 #import "/prelude.typ": *
 
+#let SERVINGS = 263
+
+#let dezlomek(it) = {
+  if type(it) == dictionary and ("numerator", "denominator").all(key => key in it) {
+    return it.numerator / it.denominator
+  } else {
+    return it
+  }
+}
+#let smartround(f) = calc.round(f, digits: if f < 1 { 2 } else if f < 10 { 1 } else { 0 })
+#let smartround-grams(m) = {
+  let m = dezlomek(m)
+  if m < 1.0 [#smartround(m * 1000);mg] else [#smartround(m);g]
+}
+#let smartround-mg(m) = smartround-grams(dezlomek(m) / 1000)
 
 /// Weights: mg of <substance> needed per liter of water
 #let W = {
@@ -9,40 +24,43 @@
   let round = calc.round.with(digits: 0)
 
   let Substance(
-    pure-name,
-    impure-name,
-    pure-mg-per-liter,
-    purity-concentration,
+    element,
+    raw-form,
+    elem-mg-per-fluid-mℓ,
+    elem-mg-per-raw-mg,
     include-footnote: true,
     product: none,
   ) = {
-    let purity_z = Z.new(purity-concentration)
-    let pure-grams = Z.new(pure-mg-per-liter)
+    // element (g) versus fluid (ℓ)
+    let elem-water-ratio = Z.new(elem-mg-per-fluid-mℓ)
+    // element (g) versus its raw form (g)
+    let elem-raw-ratio = Z.new(elem-mg-per-raw-mg)
 
-    let impure-grams = Z.div(pure-grams, purity_z)
-    let impure-milligrams = Z.mult(impure-grams, 1000)
+    // Raw element (g) / fluid (ℓ)
+    let raw-mass = Z.div(elem-water-ratio, elem-raw-ratio)
+    // Raw element (mg) / fluid (ℓ)
+    let raw-mass_m = Z.mult(raw-mass, 1000)
 
-    let assumption = if include-footnote {
-      let g-purity_f = purity_z.numerator / purity_z.denominator
-      let assumption = if g-purity_f < 1.0 {
-        let mg-purity_i = calc.round(g-purity_f * 1000)
-        [#mg-purity_i;mg]
-      } else [#calc.round(g-purity_f);g]
+    let explainer = if include-footnote {
+      let elem-mass_d = smartround-grams(elem-water-ratio)
+      let raw-mass_d = smartround-grams(raw-mass)
+      let elem-mass_d = smartround-grams(elem-raw-ratio)
       fn({
-        [Assuming roughly #assumption of #pure-name per gram of #impure-name.]
+        [This makes for about #elem-mass_d of #element (#raw-mass_d raw substance) per
+          liter, and assuming \~#elem-mass_d of #element per gram of #raw-form.]
         if product != none [\ Referenced product: #product]
       })
     }
 
-    let r = [#impure-name#assumption]
-    (r, impure-milligrams)
+    let r = [#raw-form#explainer]
+    (r, raw-mass_m)
   }
 
   W.push(Substance(
     "sodium",
     "table salt",
     (430, 625),
-    (590, 1500),
+    (393, 1000),
   ))
 
   W.push(Substance(
@@ -58,8 +76,8 @@
   W.push(Substance(
     "glucose-equivalent sweetness",
     "sucralose",
-    (31000, 650),
-    (600, 1),
+    (31 * 1000, 625), // we want the equivalent of 31 grams of sugar lmfao
+    (600, 1), // sucralose is awful potent
     // include-footnote: false,
   ))
 
@@ -78,8 +96,6 @@
   W.sorted(key: ((_, z)) => -z.numerator / z.denominator)
 }
 
-#let smartround(t) = calc.round(t, digits: if t < 1 { 2 } else if t < 10 { 1 } else { 0 })
-#let n-servings = 263
 #let grams-per-serving = {
   let z = W.map(it => it.at(1)).reduce(Zlomek.add)
   (z.numerator / z.denominator) / 1000
@@ -89,11 +105,11 @@
   title: "Transfeminine Gymder Fluid",
   description: [A potassium-free energy drink formulation. Inspired by Electrolit, Green
     Apple flavor.],
-  yield: [#n-servings liters\
+  yield: [#SERVINGS liters\
     (\~#smartround(grams-per-serving)g dry mix per L)],
   for (key, mg) in W {
     let g = mg.numerator / mg.denominator / 1000
-    g *= n-servings
+    g *= SERVINGS
     let digits = if g < 1 { 2 } else if g < 10 { 1 } else { 0 }
     g = calc.round(g, digits: digits)
     [- #g;g #key]
